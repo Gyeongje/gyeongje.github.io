@@ -94,15 +94,15 @@ Remote Code Execution via Heap Overflow in Alsee (KVE-2023-0095) <span style="fl
 
 ## Remarks
 ---
-**Republic of Korea Air Force**  
-MOS: Information Security <span style="float: right; ">2020.04 - 2022.01 </span>
+**Republic of Korea Air Force** <span style="float: right; ">2020.04 - 2022.01 </span>  
+MOS: Information Security  
 
 **Hacking Competition (CTF) Challenge Author/Organizer**  
 2022 KHU Software Security Competition <span style="float: right; ">Kyunghee University</span>  
 2017/2018 ROOTCTF <span style="float: right; ">Seoul Digitech High School</span>  
 
 **Wargame**  
-Reversing.kr (<a href="http://reversing.kr/rank.php">Gyeongje</a>) <span style="float: right; ">All Clear</span>   
+Reversing.kr (<a href="http://reversing.kr/rank.php">Gyeongje</a>) <span style="float: right; ">All Clear</span>  
 xcz.kr (<a href="http://xcz.kr/START/rank.php">Gyeongje</a>) <span style="float: right; ">All Clear</span>  
 
 
