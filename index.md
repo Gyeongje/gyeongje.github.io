@@ -101,7 +101,7 @@ MOS: Information Security <span style="float: right; ">2020.04 - 2022.01 </span>
 2022 KHU Software Security Competition <span style="float: right; ">Kyunghee University</span>  
 2017/2018 ROOTCTF <span style="float: right; ">Seoul Digitech High School</span>  
 
-**Wargame**
+**Wargame**  
 Reversing.kr (<a heaf="http://reversing.kr/rank.php">Gyeongje</a>) <span style="float: right; ">All Clear</span>   
 xcz.kr (<a heaf="http://xcz.kr/START/rank.php">Gyeongje</a>) <span style="float: right; ">All Clear</span>  
 
