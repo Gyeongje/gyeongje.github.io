@@ -79,7 +79,7 @@ Advanced Professional Class B in Seoul Women's University
 <li>2017</li>  
 <ul>
 	<li>4th, Institute of Information Security Education for the Gifted Hacking Competition</li>
-	<li>Bronze Award, Junior Information Security Olympiad (<a heaf="https://www.dailysecu.com/news/articleView.html?idxno=25263">오경제</a>) <span style="float: right; ">$300</span></li>
+	<li>Bronze Award, Junior Information Security Olympiad (<a href="https://www.dailysecu.com/news/articleView.html?idxno=25263">오경제</a>) <span style="float: right; ">$300</span></li>
 </ul>
 </ul>
 
@@ -102,8 +102,8 @@ MOS: Information Security <span style="float: right; ">2020.04 - 2022.01 </span>
 2017/2018 ROOTCTF <span style="float: right; ">Seoul Digitech High School</span>  
 
 **Wargame**  
-Reversing.kr (<a heaf="http://reversing.kr/rank.php">Gyeongje</a>) <span style="float: right; ">All Clear</span>   
-xcz.kr (<a heaf="http://xcz.kr/START/rank.php">Gyeongje</a>) <span style="float: right; ">All Clear</span>  
+Reversing.kr (<a href="http://reversing.kr/rank.php">Gyeongje</a>) <span style="float: right; ">All Clear</span>   
+xcz.kr (<a href="http://xcz.kr/START/rank.php">Gyeongje</a>) <span style="float: right; ">All Clear</span>  
 
 
 <br>
