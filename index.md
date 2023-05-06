@@ -88,7 +88,7 @@ Advanced Professional Class B in Seoul Women's University
 ## Bug Bounty Award
 ---
 **KISA Bug Bounty Award**  
-Remote Code Execution via Heap Overflow in Alsee (KVE-2023-0095) <span style="float: right; ">$2,100</span>  
+Remote Code Execution via Heap Overflow in Viewer (KVE-2023-0095) <span style="float: right; ">$2,100</span>  
 
 <br>
 
