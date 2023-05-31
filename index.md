@@ -40,8 +40,8 @@ Advanced Professional Class B in Seoul Women's University
 <ul>
 <li>2023</li>
 <ul>
-	<li>
-	10th, in 2023 DiceCTF (<a href="https://ctftime.org/event/1838/">HotIceAmericano</a>) <span style="float: right; ">$100</span></li>
+	<li>17th, in DEF CON 31 CTF Qualifier (<a href="https://nautilus.institute/2023/defcon-31/qualifier/results/2023/05/28/defcon-31-ctf-qualifier-results/">untitled</a>)</li>
+	<li>10th, in 2023 DiceCTF (<a href="https://ctftime.org/event/1838/">HotIceAmericano</a>) <span style="float: right; ">$100</span></li>
 </ul>
 
 <li>2022</li> 
