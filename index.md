@@ -49,7 +49,7 @@ Advanced Professional Class B in Seoul Women's University
 <ul>
 	<li>Finalist, in 2022 CODEGATE University Final (<a href="https://www.boannews.com/media/view.asp?idx=105159">경희대미남해커들</a>)</li>
 	<li>5th place in 2022 Samsung Hacker's Playground (<a href="https://ctftime.org/event/1715">KoreaNumberOne</a>)</li>
-	<li>20th, in DEF CON 30 CTF Qualifier (<a href="https://nautilus.institute/2022/defcon-30/qualifier/results/2022/06/04/defcon-30-ctf-qualifier-results/">0xEA</a>)</li>	
+	<li>20th, in DEF CON 30 CTF Qualifier (<a href="https://nautilus.institute/blog/2022/defcon-30-ctf-qualifier-results/">0xEA</a>)</li>	
 </ul>
 
 
