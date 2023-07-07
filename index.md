@@ -41,7 +41,7 @@ Advanced Professional Class B in Seoul Women's University
 <li>2023</li>
 <ul>
 	<li>Finalist, in 2023 CODEGATE University Final (<a href="http://www.newstap.co.kr/news/photo/202306/196798_315670_357.jpg">경희대미남해커들</a>)</li>
-	<li>17th, in DEF CON 31 CTF Qualifier (<a href="https://nautilus.institute/2023/defcon-31/qualifier/results/2023/05/28/defcon-31-ctf-qualifier-results/">untitled</a>)</li>
+	<li>17th, in DEF CON 31 CTF Qualifier (<a href="https://nautilus.institute/blog/2023/defcon-31-ctf-qualifier-results/">untitled</a>)</li>
 	<li>10th, in 2023 DiceCTF (<a href="https://ctftime.org/event/1838/">HotIceAmericano</a>) <span style="float: right; ">$100</span></li>
 </ul>
 
