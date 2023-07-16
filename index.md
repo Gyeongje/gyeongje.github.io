@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Gyeongje Oh
-subtitle: (2000.09.21)
+subtitle: Offensive Security Researcher
 ---
 
 <!--<span style="float: right; "><a href="{{ '/assets/resume.pdf' | prepend: site.baseurl }}"><strong>> Download CV</strong></a> </span>-->
@@ -24,7 +24,7 @@ Finding vulnerabilities and Exploit in software (Browser, Office, VM, RDP, etc)
 ## External Experience
 ---
 **PWNLAB** - Intern <span style="float: right; ">2023.04 - Now </span>  
-KYUNGHEE UNIVERSITY Department of Computer Engineering (Advisor: Prof. Daehee Jang) 
+Kyunghee University Department of Computer Engineering (Advisor: Prof. Daehee Jang) 
 
 **BEST OF THE BEST 7th** - Student <span style="float: right; ">2018.03 - 2019.02 </span>  
 Vulnerability Analysis Track
