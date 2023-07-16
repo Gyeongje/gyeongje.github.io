@@ -36,7 +36,7 @@ Advanced Professional Class B in Seoul Women's University
 
 ## Hacking Competition (CTF) Awards
 ---
-### International
+**International**
 <ul>
 <li>2023</li>
 <ul>
@@ -59,7 +59,7 @@ Advanced Professional Class B in Seoul Women's University
 </ul>
 </ul>
 
-### Domestic
+**Domestic**
 <ul>
 <li>2022</li>
 <ul>
