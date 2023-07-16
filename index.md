@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Gyeongje Oh
-subtitle: Offensive Security Researcher
+subtitle: (2000.09.21)
 ---
 
 <!--<span style="float: right; "><a href="{{ '/assets/resume.pdf' | prepend: site.baseurl }}"><strong>> Download CV</strong></a> </span>-->
@@ -29,7 +29,7 @@ KYUNGHEE UNIVERSITY Department of Computer Engineering (Advisor: Prof. Daehee Ja
 **BEST OF THE BEST 7th** - Student <span style="float: right; ">2018.03 - 2019.02 </span>  
 Vulnerability Analysis Track
 
-**Institute of Information Security Education for the Gifted** - Student <span style="float: right; ">2017.03 - 2017.12 </span>  
+**Information Security Gifted Education Center** - Student <span style="float: right; ">2017.03 - 2017.12 </span>  
 Advanced Professional Class B in Seoul Women's University
 
 <br>
