@@ -48,14 +48,6 @@
     max-width: 800px;
     margin: 60px auto; }
 
-  code,
-  kbd,
-  pre,
-  samp {
-    font-family: Quicksand;
-    font-size: 100%;
-  }
-
 /* =Header *//*************************************************************/
   .header {
     overflow: hidden; }
