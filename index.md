@@ -40,22 +40,23 @@ Advanced Professional Class B in Seoul Women's University
 <ul>
 <li>2023</li>
 <ul>
-	<li>Finalist, in 2023 CODEGATE University Final (<a href="http://www.newstap.co.kr/news/photo/202306/196798_315670_357.jpg">경희대미남해커들</a>)</li>
+	<li>Finalist, in HITCON CTF (<a href="https://ctf2023.hitcon.org/dashboard/scoreboard/">프로그램털모찌</a>)</li>
+	<li>Finalist, in CODEGATE University Final  (<a href="http://www.newstap.co.kr/news/photo/202306/196798_315670_357.jpg">경희대미남해커들</a>)</li>
 	<li>17th, in DEF CON 31 CTF Qualifier (<a href="https://nautilus.institute/blog/2023/defcon-31-ctf-qualifier-results/">untitled</a>)</li>
-	<li>10th, in 2023 DiceCTF (<a href="https://ctftime.org/event/1838/">HotIceAmericano</a>) <span style="float: right; ">$100</span></li>
+	<li>10th, in DiceCTF (<a href="https://ctftime.org/event/1838/">HotIceAmericano</a>) <span style="float: right; ">$100</span></li>
 </ul>
 
 <li>2022</li> 
 <ul>
-	<li>Finalist, in 2022 CODEGATE University Final (<a href="https://www.boannews.com/media/view.asp?idx=105159">경희대미남해커들</a>)</li>
-	<li>5th place in 2022 Samsung Hacker's Playground (<a href="https://ctftime.org/event/1715">KoreaNumberOne</a>)</li>
+	<li>Finalist, in CODEGATE University Final (<a href="https://www.boannews.com/media/view.asp?idx=105159">경희대미남해커들</a>)</li>
+	<li>5th place in Samsung Hacker's Playground (<a href="https://ctftime.org/event/1715">KoreaNumberOne</a>)</li>
 	<li>20th, in DEF CON 30 CTF Qualifier (<a href="https://nautilus.institute/blog/2022/defcon-30-ctf-qualifier-results/">0xEA</a>)</li>	
 </ul>
 
 
 <li>2018</li>
 <ul>
-	<li>Finalist, in 2018 CODEGATE Junior Final (<a href="https://blog.gye0ngje.com/365">Gyeongje</a>) </li>
+	<li>Finalist, in CODEGATE Junior Final (<a href="https://blog.gye0ngje.com/365">Gyeongje</a>) </li>
 </ul>
 </ul>
 
@@ -63,25 +64,25 @@ Advanced Professional Class B in Seoul Women's University
 <ul>
 <li>2022</li>
 <ul>
-	<li>Excellence Award, HackTheon Sejong Hacking Competition (<a href="https://www.ccnnews.co.kr/news/articleView.html?idxno=265932">라임도둑</a>) <span style="float: right; ">$1,000</span></li>
+	<li>Excellence Award, in HackTheon Sejong Hacking Competition (<a href="https://www.ccnnews.co.kr/news/articleView.html?idxno=265932">라임도둑</a>) <span style="float: right; ">$1,000</span></li>
 </ul>
 
 <li>2021</li>
 <ul>
-	<li>2th, Air Force Cyber Warrior Competition (<a href="https://www.youtube.com/watch?v=QXzFRuBq2UI&ab_channel=%EA%B5%AD%EB%B0%A9NEWS">오경제</a>)</li>
+	<li>2th, in Air Force Cyber Warrior Competition (<a href="https://www.youtube.com/watch?v=QXzFRuBq2UI&ab_channel=%EA%B5%AD%EB%B0%A9NEWS">오경제</a>)</li>
 </ul>
 
 <li>2018</li>
 <ul>
-	<li>Gold Award, Junior Information Security Olympiad (<a href="https://www.boannews.com/media/view.asp?idx=74485">오경제</a>) <span style="float: right; ">$1,000</span></li>
-	<li>1th, 2018 PoC Hacking Camp CTF (<a href="http://bbs.hackingcamp.org/board/index.php?mid=camp_community&document_srl=1021">7성사이다</a>)</li> 
+	<li>Gold Award, in Information Security Olympiad (<a href="https://www.boannews.com/media/view.asp?idx=74485">오경제</a>) <span style="float: right; ">$1,000</span></li>
+	<li>1th, in PoC Hacking Camp CTF (<a href="http://bbs.hackingcamp.org/board/index.php?mid=camp_community&document_srl=1021">7성사이다</a>)</li> 
 </ul>
 
 
 <li>2017</li>  
 <ul>
-	<li>4th, Institute of Information Security Education for the Gifted Hacking Competition</li>
-	<li>Bronze Award, Junior Information Security Olympiad (<a href="https://www.dailysecu.com/news/articleView.html?idxno=25263">오경제</a>) <span style="float: right; ">$300</span></li>
+	<li>4th, in Institute of Information Security Education for the Gifted Hacking Competition</li>
+	<li>Bronze Award, in Information Security Olympiad (<a href="https://www.dailysecu.com/news/articleView.html?idxno=25263">오경제</a>) <span style="float: right; ">$300</span></li>
 </ul>
 </ul>
 
