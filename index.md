@@ -101,6 +101,7 @@ Remote Code Execution via Heap Overflow in Viewer (KVE-2023-0095, KVE-2023-5125)
 MOS: Information Security  
 
 **Hacking Competition (CTF) Challenge Author/Organizer**  
+2023 Hack the DRONE <span style="float: right; ">Kyunghee University</span> 
 2022 KHU Software Security Competition <span style="float: right; ">Kyunghee University</span>  
 2017/2018 ROOTCTF <span style="float: right; ">Seoul Digitech High School</span>  
 
