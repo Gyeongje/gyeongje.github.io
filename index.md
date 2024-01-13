@@ -16,7 +16,7 @@ B.S. in Department of Software Convergence
 
 ## Work Experience
 ---
-**HAYYIM SECURITY** - Security Researcher <span style="float: right; ">2022.03 - Now </span>  
+**HAYYIM SECURITY** - Security Researcher <span style="float: right; ">2022.03 - 2023.12 </span>  
 Finding vulnerabilities and Exploit in software (Browser, Office, VM, RDP, etc)
 
 <br>
