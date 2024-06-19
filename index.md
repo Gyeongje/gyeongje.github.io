@@ -66,6 +66,11 @@ Advanced Professional Class B in Seoul Women's University
 
 ### Domestic
 <ul>
+<li>2024</li>
+<ul>
+	<li>Excellence Award, in HackTheon Sejong Hacking Competition (<a href="https://m.boannews.com/html/detail.html?tab_type=1&idx=130709">QWER</a>) <span style="float: right; ">$3,000</span></li>
+</ul>
+	
 <li>2022</li>
 <ul>
 	<li>Excellence Award, in HackTheon Sejong Hacking Competition (<a href="https://www.ccnnews.co.kr/news/articleView.html?idxno=265932">라임도둑</a>) <span style="float: right; ">$1,000</span></li>
