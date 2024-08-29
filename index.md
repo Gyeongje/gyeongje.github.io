@@ -40,21 +40,20 @@ Advanced Professional Class B in Seoul Women's University
 <ul>
 <li>2024</li>
 <ul>
-	<li>Finalist, in DEFCON 32 Qualifier (<a href="https://nautilus.institute/blog/2024/quals-2024-date/">Cold Fusion</a>)</li>
+	<li>Finalist, in HITCON CTF Final (<a href="https://ctftime.org/event/2345">Cold Fusion</a>)</li>
+	<li>Finalist, in DEFCON 32 Final (<a href="https://ctftime.org/event/2229">Cold Fusion</a>)</li>
 </ul>
 <li>2023</li>
 <ul>
-	<li>4th, in HITCON CTF Final (<a href="https://ctftime.org/event/2035/">프로그램털모찌</a>)</li>
+	<li>4th, in HITCON Final (<a href="https://ctftime.org/event/2035/">프로그램털모찌</a>)</li>
 	<li>Finalist, in CODEGATE University Final (<a href="http://www.newstap.co.kr/news/photo/202306/196798_315670_357.jpg">경희대미남해커들</a>)</li>
-	<li>17th, in DEFCON 31 CTF Qualifier (<a href="https://nautilus.institute/blog/2023/defcon-31-ctf-qualifier-results/">untitled</a>)</li>
 	<li>10th, in DiceCTF (<a href="https://ctftime.org/event/1838/">HotIceAmericano</a>) <span style="float: right; ">$100</span></li>
 </ul>
 
 <li>2022</li> 
 <ul>
 	<li>Finalist, in CODEGATE University Final (<a href="https://www.boannews.com/media/view.asp?idx=105159">경희대미남해커들</a>)</li>
-	<li>5th place in Samsung Hacker's Playground (<a href="https://ctftime.org/event/1715">KoreaNumberOne</a>)</li>
-	<li>20th, in DEFCON 30 CTF Qualifier (<a href="https://nautilus.institute/blog/2022/defcon-30-ctf-qualifier-results/">0xEA</a>)</li>	
+	<li>5th place in Samsung Hacker's Playground (<a href="https://ctftime.org/event/1715">KoreaNumberOne</a>)</li>	
 </ul>
 
 
@@ -110,7 +109,7 @@ Remote Code Execution via Heap Overflow in Viewer (KVE-2023-0095, KVE-2023-5125)
 MOS: Information Security  
 
 **Hacking Competition (CTF) Challenge Author/Organizer**  
-2023 International Drone Hacking Competition <span style="float: right; ">Author/Organizer</span>  
+2023/2024 International Drone Hacking Competition <span style="float: right; ">Author/Organizer</span>  
 2022 KHU Software Security Competition <span style="float: right; ">Author</span>  
 2017/2018 ROOTCTF <span style="float: right; ">Author/Organizer</span>  
 
