@@ -4,7 +4,7 @@ title: Gyeongje Oh
 subtitle: Offensive Security Researcher
 ---
 
-<!--<span style="float: right; "><a href="{{ '/assets/resume.pdf' | prepend: site.baseurl }}"><strong>> Download CV</strong></a> </span>-->
+<span style="float: right; "><a href="{{ '/assets/cv.pdf' | prepend: site.baseurl }}"><strong>> Download CV</strong></a> </span>
 <br>
 
 ## Education
