@@ -41,7 +41,7 @@ Advanced Professional Class B in Seoul Women's University
 <li>2024</li>
 <ul>
 	<li>Finalist, in HITCON CTF Final (<a href="https://ctftime.org/event/2345">Cold Fusion</a>)</li>
-	<li>Finalist, in DEFCON 32 Final (<a href="https://nautilus.institute/blog/2024/defcon-32-ctf-final-results/">Cold Fusion</a>)</li>
+	<li>Finalist, in DEFCON 32 Final (<a href="https://nautilus.institute/blog/2024/defcon-32-ctf-final-results">Cold Fusion</a>)</li>
 </ul>
 <li>2023</li>
 <ul>
