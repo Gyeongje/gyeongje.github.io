@@ -67,6 +67,7 @@ Advanced Professional Class B in Seoul Women's University
 <ul>
 <li>2024</li>
 <ul>
+	<li>Special Award, in FIESTA Hacking Competition (학석박입니다) <span style="float: right; ">$400</span></li>
 	<li>Excellence Award, in HackTheon Sejong Hacking Competition (<a href="https://m.boannews.com/html/detail.html?tab_type=1&idx=130709">QWER</a>) <span style="float: right; ">$3,000</span></li>
 </ul>
 	
