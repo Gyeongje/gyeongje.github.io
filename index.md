@@ -84,14 +84,14 @@ Advanced Professional Class B in Seoul Women's University (<a href="{{ '/assets/
 
 <li>2018</li>
 <ul>
-	<li>Gold Award, in Information Security Olympiad (<a href="{{ '/assets/정보보호올림피아드_금상.png' | prepend: site.baseurl }}">오경제</a>) <span style="float: right; ">$1,000</span></li>
+	<li>Gold Award, in Information Security Olympiad (<a href="{{ '/assets/정보보호올림피아드_금상.jpg' | prepend: site.baseurl }}">오경제</a>) <span style="float: right; ">$1,000</span></li>
 	<li>1th, in PoC Hacking Camp CTF (<a href="{{ '/assets/해킹캠프1위.png' | prepend: site.baseurl }}">7성사이다</a>)</li> 
 </ul>
 
 
 <li>2017</li>  
 <ul>
-	<li>4th, in Institute of Information Security Education for the Gifted CTF</li> (<a href="{{ '/assets/정보보호영재교육원_장려상.png' | prepend: site.baseurl }}">오경제</a>) <span style="float: right; ">$100</span></li>
+	<li>4th, in Institute of Information Security Education for the Gifted CTF (<a href="{{ '/assets/정보보호영재교육원_장려상.png' | prepend: site.baseurl }}">오경제</a>) <span style="float: right; ">$100</span></li>
 	<li>Bronze Award, in Information Security Olympiad (<a href="{{ '/assets/정보보호올림피아드_동상.png' | prepend: site.baseurl }}">오경제</a>) <span style="float: right; ">$300</span></li>
 </ul>
 </ul>
