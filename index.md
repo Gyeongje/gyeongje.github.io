@@ -27,10 +27,10 @@ Finding vulnerabilities and Exploit in software (Browser, Office, VM, RDP, etc)
 Kyunghee University Department of Computer Engineering (Advisor: Prof. Daehee Jang) 
 
 **BEST OF THE BEST 7th** - Student <span style="float: right; ">2018.03 - 2019.02 </span>  
-Vulnerability Analysis Track
+Vulnerability Analysis Track <span style="float: right; "><a href="{{ '/assets/bob임명장.png' | prepend: site.baseurl }}">C/O</a> </span>
 
 **Information Security Gifted Education Center** - Student <span style="float: right; ">2017.03 - 2017.12 </span>  
-Advanced Professional Class B in Seoul Women's University
+Advanced Professional Class B in Seoul Women's University <span style="float: right; "><a href="{{ '/assets/정보보호영재교육원_수료증.png' | prepend: site.baseurl }}">C/O</a> </span>
 
 <br>
 
@@ -59,7 +59,7 @@ Advanced Professional Class B in Seoul Women's University
 
 <li>2018</li>
 <ul>
-	<li>Finalist, in CODEGATE Junior Final (<a href="https://blog.gye0ngje.com/365">Gyeongje</a>) </li>
+	<li>Finalist, in CODEGATE Junior Final (<a href="{{ '/assets/코드게이트본선9위.png' | prepend: site.baseurl }}">오경제</a>) </li>
 </ul>
 </ul>
 
@@ -84,18 +84,17 @@ Advanced Professional Class B in Seoul Women's University
 
 <li>2018</li>
 <ul>
-	<li>Gold Award, in Information Security Olympiad (<a href="https://www.boannews.com/media/view.asp?idx=74485">오경제</a>) <span style="float: right; ">$1,000</span></li>
-	<li>1th, in PoC Hacking Camp CTF (<a href="http://bbs.hackingcamp.org/board/index.php?mid=camp_community&document_srl=1021">7성사이다</a>)</li> 
+	<li>Gold Award, in Information Security Olympiad (<a href="{{ '/assets/정보보호올림피아드_금상.png' | prepend: site.baseurl }}">오경제</a>) <span style="float: right; ">$1,000</span></li>
+	<li>1th, in PoC Hacking Camp CTF (<a href="{{ '/assets/해킹캠프1위.png' | prepend: site.baseurl }}">7성사이다</a>)</li> 
 </ul>
 
 
 <li>2017</li>  
 <ul>
-	<li>4th, in Institute of Information Security Education for the Gifted Hacking Competition</li>
-	<li>Bronze Award, in Information Security Olympiad (<a href="https://www.dailysecu.com/news/articleView.html?idxno=25263">오경제</a>) <span style="float: right; ">$300</span></li>
+	<li>4th, in Institute of Information Security Education for the Gifted Hacking Competition</li> (<a href="{{ '/assets/정보보호영재교육원_장려상.png' | prepend: site.baseurl }}">오경제</a>) <span style="float: right; ">$100</span></li>
+	<li>Bronze Award, in Information Security Olympiad (<a href="{{ '/assets/정보보호올림피아드_동상.png' | prepend: site.baseurl }}">오경제</a>) <span style="float: right; ">$300</span></li>
 </ul>
 </ul>
-
 <br>
 
 ## Bug Bounty Award
