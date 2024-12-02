@@ -27,10 +27,10 @@ Finding vulnerabilities and Exploit in software (Browser, Office, VM, RDP, etc)
 Kyunghee University Department of Computer Engineering (Advisor: Prof. Daehee Jang) 
 
 **BEST OF THE BEST 7th** - Student <span style="float: right; ">2018.03 - 2019.02 </span>  
-Vulnerability Analysis Track <span style="float: right; "><a href="{{ '/assets/bob임명장.png' | prepend: site.baseurl }}">C/O</a> </span>
+Vulnerability Analysis Track (<a href="{{ '/assets/bob임명장.png' | prepend: site.baseurl }}">C/O</a>)
 
 **Information Security Gifted Education Center** - Student <span style="float: right; ">2017.03 - 2017.12 </span>  
-Advanced Professional Class B in Seoul Women's University <span style="float: right; "><a href="{{ '/assets/정보보호영재교육원_수료증.png' | prepend: site.baseurl }}">C/O</a> </span>
+Advanced Professional Class B in Seoul Women's University (<a href="{{ '/assets/정보보호영재교육원_수료증.png' | prepend: site.baseurl }}">C/O</a>)
 
 <br>
 
@@ -91,7 +91,7 @@ Advanced Professional Class B in Seoul Women's University <span style="float: ri
 
 <li>2017</li>  
 <ul>
-	<li>4th, in Institute of Information Security Education for the Gifted Hacking Competition</li> (<a href="{{ '/assets/정보보호영재교육원_장려상.png' | prepend: site.baseurl }}">오경제</a>) <span style="float: right; ">$100</span></li>
+	<li>4th, in Institute of Information Security Education for the Gifted CTF</li> (<a href="{{ '/assets/정보보호영재교육원_장려상.png' | prepend: site.baseurl }}">오경제</a>) <span style="float: right; ">$100</span></li>
 	<li>Bronze Award, in Information Security Olympiad (<a href="{{ '/assets/정보보호올림피아드_동상.png' | prepend: site.baseurl }}">오경제</a>) <span style="float: right; ">$300</span></li>
 </ul>
 </ul>
