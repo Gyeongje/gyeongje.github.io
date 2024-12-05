@@ -91,7 +91,7 @@ Advanced Professional Class B in Seoul Women's University (<a href="{{ '/assets/
 
 <li>2017</li>  
 <ul>
-	<li>4th, in Institute of Information Security Education for the Gifted CTF (<a href="{{ '/assets/정보보호영재교육원_장려상.png' | prepend: site.baseurl }}">오경제</a>) <span style="float: right; ">$100</span></li>
+	<li>4th, in Institute of Information Security Education for the Gifted CTF (<a href="{{ '/assets/정보보호영재교육원_장려상.png' | prepend: site.baseurl }}">오경제</a>) <span style="float: right; ">$300</span></li>
 	<li>Bronze Award, in Information Security Olympiad (<a href="{{ '/assets/정보보호올림피아드_동상.png' | prepend: site.baseurl }}">오경제</a>) <span style="float: right; ">$300</span></li>
 </ul>
 </ul>
