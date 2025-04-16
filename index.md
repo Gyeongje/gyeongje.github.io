@@ -9,8 +9,11 @@ subtitle: Offensive Security Researcher
 
 ## Education
 ---
-**KYUNGHEE UNIVERSITY** <span style="float: right; ">2019.03 - Now (w/ army service) </span>  
-B.S. in Department of Software Convergence
+**KYUNGHEE UNIVERSITY** <span style="float: right; ">2019.03 - 2025.02 (w/ army service) </span>  
+B.S. in Department of Software Convergence  
+
+**KYUNGHEE UNIVERSITY** <span style="float: right; ">2025.03 - Now </span>  
+M.S. in Department of Computer Engineering (Advisor: Prof. Daehee Jang)  
 
 <br>
 
@@ -23,7 +26,7 @@ Finding vulnerabilities and Exploit in software (Browser, Office, VM, RDP, etc)
 
 ## External Experience
 ---
-**PWNLAB** - Intern <span style="float: right; ">2023.04 - Now </span>  
+**PWNLAB** - Intern <span style="float: right; ">2023.04 - 2025.02 </span>  
 Kyunghee University Department of Computer Engineering (Advisor: Prof. Daehee Jang) 
 
 **BEST OF THE BEST 7th** - Student <span style="float: right; ">2018.03 - 2019.02 </span>  
