@@ -38,28 +38,33 @@ Advanced Professional Class B in Seoul Women's University (<a href="{{ '/assets/
 ---
 ### International
 <ul>
+<li>2025</li>
+<ul>
+	<li>8th, in DEFCON 33 CTF Final (<a href="{{ '/assets/defcon33_quals.png' | prepend: site.baseurl }}">Cold Fusion</a>)</li> 
+	<li>9th, in CODEGATE CTF Final (<a href="{{ '/assets/codegate2025quals.jpg' | prepend: site.baseurl }}">경희로운세종대왕</a>)</li> 
+<ul>
 <li>2024</li>
 <ul>
 	<li>6th, in HITCON CTF Final (<a href="https://ctftime.org/event/2345">Cold Fusion</a>)</li>
-	<li>9th, in DEFCON 32 Final (<a href="https://nautilus.institute/blog/2024/defcon-32-ctf-final-results">Cold Fusion</a>)</li>
+	<li>9th, in DEFCON 32 CTF Final (<a href="https://nautilus.institute/blog/2024/defcon-32-ctf-final-results">Cold Fusion</a>)</li>
 </ul>
 <li>2023</li>
 <ul>
-	<li>4th, in HITCON Final (<a href="https://ctftime.org/event/2035/">프로그램털모찌</a>)</li>
-	<li>6th, in CODEGATE University Final (<a href="http://www.newstap.co.kr/news/photo/202306/196798_315670_357.jpg">경희대미남해커들</a>)</li>
+	<li>4th, in HITCON CTF Final (<a href="https://ctftime.org/event/2035/">프로그램털모찌</a>)</li>
+	<li>6th, in CODEGATE CTF University Final (<a href="http://www.newstap.co.kr/news/photo/202306/196798_315670_357.jpg">경희대미남해커들</a>)</li>
 	<li>10th, in DiceCTF (<a href="https://ctftime.org/event/1838/">HotIceAmericano</a>) <span style="float: right; ">$100</span></li>
 </ul>
 
 <li>2022</li> 
 <ul>
-	<li>10th, in CODEGATE University Final (<a href="https://www.boannews.com/media/view.asp?idx=105159">경희대미남해커들</a>)</li>
-	<li>5th place in Samsung Hacker's Playground (<a href="https://ctftime.org/event/1715">KoreaNumberOne</a>)</li>	
+	<li>10th, in CODEGATE CTF University Final (<a href="https://www.boannews.com/media/view.asp?idx=105159">경희대미남해커들</a>)</li>
+	<li>5th place in Samsung Hacker's Playground CTF (<a href="https://ctftime.org/event/1715">KoreaNumberOne</a>)</li>	
 </ul>
 
 
 <li>2018</li>
 <ul>
-	<li>9th, in CODEGATE Junior Final (<a href="{{ '/assets/코드게이트본선9위.png' | prepend: site.baseurl }}">오경제</a>) </li>
+	<li>9th, in CODEGATE CTF Junior Final (<a href="{{ '/assets/코드게이트본선9위.png' | prepend: site.baseurl }}">오경제</a>) </li>
 </ul>
 </ul>
 
@@ -67,9 +72,9 @@ Advanced Professional Class B in Seoul Women's University (<a href="{{ '/assets/
 <ul>
 <li>2024</li>
 <ul>
-	<li>Excellence Award, in LG U+ Hacking Competition (리버서구해요) <span style="float: right; ">$3,000</span></li>
-	<li>Special Award, in AutoHack Hacking Competition (오똑핵) </li>
-	<li>Special Award, in FIESTA Hacking Competition (학석박입니다) <span style="float: right; ">$400</span></li>
+	<li>Excellence Award, in LG U+ Hacking Competition (<a href="{{ '/assets/LGU+우수상.jpg' | prepend: site.baseurl }}">리버서 구해요</a>) <span style="float: right; ">$3,000</span></li>
+	<li>Special Award, in AutoHack Hacking Competition (<a href="{{ '/assets/Autohack특별상.jpg' | prepend: site.baseurl }}">오똑핵</a>) </li>
+	<li>Special Award, in FIESTA Hacking Competition (<a href="{{ '/assets/fiesta2024.png' | prepend: site.baseurl }}">학석박입니다</a>) <span style="float: right; ">$400</span></li>
 	<li>Excellence Award, in HackTheon Sejong Hacking Competition (<a href="https://m.boannews.com/html/detail.html?tab_type=1&idx=130709">QWER</a>) <span style="float: right; ">$3,000</span></li>
 </ul>
 	
