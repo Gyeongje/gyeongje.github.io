@@ -12,7 +12,7 @@ subtitle: Offensive Security Researcher
 **KYUNGHEE UNIVERSITY** <span style="float: right; ">2019.03 - 2025.02 (w/ army service) </span>  
 B.S. in Department of Software Convergence  
 
-**KYUNGHEE UNIVERSITY** <span style="float: right; ">2025.03 - Now </span>  
+**KYUNGHEE UNIVERSITY** <span style="float: right; ">2025.03 - Current </span>  
 M.S. in Department of Computer Engineering (Advisor: Prof. Daehee Jang)  
 
 <br>
