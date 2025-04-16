@@ -42,7 +42,7 @@ Advanced Professional Class B in Seoul Women's University (<a href="{{ '/assets/
 <ul>
 	<li>8th, in DEFCON 33 CTF Final (<a href="{{ '/assets/defcon33_quals.png' | prepend: site.baseurl }}">Cold Fusion</a>)</li> 
 	<li>9th, in CODEGATE CTF Final (<a href="{{ '/assets/codegate2025quals.jpg' | prepend: site.baseurl }}">경희로운세종대왕</a>)</li> 
-<ul>
+</ul>
 <li>2024</li>
 <ul>
 	<li>6th, in HITCON CTF Final (<a href="https://ctftime.org/event/2345">Cold Fusion</a>)</li>
