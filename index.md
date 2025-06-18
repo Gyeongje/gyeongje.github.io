@@ -20,7 +20,10 @@ M.S. in Department of Computer Engineering (Advisor: Prof. Daehee Jang)
 ## Work Experience
 ---
 **HAYYIM SECURITY** - Security Researcher <span style="float: right; ">2022.03 - 2023.12 </span>  
-Finding vulnerabilities and Exploit in software (Browser, Office, VM, RDP, etc)
+Finding vulnerabilities and Exploit in software (Browser, Office, VM, RDP, etc)  
+
+**GMO CyberSecurity by Ierae** - InternShip <span style="float: right; ">2025.07 - 2025.08 </span>  
+Aerospace Village in DEFCON 33 Conference  
 
 <br>
 
