@@ -76,6 +76,11 @@ Advanced Professional Class B in Seoul Women's University (<a href="{{ '/assets/
 
 ### Domestic
 <ul>
+<li>2025</li> 
+<ul>
+	<li>5th, in Cyber Conflict Exercise(CCE) CTF Final (<a href="{{ '/assets/2025_CCE.png' | prepend: site.baseurl }}">경희대미남해커들</a>)</li>
+</ul>
+	
 <li>2024</li>
 <ul>
 	<li>Excellence Award, in LG U+ Hacking Competition (<a href="{{ '/assets/LGU+우수상.jpg' | prepend: site.baseurl }}">리버서 구해요</a>) <span style="float: right; ">$3,000</span></li>
