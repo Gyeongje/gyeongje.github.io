@@ -20,10 +20,10 @@ M.S. in Department of Computer Engineering (Advisor: Prof. Daehee Jang)
 ## Work Experience
 ---
 **HAYYIM SECURITY** - Security Researcher <span style="float: right; ">2022.03 - 2023.12 </span>  
-Finding vulnerabilities and Exploit in software (Browser, Office, VM, RDP, etc)  
+Finding vulnerabilities and Exploit in software (Browser, Office, VM, RDP)  
 
 **GMO CyberSecurity by Ierae** - InternShip <span style="float: right; ">2025.07 - 2025.08 </span>  
-Aerospace Village in DEFCON 33 Conference  
+Aerospace Village in DEFCON 33 Conference (Las Vegas, Bahrain)
 
 <br>
 
@@ -46,6 +46,7 @@ Advanced Professional Class B in Seoul Women's University (<a href="{{ '/assets/
 <ul>
 <li>2025</li>
 <ul>
+	<li>5th, in Cykor CTF (<a href="{{ '/assets/Cykor2025.png' | prepend: site.baseurl }}">경희대미남해커들</a>)</li> 
 	<li>8th, in DEFCON 33 CTF Final (<a href="{{ '/assets/defcon33_quals.png' | prepend: site.baseurl }}">Cold Fusion</a>)</li> 
 	<li>9th, in CODEGATE CTF Final (<a href="{{ '/assets/codegate2025quals.jpg' | prepend: site.baseurl }}">경희로운세종대왕</a>)</li> 
 </ul>
@@ -94,21 +95,14 @@ Advanced Professional Class B in Seoul Women's University (<a href="{{ '/assets/
 	<li>Excellence Award, in HackTheon Sejong Hacking Competition (<a href="https://www.ccnnews.co.kr/news/articleView.html?idxno=265932">라임도둑</a>) <span style="float: right; ">$1,000</span></li>
 </ul>
 
-<li>2021</li>
-<ul>
-	<li>2th, in Air Force Cyber Warrior Competition (<a href="https://www.youtube.com/watch?v=QXzFRuBq2UI&ab_channel=%EA%B5%AD%EB%B0%A9NEWS">오경제</a>)</li>
-</ul>
-
 <li>2018</li>
 <ul>
 	<li>Gold Award, in Information Security Olympiad (<a href="{{ '/assets/정보보호올림피아드_금상.jpg' | prepend: site.baseurl }}">오경제</a>) <span style="float: right; ">$1,000</span></li>
-	<li>1th, in PoC Hacking Camp CTF (<a href="{{ '/assets/해킹캠프1위.png' | prepend: site.baseurl }}">7성사이다</a>)</li> 
 </ul>
 
 
 <li>2017</li>  
 <ul>
-	<li>4th, in Institute of Information Security Education for the Gifted CTF (<a href="{{ '/assets/정보보호영재교육원_장려상.png' | prepend: site.baseurl }}">오경제</a>) <span style="float: right; ">$300</span></li>
 	<li>Bronze Award, in Information Security Olympiad (<a href="{{ '/assets/정보보호올림피아드_동상.png' | prepend: site.baseurl }}">오경제</a>) <span style="float: right; ">$300</span></li>
 </ul>
 </ul>
@@ -128,7 +122,7 @@ MOS: Information Security
 
 **Hacking Competition (CTF) Challenge Author/Organizer**  
 2023/2024 International Drone Hacking Competition <span style="float: right; ">Author/Organizer</span>  
-2022 KHU Software Security Competition <span style="float: right; ">Author</span>  
+2022 KHU Software Security Competition <span style="float: right; ">Author/Organizer</span>  
 2017/2018 ROOTCTF <span style="float: right; ">Author/Organizer</span>  
 
 **Wargame**  
