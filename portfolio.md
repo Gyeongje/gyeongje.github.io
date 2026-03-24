@@ -9,23 +9,16 @@ permalink: /portfolio/
 
 <a href="{{ '/' | prepend: site.baseurl }}" class="portfolio-card">
 <div class="portfolio-card__icon">📡</div>
-<div class="portfolio-card__title" data-en="RF Security Research" data-ko="RF 보안 연구">RF Security Research</div>
-<div class="portfolio-card__desc" data-en="<strong>SDR</strong>-based signal analysis and generation, wireless protocol attack and verification in real-world <strong>RF</strong> environments." data-ko="<strong>SDR</strong> 기반 신호 분석 및 생성, 무선 통신 환경에서의 공격·검증 연구."><strong>SDR</strong>-based signal analysis and generation, wireless protocol attack and verification in real-world <strong>RF</strong> environments.</div>
-<div class="portfolio-card__tag">SDR / Wireless / Signal</div>
-</a>
-
-<a href="{{ '/' | prepend: site.baseurl }}" class="portfolio-card">
-<div class="portfolio-card__icon">🛰️</div>
-<div class="portfolio-card__title" data-en="Satellite Ground Station Security" data-ko="위성 지상국 보안 연구">Satellite Ground Station Security</div>
-<div class="portfolio-card__desc" data-en="Structural analysis of open-source <strong>satellite ground station</strong> systems, <strong>protocol</strong> and <strong>RF</strong>-based vulnerability research." data-ko="오픈소스 <strong>위성 지상국</strong> 시스템 구조 분석, <strong>프로토콜</strong> 및 <strong>RF</strong> 기반 취약점 연구.">Structural analysis of open-source <strong>satellite ground station</strong> systems, <strong>protocol</strong> and <strong>RF</strong>-based vulnerability research.</div>
-<div class="portfolio-card__tag">SatCom / Ground Station</div>
+<div class="portfolio-card__title" data-en="RF & Satellite Security Research" data-ko="RF · 위성 보안 연구">RF &amp; Satellite Security Research</div>
+<div class="portfolio-card__desc" data-en="<strong>SDR</strong> and <strong>GNU Radio</strong>-based RF signal analysis, wireless protocol attack research. Captured and demodulated real <strong>X/S-band</strong> signals from <strong>Aqua</strong>, <strong>Terra</strong>, and <strong>NOAA</strong> satellites, decoded Earth observation imagery via NASA tools. Security assessment of open-source <strong>satellite ground station</strong> systems." data-ko="<strong>SDR</strong> 및 <strong>GNU Radio</strong> 기반 RF 신호 분석, 무선 프로토콜 공격 연구. 실제 <strong>Aqua</strong>, <strong>Terra</strong>, <strong>NOAA</strong> 위성의 <strong>X/S-band</strong> 신호를 수신·복조하고 NASA 소프트웨어로 지구 관측 영상 복호화. 오픈소스 <strong>위성 지상국</strong> 시스템 보안 분석."><strong>SDR</strong> and <strong>GNU Radio</strong>-based RF signal analysis, wireless protocol attack research. Captured and demodulated real <strong>X/S-band</strong> signals from <strong>Aqua</strong>, <strong>Terra</strong>, and <strong>NOAA</strong> satellites, decoded Earth observation imagery via NASA tools. Security assessment of open-source <strong>satellite ground station</strong> systems.</div>
+<div class="portfolio-card__tag">SDR / GNU Radio / SatCom / Ground Station</div>
 </a>
 
 <a href="{{ '/' | prepend: site.baseurl }}" class="portfolio-card">
 <div class="portfolio-card__icon">🛩️</div>
-<div class="portfolio-card__title" data-en="Drone & Satellite Firmware Analysis" data-ko="드론·인공위성 펌웨어 분석">Drone &amp; Satellite Firmware Analysis</div>
-<div class="portfolio-card__desc" data-en="Embedded firmware structure analysis and security assessment for <strong>drone</strong> and <strong>satellite</strong> systems." data-ko="<strong>드론</strong> 및 <strong>위성</strong> 관련 임베디드 펌웨어 구조 분석과 보안성 검토.">Embedded firmware structure analysis and security assessment for <strong>drone</strong> and <strong>satellite</strong> systems.</div>
-<div class="portfolio-card__tag">Embedded / IoT / Aerospace</div>
+<div class="portfolio-card__title" data-en="Drone & Satellite Firmware Security" data-ko="드론·인공위성 펌웨어 보안">Drone &amp; Satellite Firmware Security</div>
+<div class="portfolio-card__desc" data-en="Replay attack and memory corruption research on <strong>DJI</strong> and <strong>PX4</strong> drone firmware. Security tooling development for <strong>GomSpace</strong> and <strong>EnduroSat OBC</strong> satellite systems." data-ko="<strong>DJI</strong>, <strong>PX4</strong> 드론 펌웨어 대상 replay attack 및 memory corruption 연구. <strong>GomSpace</strong>, <strong>EnduroSat OBC</strong> 위성 시스템 보안 도구 개발.">Replay attack and memory corruption research on <strong>DJI</strong> and <strong>PX4</strong> drone firmware. Security tooling development for <strong>GomSpace</strong> and <strong>EnduroSat OBC</strong> satellite systems.</div>
+<div class="portfolio-card__tag">DJI / PX4 / GomSpace / EnduroSat</div>
 </a>
 
 <a href="{{ '/' | prepend: site.baseurl }}" class="portfolio-card">
