@@ -2,38 +2,63 @@
 <script>hljs.initHighlightingOnLoad();</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
 <script>
-function generatePDF(lang) {
-  var content = document.getElementById('cv-content');
-  if (!content) {
-    alert('CV content not found on this page.');
-    return;
+var currentLang = 'en';
+
+function toggleLang() {
+  currentLang = currentLang === 'en' ? 'ko' : 'en';
+
+  var sw = document.getElementById('lang-switch');
+  if (sw) {
+    if (currentLang === 'ko') {
+      sw.classList.add('is-ko');
+    } else {
+      sw.classList.remove('is-ko');
+    }
   }
+
+  var els = document.querySelectorAll('[data-en][data-ko]');
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    var val = el.getAttribute('data-' + currentLang);
+    if (val.indexOf('<') !== -1) {
+      el.innerHTML = val;
+    } else if (el.children.length === 0) {
+      el.textContent = val;
+    }
+  }
+}
+
+function generatePDF() {
+  var content = document.getElementById('cv-content');
+  if (!content) { alert('CV content not found.'); return; }
 
   var clone = content.cloneNode(true);
 
+  // --- Same site font (Quicksand) for PDF ---
   var wrapper = document.createElement('div');
-  wrapper.style.padding = '20px 40px';
+  wrapper.style.padding = '12px 36px';
   wrapper.style.fontFamily = "'Quicksand', sans-serif";
   wrapper.style.fontSize = '11px';
   wrapper.style.lineHeight = '1.5';
-  wrapper.style.color = '#012';
-  wrapper.style.maxWidth = '700px';
+  wrapper.style.color = '#1a1a2e';
 
+  // Header
   var header = document.createElement('div');
   header.style.textAlign = 'center';
-  header.style.marginBottom = '10px';
-  if (lang === 'ko') {
-    header.innerHTML = '<h1 style="margin:0;color:#16a085;font-size:24px;">오경제</h1><p style="color:#828282;margin:4px 0 0;">공격 보안 연구원 | ogj0824@gmail.com | github.com/Gyeongje</p>';
+  header.style.marginBottom = '6px';
+  header.style.paddingBottom = '8px';
+  header.style.borderBottom = '2px solid #16a085';
+  if (currentLang === 'ko') {
+    header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,sans-serif;font-weight:bold;">오경제 (Gyeongje Oh)</h1><p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,sans-serif;">Offensive Security Researcher | ogj0824@gmail.com | github.com/Gyeongje</p>';
   } else {
-    header.innerHTML = '<h1 style="margin:0;color:#16a085;font-size:24px;">Gyeongje Oh</h1><p style="color:#828282;margin:4px 0 0;">Offensive Security Researcher | ogj0824@gmail.com | github.com/Gyeongje</p>';
+    header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,sans-serif;font-weight:bold;">Gyeongje Oh</h1><p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,sans-serif;">Offensive Security Researcher | ogj0824@gmail.com | github.com/Gyeongje</p>';
   }
   wrapper.appendChild(header);
   wrapper.appendChild(clone);
 
-  var filename = lang === 'ko' ? 'CV_오경제.pdf' : 'CV_Gyeongje_Oh.pdf';
-
+  var filename = currentLang === 'ko' ? 'CV_오경제.pdf' : 'CV_Gyeongje_Oh.pdf';
   var opt = {
-    margin: [8, 10, 8, 10],
+    margin: [10, 12, 10, 12],
     filename: filename,
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: { scale: 2, useCORS: true },

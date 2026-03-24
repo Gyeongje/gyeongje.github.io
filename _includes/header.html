@@ -1,20 +1,16 @@
 <header class="header">
 <div class="navigation">
-<a href="{{ '/' | prepend: site.baseurl }}" class="logo">{{ site.title }}</a>
 <ul class="menu">
-  <li class="menu__entry"><a href="{{ '/blog/' | prepend: site.baseurl }}">{% if page.lang == 'ko' %}블로그{% else %}Blog{% endif %}</a></li>
+  <li class="menu__entry"><a href="{{ '/' | prepend: site.baseurl }}">Home</a></li>
+  <li class="menu__entry"><a href="{{ '/portfolio/' | prepend: site.baseurl }}">Portfolio</a></li>
+  <li class="menu__entry"><a href="{{ '/blog/' | prepend: site.baseurl }}">Blog</a></li>
 </ul>
 </div>
-<ul class="social-links">
-{% if site.author.email %}
-<a href="mailto:{{ site.author.email }}" class="social-links__entry" target="_blank">
-<i class="fa fa-envelope-square"></i>
-</a>
-{% endif %}
-{% if site.author.github %}
-<a href="https://github.com/{{ site.author.github }}" class="social-links__entry" target="_blank">
-<i class="fa fa-github"></i>
-</a>
-{% endif %}
-</ul>
+<div class="header-right">
+  <div class="lang-switch" id="lang-switch" onclick="toggleLang()">
+    <span class="lang-switch__en">EN</span>
+    <span class="lang-switch__slider"></span>
+    <span class="lang-switch__ko">KR</span>
+  </div>
+</div>
 </header>
