@@ -9,7 +9,7 @@ lang: en
 <span style="float: right; margin-right: 20px;"><a href="{{ '/ko/' | prepend: site.baseurl }}"><strong>🌐 한국어</strong></a> </span>
 <br>
 
-<div id="cv-content">
+<div id="cv-content" markdown="1">
 
 ## Education
 ---

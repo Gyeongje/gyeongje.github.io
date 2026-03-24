@@ -9,7 +9,7 @@ lang: ko
 <span style="float: right; margin-right: 20px;"><a href="{{ '/' | prepend: site.baseurl }}"><strong>🌐 English</strong></a> </span>
 <br>
 
-<div id="cv-content">
+<div id="cv-content" markdown="1">
 
 ## 학력
 ---
