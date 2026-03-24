@@ -1,2 +1,46 @@
 <script src="{{ "/assets/vendor/highlight/highlight.pack.js" | prepend: site.baseurl }}"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
+<script>
+function generatePDF(lang) {
+  var content = document.getElementById('cv-content');
+  if (!content) {
+    alert('CV content not found on this page.');
+    return;
+  }
+
+  var clone = content.cloneNode(true);
+
+  var wrapper = document.createElement('div');
+  wrapper.style.padding = '20px 40px';
+  wrapper.style.fontFamily = "'Quicksand', sans-serif";
+  wrapper.style.fontSize = '11px';
+  wrapper.style.lineHeight = '1.5';
+  wrapper.style.color = '#012';
+  wrapper.style.maxWidth = '700px';
+
+  var header = document.createElement('div');
+  header.style.textAlign = 'center';
+  header.style.marginBottom = '10px';
+  if (lang === 'ko') {
+    header.innerHTML = '<h1 style="margin:0;color:#16a085;font-size:24px;">오경제</h1><p style="color:#828282;margin:4px 0 0;">공격 보안 연구원 | ogj0824@gmail.com | github.com/Gyeongje</p>';
+  } else {
+    header.innerHTML = '<h1 style="margin:0;color:#16a085;font-size:24px;">Gyeongje Oh</h1><p style="color:#828282;margin:4px 0 0;">Offensive Security Researcher | ogj0824@gmail.com | github.com/Gyeongje</p>';
+  }
+  wrapper.appendChild(header);
+  wrapper.appendChild(clone);
+
+  var filename = lang === 'ko' ? 'CV_오경제.pdf' : 'CV_Gyeongje_Oh.pdf';
+
+  var opt = {
+    margin: [8, 10, 8, 10],
+    filename: filename,
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2, useCORS: true },
+    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+  };
+
+  html2pdf().set(opt).from(wrapper).save();
+}
+</script>

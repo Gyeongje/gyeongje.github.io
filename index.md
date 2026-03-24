@@ -2,10 +2,14 @@
 layout: page
 title: Gyeongje Oh
 subtitle: Offensive Security Researcher
+lang: en
 ---
 
-<span style="float: right; "><a href="{{ '/assets/cv.pdf' | prepend: site.baseurl }}"><strong>> Download CV</strong></a> </span>
+<span style="float: right; "><a href="#" onclick="generatePDF('en'); return false;"><strong>> Download CV (PDF)</strong></a> </span>
+<span style="float: right; margin-right: 20px;"><a href="{{ '/ko/' | prepend: site.baseurl }}"><strong>🌐 한국어</strong></a> </span>
 <br>
+
+<div id="cv-content">
 
 ## Education
 ---
@@ -131,5 +135,7 @@ xcz.kr (<a href="http://xcz.kr/START/rank.php">Gyeongje</a>) <span style="float:
 
 
 <br>
+
+</div>
 
 <!--## Speaker-->
