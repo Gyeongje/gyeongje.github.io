@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls *.md)",
+      "Bash(while IFS= read -r f)",
+      "Bash(do rm:*)",
+      "Bash(done)"
+    ]
+  }
+}

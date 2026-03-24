@@ -570,8 +570,12 @@ strong { color: #16a085; }
 @media (max-width: 640px) {
   p, ul, ol, dl { font-size: 100%; line-height: 1.6; }
   .wrapper { width: 92%; margin: 15px auto; padding: 0; }
-  .navigation { display: block; text-align: center; width: 100%; }
-  .header-right { float: none; justify-content: center; padding-top: 8px; }
+
+  .header { display: flex; align-items: center; justify-content: space-between; overflow: visible; }
+  .navigation { float: none; }
+  .menu { font-size: 100%; margin-top: 4px; }
+  .menu__entry { margin-right: 12px; }
+  .header-right { float: none; padding-top: 0; }
   .social-links { display: block; text-align: center; width: 100%; font-size: 200%; margin: 10px auto; }
 
   .cv-header { padding: 20px 0 16px; }

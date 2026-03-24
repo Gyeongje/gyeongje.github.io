@@ -2,11 +2,9 @@
 <script>hljs.initHighlightingOnLoad();</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
 <script>
-var currentLang = 'en';
+var currentLang = 'ko';
 
-function toggleLang() {
-  currentLang = currentLang === 'en' ? 'ko' : 'en';
-
+function applyLang() {
   var sw = document.getElementById('lang-switch');
   if (sw) {
     if (currentLang === 'ko') {
@@ -27,6 +25,13 @@ function toggleLang() {
     }
   }
 }
+
+function toggleLang() {
+  currentLang = currentLang === 'en' ? 'ko' : 'en';
+  applyLang();
+}
+
+document.addEventListener('DOMContentLoaded', applyLang);
 
 function generatePDF() {
   var content = document.getElementById('cv-content');
