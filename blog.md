@@ -30,7 +30,7 @@ permalink: /blog/
 {% endfor %}
 </div>
 
-<div class="about">
+<div class="about" style="margin-top: 80px; position: sticky; bottom: 0; padding: 20px 0; background: #fff;">
 <div class="about__divider">*****</div>
 <div class="about__text"><strong>Old Blog: <a href="https://blog.gye0ngje.com">blog.gye0ngje.com</a></strong></div>
 </div>
