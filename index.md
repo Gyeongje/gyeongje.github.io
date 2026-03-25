@@ -32,7 +32,7 @@ title: Gyeongje Oh
       <div class="cv-timeline__content">
         <strong data-en="KYUNGHEE UNIVERSITY" data-ko="경희대학교">KYUNGHEE UNIVERSITY</strong>
         <p data-en="M.S. in Department of Computer Engineering" data-ko="컴퓨터공학과 석사과정">M.S. in Department of Computer Engineering</p>
-        <p class="cv-timeline__sub"><a href="https://pwnlab.kr" target="_blank">PWNLAB</a> · Advisor: <a href="https://pwnlab.kr/downloads/cv.pdf" target="_blank">Prof. Daehee Jang</a></p>
+        <p class="cv-timeline__sub"><a href="https://pwnlab.kr" target="_blank">PWNLAB</a> <span data-en="(Lab Leader)" data-ko="(랩장)">(Lab Leader)</span> · Advisor: <a href="https://pwnlab.kr/downloads/cv.pdf" target="_blank">Prof. Daehee Jang</a></p>
       </div>
     </div>
     <div class="cv-timeline__item">
@@ -93,6 +93,30 @@ title: Gyeongje Oh
         <strong data-en="Information Security Gifted Education Center" data-ko="정보보호영재교육원">Information Security Gifted Education Center</strong>
         <p data-en="Advanced Professional Class B, Seoul Women's University" data-ko="서울여자대학교 고급전문B반">Advanced Professional Class B, Seoul Women's University</p>
         <p><a href="{{ '/assets/정보보호영재교육원_수료증.png' | prepend: site.baseurl }}">Certificate</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== PUBLICATIONS ==================== -->
+<div class="cv-section">
+  <h2 class="cv-section__title"><i class="fa fa-file-text"></i> Publications</h2>
+
+  <div class="cv-timeline">
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date" data-en="Pending" data-ko="투고예정">Pending</div>
+      <div class="cv-timeline__content">
+        <strong>"CCSDS based Firewall for Modern Satellite System"</strong>
+        <p>Computers & Security (SCI)</p>
+        <p class="cv-timeline__sub">Woohyeop Im, Gyeongje Oh, Shinichi Kan, Kosuke Ito, Hikohiro Lin, Sayeon Kim, Jinwoo Jeong, Sangbom Yun, Daehee Jang</p>
+      </div>
+    </div>
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2026.05</div>
+      <div class="cv-timeline__content">
+        <strong data-en="Vulnerability Research on Open-Source Ground Station Systems via Satellite RF Signal Generation" data-ko="인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구">"인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구"</strong>
+        <p data-en="CISC (KCI)" data-ko="정보보호학회 (KCI)">정보보호학회 (KCI)</p>
+        <p class="cv-timeline__sub" data-en="Gyeongje Oh, Daehee Jang" data-ko="오경제, 장대희">오경제, 장대희</p>
       </div>
     </div>
   </div>
@@ -278,6 +302,42 @@ title: Gyeongje Oh
     <span class="cv-award__prize">$3,100</span>
     <p>Remote Code Execution via Heap Overflow in Viewer</p>
     <p class="cv-timeline__sub">KVE-2023-0095, KVE-2023-5125</p>
+  </div>
+</div>
+
+<!-- ==================== PRESENTATIONS ==================== -->
+<div class="cv-section">
+  <h2 class="cv-section__title"><i class="fa fa-microphone"></i> <span data-en="Presentations" data-ko="Presentations">Presentations</span></h2>
+
+  <div class="cv-timeline">
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2026.07</div>
+      <div class="cv-timeline__content">
+        <strong data-en="CodeEngn 2026" data-ko="코드엔진 2026">코드엔진 2026</strong>
+        <p data-en="&quot;Vulnerability Research on Open-Source Ground Station Systems via Satellite RF Signal Generation&quot;" data-ko="&quot;인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구&quot;">"인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구"</p>
+      </div>
+    </div>
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2026.05</div>
+      <div class="cv-timeline__content">
+        <strong data-en="CISC 2026" data-ko="정보보호학회 2026">정보보호학회 2026</strong>
+        <p data-en="&quot;Vulnerability Research on Open-Source Ground Station Systems via Satellite RF Signal Generation&quot;" data-ko="&quot;인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구&quot;">"인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구"</p>
+      </div>
+    </div>
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2025.11</div>
+      <div class="cv-timeline__content">
+        <strong>DEFCON Aerospace Village — Bahrain</strong>
+        <p>"CCSDS based Firewall for Modern Satellite System"</p>
+      </div>
+    </div>
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2025.08</div>
+      <div class="cv-timeline__content">
+        <strong>DEFCON Aerospace Village — Las Vegas</strong>
+        <p>"CCSDS based Firewall for Modern Satellite System"</p>
+      </div>
+    </div>
   </div>
 </div>
 

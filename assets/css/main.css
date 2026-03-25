@@ -2,7 +2,7 @@
 
 /* =Base */
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', 'Pretendard Variable', Pretendard, sans-serif;
   font-size: 100%;
   color: #1a1a2e;
   background-color: #fff;
@@ -24,8 +24,29 @@ p, ul, ol, dl {
 
 img {
   display: block;
-  max-width: 100%;
+  max-width: 85%;
+  margin: 24px auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 95%;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px 14px;
+  text-align: left;
+}
+th {
+  background: #f5f5f5;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+tr:hover { background: #f9f9f9; }
 
 blockquote {
   letter-spacing: 3px;
@@ -623,7 +644,8 @@ strong { color: #16a085; }
   font-weight: 400;
 }
 
-.pf-project__desc strong { color: #1a1a2e; }
+.pf-project__desc strong { color: #333; font-weight: 600; }
+
 
 .pf-project__tags {
   display: flex;

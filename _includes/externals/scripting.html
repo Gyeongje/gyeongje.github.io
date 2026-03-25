@@ -2,7 +2,7 @@
 <script>hljs.initHighlightingOnLoad();</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
 <script>
-var currentLang = 'ko';
+var currentLang = 'en';
 
 function applyLang() {
   var sw = document.getElementById('lang-switch');
@@ -42,7 +42,7 @@ function generatePDF() {
   // --- Same site font (Quicksand) for PDF ---
   var wrapper = document.createElement('div');
   wrapper.style.padding = '12px 36px';
-  wrapper.style.fontFamily = "'Quicksand', sans-serif";
+  wrapper.style.fontFamily = "'Quicksand', 'Pretendard Variable', Pretendard, sans-serif";
   wrapper.style.fontSize = '11px';
   wrapper.style.lineHeight = '1.5';
   wrapper.style.color = '#1a1a2e';
@@ -54,9 +54,9 @@ function generatePDF() {
   header.style.paddingBottom = '8px';
   header.style.borderBottom = '2px solid #16a085';
   if (currentLang === 'ko') {
-    header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,sans-serif;font-weight:bold;">오경제 (Gyeongje Oh)</h1><p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,sans-serif;">Offensive Security Researcher | ogj0824@gmail.com | github.com/Gyeongje</p>';
+    header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;font-weight:bold;">오경제 (Gyeongje Oh)</h1><p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;">Offensive Security Researcher | ogj0824@gmail.com | github.com/Gyeongje</p>';
   } else {
-    header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,sans-serif;font-weight:bold;">Gyeongje Oh</h1><p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,sans-serif;">Offensive Security Researcher | ogj0824@gmail.com | github.com/Gyeongje</p>';
+    header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;font-weight:bold;">Gyeongje Oh</h1><p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;">Offensive Security Researcher | ogj0824@gmail.com | github.com/Gyeongje</p>';
   }
   wrapper.appendChild(header);
   wrapper.appendChild(clone);
