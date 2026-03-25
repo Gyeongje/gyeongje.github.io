@@ -168,3 +168,8 @@ permalink: /portfolio/
   </div>
 
 </div>
+
+<div class="about">
+<div class="about__divider">*****</div>
+<div class="about__text"><strong>Contact: ogj0824@gmail.com</strong></div>
+</div>

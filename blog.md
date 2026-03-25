@@ -29,3 +29,8 @@ permalink: /blog/
 </ul>
 {% endfor %}
 </div>
+
+<div class="about">
+<div class="about__divider">*****</div>
+<div class="about__text"><strong>Old Blog: <a href="https://blog.gye0ngje.com">blog.gye0ngje.com</a></strong></div>
+</div>
