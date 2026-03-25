@@ -542,10 +542,30 @@ strong { color: #16a085; }
   border-radius: 16px;
 }
 
+.pf-skill--target {
+  background: #1a1a2e;
+  color: #fff;
+}
+
 .pf-skill--sub {
   background: transparent;
   color: #555;
   border: 1px solid #ddd;
+}
+
+.pf-skills__label {
+  font-size: 78%;
+  font-weight: 700;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.pf-skills__divider {
+  height: 1px;
+  background: #eee;
+  margin: 14px 0;
 }
 
 /* =Portfolio Projects */

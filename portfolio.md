@@ -5,9 +5,31 @@ subtitle: Research & Experience
 permalink: /portfolio/
 ---
 
-<!-- ==================== SKILLS ==================== -->
+<!-- ==================== TARGETS & SKILLS ==================== -->
 <div class="pf-skills">
-  <h2 class="pf-skills__title"><i class="fa fa-wrench"></i> Skills</h2>
+  <h2 class="pf-skills__title"><i class="fa fa-crosshairs"></i> Targets &amp; Skills</h2>
+
+  <div class="pf-skills__label">Targets</div>
+  <div class="pf-skills__group">
+    <span class="pf-skill pf-skill--target">Windows Kernel</span>
+    <span class="pf-skill pf-skill--target">Android Kernel</span>
+    <span class="pf-skill pf-skill--target">Browser</span>
+    <span class="pf-skill pf-skill--target">Office</span>
+    <span class="pf-skill pf-skill--target">RDP</span>
+    <span class="pf-skill pf-skill--target">Antivirus</span>
+    <span class="pf-skill pf-skill--target">Viewer</span>
+    <span class="pf-skill pf-skill--target">DJI</span>
+    <span class="pf-skill pf-skill--target">PX4</span>
+    <span class="pf-skill pf-skill--target">GomSpace</span>
+    <span class="pf-skill pf-skill--target">EnduroSat</span>
+    <span class="pf-skill pf-skill--target">TinyGS</span>
+    <span class="pf-skill pf-skill--target">NOAA</span>
+    <span class="pf-skill pf-skill--target">Aqua / Terra</span>
+  </div>
+
+  <div class="pf-skills__divider"></div>
+
+  <div class="pf-skills__label">Skills</div>
   <div class="pf-skills__group">
     <span class="pf-skill">Reverse Engineering</span>
     <span class="pf-skill">Exploit Development</span>
@@ -28,6 +50,8 @@ permalink: /portfolio/
     <span class="pf-skill pf-skill--sub">GDB</span>
     <span class="pf-skill pf-skill--sub">WinDbg</span>
     <span class="pf-skill pf-skill--sub">Wireshark</span>
+    <span class="pf-skill pf-skill--sub">USRP</span>
+    <span class="pf-skill pf-skill--sub">HackRF</span>
     <span class="pf-skill pf-skill--sub">QEMU</span>
   </div>
 </div>
