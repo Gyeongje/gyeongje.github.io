@@ -18,7 +18,7 @@ permalink: /portfolio/
     <span class="pf-skill pf-skill--target">TinyGS</span>
     <span class="pf-skill pf-skill--target">DJI</span>
     <span class="pf-skill pf-skill--target">PX4</span>
-    <span class="pf-skill pf-skill--target">NOAA / Aqua</span>
+    <span class="pf-skill pf-skill--target">NOAA-20</span>
     <span class="pf-skill pf-skill--target">Browser</span>
     <span class="pf-skill pf-skill--target">Office</span>
     <span class="pf-skill pf-skill--target">RDP</span>
@@ -31,13 +31,12 @@ permalink: /portfolio/
   <div class="pf-skills__label">Skills</div>
   <div class="pf-skills__group">
     <span class="pf-skill">Reverse Engineering</span>
-    <span class="pf-skill">Exploit Development</span>
+    <span class="pf-skill">Exploit</span>
     <span class="pf-skill">Vulnerability Research</span>
-    <span class="pf-skill">Kernel Security</span>
+    <span class="pf-skill">Kernel Debugging</span>
     <span class="pf-skill">RF / SDR</span>
     <span class="pf-skill">GNU Radio</span>
     <span class="pf-skill">Firmware Analysis</span>
-    <span class="pf-skill">Binary Analysis</span>
     <span class="pf-skill">Bug Bounty</span>
     <span class="pf-skill">CTF</span>
   </div>
@@ -45,10 +44,10 @@ permalink: /portfolio/
     <span class="pf-skill pf-skill--sub">C / C++</span>
     <span class="pf-skill pf-skill--sub">Python</span>
     <span class="pf-skill pf-skill--sub">IDA Pro</span>
-    <span class="pf-skill pf-skill--sub">Ghidra</span>
     <span class="pf-skill pf-skill--sub">GDB</span>
     <span class="pf-skill pf-skill--sub">WinDbg</span>
     <span class="pf-skill pf-skill--sub">Wireshark</span>
+    <span class="pf-skill pf-skill--sub">Procmon</span>
     <span class="pf-skill pf-skill--sub">USRP</span>
     <span class="pf-skill pf-skill--sub">HackRF</span>
     <span class="pf-skill pf-skill--sub">QEMU</span>
