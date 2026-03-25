@@ -5,62 +5,123 @@ subtitle: Research & Experience
 permalink: /portfolio/
 ---
 
-<div class="portfolio-grid">
+<!-- ==================== SKILLS ==================== -->
+<div class="pf-skills">
+  <h2 class="pf-skills__title"><i class="fa fa-wrench"></i> Skills</h2>
+  <div class="pf-skills__group">
+    <span class="pf-skill">Reverse Engineering</span>
+    <span class="pf-skill">Exploit Development</span>
+    <span class="pf-skill">Vulnerability Research</span>
+    <span class="pf-skill">Kernel Security</span>
+    <span class="pf-skill">RF / SDR</span>
+    <span class="pf-skill">GNU Radio</span>
+    <span class="pf-skill">Firmware Analysis</span>
+    <span class="pf-skill">Binary Analysis</span>
+    <span class="pf-skill">Bug Bounty</span>
+    <span class="pf-skill">CTF</span>
+  </div>
+  <div class="pf-skills__group">
+    <span class="pf-skill pf-skill--sub">C / C++</span>
+    <span class="pf-skill pf-skill--sub">Python</span>
+    <span class="pf-skill pf-skill--sub">IDA Pro</span>
+    <span class="pf-skill pf-skill--sub">Ghidra</span>
+    <span class="pf-skill pf-skill--sub">GDB</span>
+    <span class="pf-skill pf-skill--sub">WinDbg</span>
+    <span class="pf-skill pf-skill--sub">Wireshark</span>
+    <span class="pf-skill pf-skill--sub">QEMU</span>
+  </div>
+</div>
 
-<a href="{{ '/' | prepend: site.baseurl }}" class="portfolio-card">
-<div class="portfolio-card__icon">📡</div>
-<div class="portfolio-card__title" data-en="RF & Satellite Security Research" data-ko="RF · 위성 보안 연구">RF &amp; Satellite Security Research</div>
-<div class="portfolio-card__desc" data-en="<strong>SDR</strong> and <strong>GNU Radio</strong>-based RF signal analysis, wireless protocol attack research. Captured and demodulated real <strong>X/S-band</strong> signals from <strong>Aqua</strong>, <strong>Terra</strong>, and <strong>NOAA</strong> satellites, decoded Earth observation imagery via NASA tools. Security assessment of open-source <strong>satellite ground station</strong> systems." data-ko="<strong>SDR</strong> 및 <strong>GNU Radio</strong> 기반 RF 신호 분석, 무선 프로토콜 공격 연구. 실제 <strong>Aqua</strong>, <strong>Terra</strong>, <strong>NOAA</strong> 위성의 <strong>X/S-band</strong> 신호를 수신·복조하고 NASA 소프트웨어로 지구 관측 영상 복호화. 오픈소스 <strong>위성 지상국</strong> 시스템 보안 분석."><strong>SDR</strong> and <strong>GNU Radio</strong>-based RF signal analysis, wireless protocol attack research. Captured and demodulated real <strong>X/S-band</strong> signals from <strong>Aqua</strong>, <strong>Terra</strong>, and <strong>NOAA</strong> satellites, decoded Earth observation imagery via NASA tools. Security assessment of open-source <strong>satellite ground station</strong> systems.</div>
-<div class="portfolio-card__tag">SDR / GNU Radio / SatCom / Ground Station</div>
-</a>
+<!-- ==================== PROJECTS ==================== -->
+<div class="pf-projects">
+  <h2 class="pf-projects__title"><i class="fa fa-flask"></i> Projects</h2>
 
-<a href="{{ '/' | prepend: site.baseurl }}" class="portfolio-card">
-<div class="portfolio-card__icon">🛩️</div>
-<div class="portfolio-card__title" data-en="Drone & Satellite Firmware Security" data-ko="드론·인공위성 펌웨어 보안">Drone &amp; Satellite Firmware Security</div>
-<div class="portfolio-card__desc" data-en="Replay attack and memory corruption research on <strong>DJI</strong> and <strong>PX4</strong> drone firmware. Security tooling development for <strong>GomSpace</strong> and <strong>EnduroSat OBC</strong> satellite systems." data-ko="<strong>DJI</strong>, <strong>PX4</strong> 드론 펌웨어 대상 replay attack 및 memory corruption 연구. <strong>GomSpace</strong>, <strong>EnduroSat OBC</strong> 위성 시스템 보안 도구 개발.">Replay attack and memory corruption research on <strong>DJI</strong> and <strong>PX4</strong> drone firmware. Security tooling development for <strong>GomSpace</strong> and <strong>EnduroSat OBC</strong> satellite systems.</div>
-<div class="portfolio-card__tag">DJI / PX4 / GomSpace / EnduroSat</div>
-</a>
+  <div class="pf-project">
+    <div class="pf-project__header">
+      <h3 class="pf-project__name" data-en="Satellite Signal Reception & Decoding" data-ko="위성 신호 수신 및 복호화">위성 신호 수신 및 복호화</h3>
+      <span class="pf-project__period">2024.06 ~ 2025.02</span>
+    </div>
+    <p class="pf-project__desc" data-en="Captured real <strong>X/S-band</strong> signals from <strong>Aqua</strong>, <strong>Terra</strong>, and <strong>NOAA</strong> satellites using <strong>SDR</strong> and <strong>GNU Radio</strong>. Demodulated signals and decoded Earth observation imagery with NASA software tools." data-ko="<strong>SDR</strong> 및 <strong>GNU Radio</strong>를 활용하여 <strong>Aqua</strong>, <strong>Terra</strong>, <strong>NOAA</strong> 위성의 <strong>X/S-band</strong> 실제 신호 수신 및 복조. NASA 소프트웨어로 지구 관측 영상 복호화."><strong>SDR</strong> 및 <strong>GNU Radio</strong>를 활용하여 <strong>Aqua</strong>, <strong>Terra</strong>, <strong>NOAA</strong> 위성의 <strong>X/S-band</strong> 실제 신호 수신 및 복조. NASA 소프트웨어로 지구 관측 영상 복호화.</p>
+    <div class="pf-project__tags">
+      <span class="pf-tag">SDR</span><span class="pf-tag">GNU Radio</span><span class="pf-tag">X/S-band</span><span class="pf-tag">NOAA</span><span class="pf-tag">NASA</span>
+    </div>
+  </div>
 
-<a href="{{ '/' | prepend: site.baseurl }}" class="portfolio-card">
-<div class="portfolio-card__icon">🔓</div>
-<div class="portfolio-card__title" data-en="Vulnerability Research & Exploit Development" data-ko="소프트웨어 취약점 연구 및 Exploit 개발">Vulnerability Research &amp; Exploit Development</div>
-<div class="portfolio-card__desc" data-en="Discovered and exploited vulnerabilities in <strong>browsers</strong>, <strong>office suites</strong>, <strong>RDP</strong>, and <strong>document viewers</strong>. Reported through KISA Bug Bounty." data-ko="<strong>브라우저</strong>, <strong>오피스</strong>, <strong>RDP</strong>, <strong>뷰어</strong> 등 다양한 소프트웨어를 대상으로 취약점 분석 및 exploit 개발. KISA 버그바운티 제보.">Discovered and exploited vulnerabilities in <strong>browsers</strong>, <strong>office suites</strong>, <strong>RDP</strong>, and <strong>document viewers</strong>. Reported through KISA Bug Bounty.</div>
-<div class="portfolio-card__tag">Browser / Office / RDP / Viewer</div>
-</a>
+  <div class="pf-project">
+    <div class="pf-project__header">
+      <h3 class="pf-project__name" data-en="Satellite Ground Station Security Assessment" data-ko="위성 지상국 시스템 보안 분석">위성 지상국 시스템 보안 분석</h3>
+      <span class="pf-project__period">2024.03 ~ 2025.02</span>
+    </div>
+    <p class="pf-project__desc" data-en="Structural analysis and vulnerability research on open-source <strong>satellite ground station</strong> systems. Protocol and <strong>RF</strong>-based attack surface identification." data-ko="오픈소스 <strong>위성 지상국</strong> 시스템 구조 분석 및 취약점 연구. <strong>프로토콜</strong> 및 <strong>RF</strong> 기반 공격 표면 식별.">오픈소스 <strong>위성 지상국</strong> 시스템 구조 분석 및 취약점 연구. <strong>프로토콜</strong> 및 <strong>RF</strong> 기반 공격 표면 식별.</p>
+    <div class="pf-project__tags">
+      <span class="pf-tag">SatCom</span><span class="pf-tag">Ground Station</span><span class="pf-tag">RF</span><span class="pf-tag">Protocol</span>
+    </div>
+  </div>
 
-<a href="{{ '/' | prepend: site.baseurl }}" class="portfolio-card">
-<div class="portfolio-card__icon">⚙️</div>
-<div class="portfolio-card__title" data-en="Privileged Software Security Research" data-ko="고권한 소프트웨어 보안 연구">Privileged Software Security Research</div>
-<div class="portfolio-card__desc" data-en="Attack surface analysis and vulnerability research on <strong>Windows Kernel</strong>, <strong>Android Kernel</strong>, and <strong>antivirus</strong> products." data-ko="<strong>Windows Kernel</strong>, <strong>Android Kernel</strong>, <strong>백신</strong> 등 높은 권한을 가지는 소프트웨어의 공격 표면 분석 및 취약점 연구.">Attack surface analysis and vulnerability research on <strong>Windows Kernel</strong>, <strong>Android Kernel</strong>, and <strong>antivirus</strong> products.</div>
-<div class="portfolio-card__tag">Kernel / AV / Privileged</div>
-</a>
+  <div class="pf-project">
+    <div class="pf-project__header">
+      <h3 class="pf-project__name" data-en="Drone Firmware Security Research" data-ko="드론 펌웨어 보안 연구">드론 펌웨어 보안 연구</h3>
+      <span class="pf-project__period">2023.06 ~ 2024.12</span>
+    </div>
+    <p class="pf-project__desc" data-en="Replay attack and memory corruption research on <strong>DJI</strong> and <strong>PX4</strong> drone firmware. Embedded firmware structure analysis and vulnerability identification." data-ko="<strong>DJI</strong>, <strong>PX4</strong> 드론 펌웨어 대상 replay attack 및 memory corruption 연구. 임베디드 펌웨어 구조 분석 및 취약점 식별."><strong>DJI</strong>, <strong>PX4</strong> 드론 펌웨어 대상 replay attack 및 memory corruption 연구. 임베디드 펌웨어 구조 분석 및 취약점 식별.</p>
+    <div class="pf-project__tags">
+      <span class="pf-tag">DJI</span><span class="pf-tag">PX4</span><span class="pf-tag">Replay Attack</span><span class="pf-tag">Memory Corruption</span>
+    </div>
+  </div>
 
-<a href="{{ '/' | prepend: site.baseurl }}" class="portfolio-card">
-<div class="portfolio-card__icon">🔬</div>
-<div class="portfolio-card__title" data-en="Reverse Engineering" data-ko="리버스 엔지니어링">Reverse Engineering</div>
-<div class="portfolio-card__desc" data-en="<strong>Binary</strong> and <strong>firmware</strong> reverse engineering, behavioral analysis, and identification of vulnerable attack surfaces." data-ko="<strong>바이너리</strong> 및 <strong>펌웨어</strong> 분석, 동작 구조 파악, 취약 지점 식별."><strong>Binary</strong> and <strong>firmware</strong> reverse engineering, behavioral analysis, and identification of vulnerable attack surfaces.</div>
-<div class="portfolio-card__tag">Binary / Firmware / Analysis</div>
-</a>
+  <div class="pf-project">
+    <div class="pf-project__header">
+      <h3 class="pf-project__name" data-en="Satellite OBC Security Tooling" data-ko="위성 OBC 보안 도구 개발">위성 OBC 보안 도구 개발</h3>
+      <span class="pf-project__period">2024.01 ~ 2024.12</span>
+    </div>
+    <p class="pf-project__desc" data-en="Security tooling development for <strong>GomSpace</strong> and <strong>EnduroSat OBC</strong> satellite on-board computer systems." data-ko="<strong>GomSpace</strong> 및 <strong>EnduroSat OBC</strong> 위성 온보드 컴퓨터 시스템 보안 도구 개발."><strong>GomSpace</strong> 및 <strong>EnduroSat OBC</strong> 위성 온보드 컴퓨터 시스템 보안 도구 개발.</p>
+    <div class="pf-project__tags">
+      <span class="pf-tag">GomSpace</span><span class="pf-tag">EnduroSat</span><span class="pf-tag">OBC</span><span class="pf-tag">Embedded</span>
+    </div>
+  </div>
 
-<a href="{{ '/' | prepend: site.baseurl }}" class="portfolio-card">
-<div class="portfolio-card__icon">🐛</div>
-<div class="portfolio-card__title" data-en="Bug Bounty" data-ko="버그바운티">Bug Bounty</div>
-<div class="portfolio-card__desc" data-en="Real-world vulnerability discovery and responsible disclosure for <strong>commercial software</strong> and services." data-ko="실제 <strong>서비스 및 소프트웨어</strong> 대상 취약점 발견 및 제보 경험.">Real-world vulnerability discovery and responsible disclosure for <strong>commercial software</strong> and services.</div>
-<div class="portfolio-card__tag">KISA / CVE / KVE</div>
-</a>
+  <div class="pf-project">
+    <div class="pf-project__header">
+      <h3 class="pf-project__name" data-en="Software Vulnerability Research & Exploitation" data-ko="소프트웨어 취약점 분석 및 Exploit 개발">소프트웨어 취약점 분석 및 Exploit 개발</h3>
+      <span class="pf-project__period">2022.03 ~ 2023.12</span>
+    </div>
+    <p class="pf-project__desc" data-en="Discovered and exploited vulnerabilities in <strong>browsers</strong>, <strong>office suites</strong>, <strong>RDP</strong>, and <strong>document viewers</strong>. Reported via KISA Bug Bounty (KVE-2023-0095, KVE-2023-5125)." data-ko="<strong>브라우저</strong>, <strong>오피스</strong>, <strong>RDP</strong>, <strong>뷰어</strong> 대상 취약점 분석 및 exploit 개발. KISA 버그바운티 제보 (KVE-2023-0095, KVE-2023-5125)."><strong>브라우저</strong>, <strong>오피스</strong>, <strong>RDP</strong>, <strong>뷰어</strong> 대상 취약점 분석 및 exploit 개발. KISA 버그바운티 제보 (KVE-2023-0095, KVE-2023-5125).</p>
+    <div class="pf-project__tags">
+      <span class="pf-tag">Browser</span><span class="pf-tag">Office</span><span class="pf-tag">RDP</span><span class="pf-tag">Heap Overflow</span><span class="pf-tag">RCE</span>
+    </div>
+  </div>
 
-<a href="{{ '/' | prepend: site.baseurl }}" class="portfolio-card">
-<div class="portfolio-card__icon">🏴</div>
-<div class="portfolio-card__title" data-en="CTF Competition" data-ko="CTF 대회 참가">CTF Competition</div>
-<div class="portfolio-card__desc" data-en="Active participant in international CTFs including <strong>DEFCON</strong>, <strong>HITCON</strong>, and <strong>CODEGATE</strong> Finals." data-ko="<strong>DEFCON</strong>, <strong>HITCON</strong>, <strong>CODEGATE</strong> 등 국내외 CTF 본선 참가 및 문제 해결 경험.">Active participant in international CTFs including <strong>DEFCON</strong>, <strong>HITCON</strong>, and <strong>CODEGATE</strong> Finals.</div>
-<div class="portfolio-card__tag">Pwn / Rev / Exploit</div>
-</a>
+  <div class="pf-project">
+    <div class="pf-project__header">
+      <h3 class="pf-project__name" data-en="Privileged Software Security Research" data-ko="고권한 소프트웨어 보안 연구">고권한 소프트웨어 보안 연구</h3>
+      <span class="pf-project__period">2023.04 ~ Present</span>
+    </div>
+    <p class="pf-project__desc" data-en="Attack surface analysis and vulnerability research on <strong>Windows Kernel</strong>, <strong>Android Kernel</strong>, and <strong>antivirus</strong> products." data-ko="<strong>Windows Kernel</strong>, <strong>Android Kernel</strong>, <strong>백신</strong> 등 고권한 소프트웨어 공격 표면 분석 및 취약점 연구."><strong>Windows Kernel</strong>, <strong>Android Kernel</strong>, <strong>백신</strong> 등 고권한 소프트웨어 공격 표면 분석 및 취약점 연구.</p>
+    <div class="pf-project__tags">
+      <span class="pf-tag">Windows Kernel</span><span class="pf-tag">Android Kernel</span><span class="pf-tag">Antivirus</span>
+    </div>
+  </div>
 
-<a href="{{ '/' | prepend: site.baseurl }}" class="portfolio-card">
-<div class="portfolio-card__icon">🏗️</div>
-<div class="portfolio-card__title" data-en="Challenge Authoring & Organization" data-ko="문제 출제 및 대회 운영">Challenge Authoring &amp; Organization</div>
-<div class="portfolio-card__desc" data-en="Designed and operated challenges for <strong>International Drone Hacking Competition</strong>, KHU Security Competition, and <strong>ROOTCTF</strong>." data-ko="<strong>국제 드론 해킹대회</strong>, 경희대 보안 대회, <strong>ROOTCTF</strong> 문제 제작 및 운영.">Designed and operated challenges for <strong>International Drone Hacking Competition</strong>, KHU Security Competition, and <strong>ROOTCTF</strong>.</div>
-<div class="portfolio-card__tag">Author / Organizer</div>
-</a>
+  <div class="pf-project">
+    <div class="pf-project__header">
+      <h3 class="pf-project__name" data-en="International Drone Hacking Competition" data-ko="국제 드론 해킹 대회 출제 및 운영">국제 드론 해킹 대회 출제 및 운영</h3>
+      <span class="pf-project__period">2023 / 2024</span>
+    </div>
+    <p class="pf-project__desc" data-en="Designed security challenges and operated the <strong>International Drone Hacking Competition</strong>. Also authored challenges for KHU Security Competition and <strong>ROOTCTF</strong>." data-ko="<strong>국제 드론 해킹대회</strong> 보안 문제 출제 및 운영. 경희대 보안 대회, <strong>ROOTCTF</strong> 문제 제작."><strong>국제 드론 해킹대회</strong> 보안 문제 출제 및 운영. 경희대 보안 대회, <strong>ROOTCTF</strong> 문제 제작.</p>
+    <div class="pf-project__tags">
+      <span class="pf-tag">CTF Author</span><span class="pf-tag">Organizer</span><span class="pf-tag">Drone</span>
+    </div>
+  </div>
+
+  <div class="pf-project">
+    <div class="pf-project__header">
+      <h3 class="pf-project__name" data-en="CTF Competitions" data-ko="CTF 대회 참가">CTF 대회 참가</h3>
+      <span class="pf-project__period">2017 ~ Present</span>
+    </div>
+    <p class="pf-project__desc" data-en="Active participant in top-tier international CTFs. Finals at <strong>DEFCON</strong> (32nd, 33rd), <strong>HITCON</strong>, <strong>CODEGATE</strong>, and more." data-ko="<strong>DEFCON</strong> (32nd, 33rd), <strong>HITCON</strong>, <strong>CODEGATE</strong> 등 국내외 Top-tier CTF 본선 참가."><strong>DEFCON</strong> (32nd, 33rd), <strong>HITCON</strong>, <strong>CODEGATE</strong> 등 국내외 Top-tier CTF 본선 참가.</p>
+    <div class="pf-project__tags">
+      <span class="pf-tag">DEFCON</span><span class="pf-tag">HITCON</span><span class="pf-tag">CODEGATE</span><span class="pf-tag">Pwn</span><span class="pf-tag">Rev</span>
+    </div>
+  </div>
 
 </div>
