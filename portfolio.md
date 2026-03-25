@@ -13,18 +13,17 @@ permalink: /portfolio/
   <div class="pf-skills__group">
     <span class="pf-skill pf-skill--target">Windows Kernel</span>
     <span class="pf-skill pf-skill--target">Android Kernel</span>
+    <span class="pf-skill pf-skill--target">GomSpace</span>
+    <span class="pf-skill pf-skill--target">EnduroSat</span>
+    <span class="pf-skill pf-skill--target">TinyGS</span>
+    <span class="pf-skill pf-skill--target">DJI</span>
+    <span class="pf-skill pf-skill--target">PX4</span>
+    <span class="pf-skill pf-skill--target">NOAA / Aqua</span>
     <span class="pf-skill pf-skill--target">Browser</span>
     <span class="pf-skill pf-skill--target">Office</span>
     <span class="pf-skill pf-skill--target">RDP</span>
     <span class="pf-skill pf-skill--target">Antivirus</span>
     <span class="pf-skill pf-skill--target">Viewer</span>
-    <span class="pf-skill pf-skill--target">DJI</span>
-    <span class="pf-skill pf-skill--target">PX4</span>
-    <span class="pf-skill pf-skill--target">GomSpace</span>
-    <span class="pf-skill pf-skill--target">EnduroSat</span>
-    <span class="pf-skill pf-skill--target">TinyGS</span>
-    <span class="pf-skill pf-skill--target">NOAA</span>
-    <span class="pf-skill pf-skill--target">Aqua / Terra</span>
   </div>
 
   <div class="pf-skills__divider"></div>
