@@ -1,11 +1,11 @@
 <header class="header">
-<div class="navigation">
+<nav class="navigation">
 <ul class="menu">
-  <li class="menu__entry"><a href="{{ '/' | prepend: site.baseurl }}">Home</a></li>
-  <li class="menu__entry"><a href="{{ '/portfolio/' | prepend: site.baseurl }}">Portfolio</a></li>
-  <li class="menu__entry"><a href="{{ '/blog/' | prepend: site.baseurl }}">Blog</a></li>
+  <li class="menu__entry"><a href="{{ '/' | prepend: site.baseurl }}" {% if page.url == '/' %}class="menu--active"{% endif %}>Home</a></li>
+  <li class="menu__entry"><a href="{{ '/portfolio/' | prepend: site.baseurl }}" {% if page.url == '/portfolio/' %}class="menu--active"{% endif %}>Portfolio</a></li>
+  <li class="menu__entry"><a href="{{ '/blog/' | prepend: site.baseurl }}" {% if page.url contains '/blog' %}class="menu--active"{% endif %}>Blog</a></li>
 </ul>
-</div>
+</nav>
 <div class="header-right">
   <div class="lang-switch" id="lang-switch" onclick="toggleLang()">
     <span class="lang-switch__en">EN</span>
