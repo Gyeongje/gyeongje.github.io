@@ -5,6 +5,14 @@ subtitle: Research & Experience
 permalink: /portfolio/
 ---
 
+<div style="text-align: center; margin-bottom: 20px;">
+  <a href="#" class="cv-download" onclick="generatePortfolioPDF(); return false;">
+    <i class="fa fa-download"></i> Download Portfolio
+  </a>
+</div>
+
+<div id="portfolio-content">
+
 <!-- ==================== TARGETS & SKILLS ==================== -->
 <div class="pf-skills">
   <h2 class="pf-skills__title"><i class="fa fa-crosshairs"></i> Targets &amp; Skills</h2>
@@ -168,6 +176,8 @@ permalink: /portfolio/
   </div>
 
 </div>
+
+</div><!-- end #portfolio-content -->
 
 <div class="about">
 <div class="about__divider">*****</div>

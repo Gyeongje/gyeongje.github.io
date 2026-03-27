@@ -73,4 +73,55 @@ function generatePDF() {
 
   html2pdf().set(opt).from(wrapper).save();
 }
+
+function generatePortfolioPDF() {
+  var content = document.getElementById('portfolio-content');
+  if (!content) { alert('Portfolio content not found.'); return; }
+
+  var clone = content.cloneNode(true);
+
+  // Apply current language to cloned elements
+  var els = clone.querySelectorAll('[data-en][data-ko]');
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    var val = el.getAttribute('data-' + currentLang);
+    if (val.indexOf('<') !== -1) {
+      el.innerHTML = val;
+    } else {
+      el.textContent = val;
+    }
+  }
+
+  var wrapper = document.createElement('div');
+  wrapper.style.padding = '12px 36px';
+  wrapper.style.fontFamily = "'Quicksand', 'Pretendard Variable', Pretendard, sans-serif";
+  wrapper.style.fontSize = '11px';
+  wrapper.style.lineHeight = '1.5';
+  wrapper.style.color = '#1a1a2e';
+
+  var header = document.createElement('div');
+  header.style.textAlign = 'center';
+  header.style.marginBottom = '6px';
+  header.style.paddingBottom = '8px';
+  header.style.borderBottom = '2px solid #16a085';
+  if (currentLang === 'ko') {
+    header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;font-weight:bold;">오경제 (Gyeongje Oh)</h1><p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;">Offensive Security Researcher | Portfolio</p>';
+  } else {
+    header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;font-weight:bold;">Gyeongje Oh</h1><p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;">Offensive Security Researcher | Portfolio</p>';
+  }
+  wrapper.appendChild(header);
+  wrapper.appendChild(clone);
+
+  var filename = currentLang === 'ko' ? 'Portfolio_오경제.pdf' : 'Portfolio_Gyeongje_Oh.pdf';
+  var opt = {
+    margin: [10, 12, 10, 12],
+    filename: filename,
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2, useCORS: true },
+    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+  };
+
+  html2pdf().set(opt).from(wrapper).save();
+}
 </script>
