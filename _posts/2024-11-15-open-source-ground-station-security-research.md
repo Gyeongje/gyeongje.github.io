@@ -4,6 +4,7 @@ title: "Security Analysis of Open-Source Satellite Ground Station Software"
 subtitle: "Vulnerability discovery and RF fuzzing on TinyGS"
 date: 2024-11-15 00:00:00 +0900
 categories: ["satellite"]
+published: false
 ---
 
 ## 개요
