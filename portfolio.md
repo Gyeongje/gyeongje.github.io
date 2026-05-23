@@ -67,6 +67,17 @@ permalink: /portfolio/
 
   <div class="pf-project">
     <div class="pf-project__header">
+      <h3 class="pf-project__name" data-en="🍎 macOS Kernel Bluetooth Chipset Security Research" data-ko="🍎 macOS 커널 블루투스 칩셋 보안 연구">🍎 macOS 커널 블루투스 칩셋 보안 연구</h3>
+      <span class="pf-project__period">2026.02 ~ 2026.11</span>
+    </div>
+    <p class="pf-project__desc" data-en="macOS kernel Bluetooth chipset firmware analysis and mitigation bypass research." data-ko="macOS 커널 블루투스 칩셋 펌웨어 분석 및 보호 기법 우회 연구.">macOS 커널 블루투스 칩셋 펌웨어 분석 및 보호 기법 우회 연구.</p>
+    <div class="pf-project__tags">
+      <span class="pf-tag">macOS Kernel</span><span class="pf-tag">Bluetooth</span><span class="pf-tag">Firmware</span><span class="pf-tag">Mitigation Bypass</span>
+    </div>
+  </div>
+
+  <div class="pf-project">
+    <div class="pf-project__header">
       <h3 class="pf-project__name" data-en="🛰️ Satellite OBC Security Tooling" data-ko="🛰️ 위성 OBC 보안 도구 개발">🛰️ 위성 OBC 보안 도구 개발</h3>
       <span class="pf-project__period">2025.07 ~ 2026.03</span>
     </div>
