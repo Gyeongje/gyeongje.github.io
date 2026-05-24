@@ -17,6 +17,9 @@ title: Gyeongje Oh
     <a href="#" class="cv-download" onclick="generatePDF(); return false;">
       <i class="fa fa-download"></i> Download CV
     </a>
+    <a href="#" class="cv-download" onclick="generateFullPDF(); return false;">
+      <i class="fa fa-download"></i> Full Download
+    </a>
   </div>
 </div>
 

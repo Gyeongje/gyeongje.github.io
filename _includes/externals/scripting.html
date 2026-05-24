@@ -33,11 +33,34 @@ function toggleLang() {
 
 document.addEventListener('DOMContentLoaded', applyLang);
 
+function applyLangTo(root) {
+  var els = root.querySelectorAll('[data-en][data-ko]');
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    var val = el.getAttribute('data-' + currentLang);
+    if (val.indexOf('<') !== -1) {
+      el.innerHTML = val;
+    } else if (el.children.length === 0) {
+      el.textContent = val;
+    }
+  }
+}
+
+function makePdfHeader(subtitle) {
+  var header = document.createElement('div');
+  header.style.textAlign = 'center';
+  header.style.marginBottom = '6px';
+  header.style.paddingBottom = '8px';
+  header.style.borderBottom = '2px solid #16a085';
+  var name = currentLang === 'ko' ? '오경제 (Gyeongje Oh)' : 'Gyeongje Oh';
+  header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;font-weight:bold;">' + name + '</h1>' +
+    '<p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;">' + subtitle + '</p>';
+  return header;
+}
+
 function generatePDF() {
   var content = document.getElementById('cv-content');
   if (!content) { alert('CV content not found.'); return; }
-
-  var clone = content.cloneNode(true);
 
   // --- Same site font (Quicksand) for PDF ---
   var wrapper = document.createElement('div');
@@ -47,19 +70,8 @@ function generatePDF() {
   wrapper.style.lineHeight = '1.5';
   wrapper.style.color = '#1a1a2e';
 
-  // Header
-  var header = document.createElement('div');
-  header.style.textAlign = 'center';
-  header.style.marginBottom = '6px';
-  header.style.paddingBottom = '8px';
-  header.style.borderBottom = '2px solid #16a085';
-  if (currentLang === 'ko') {
-    header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;font-weight:bold;">오경제 (Gyeongje Oh)</h1><p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;">Offensive Security Researcher | ogj0824@gmail.com | github.com/Gyeongje</p>';
-  } else {
-    header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;font-weight:bold;">Gyeongje Oh</h1><p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;">Offensive Security Researcher | ogj0824@gmail.com | github.com/Gyeongje</p>';
-  }
-  wrapper.appendChild(header);
-  wrapper.appendChild(clone);
+  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | ogj0824@gmail.com | github.com/Gyeongje'));
+  wrapper.appendChild(content.cloneNode(true));
 
   var filename = currentLang === 'ko' ? 'CV_오경제.pdf' : 'CV_Gyeongje_Oh.pdf';
   var opt = {
@@ -74,23 +86,10 @@ function generatePDF() {
   html2pdf().set(opt).from(wrapper).save();
 }
 
-function generatePortfolioPDF() {
-  var content = document.getElementById('portfolio-content');
-  if (!content) { alert('Portfolio content not found.'); return; }
-
-  var clone = content.cloneNode(true);
-
-  // Apply current language to cloned elements
-  var els = clone.querySelectorAll('[data-en][data-ko]');
-  for (var i = 0; i < els.length; i++) {
-    var el = els[i];
-    var val = el.getAttribute('data-' + currentLang);
-    if (val.indexOf('<') !== -1) {
-      el.innerHTML = val;
-    } else {
-      el.textContent = val;
-    }
-  }
+// CV + Portfolio merged into a single PDF.
+function generateFullPDF() {
+  var content = document.getElementById('cv-content');
+  if (!content) { alert('CV content not found.'); return; }
 
   var wrapper = document.createElement('div');
   wrapper.style.padding = '12px 36px';
@@ -99,17 +98,59 @@ function generatePortfolioPDF() {
   wrapper.style.lineHeight = '1.5';
   wrapper.style.color = '#1a1a2e';
 
-  var header = document.createElement('div');
-  header.style.textAlign = 'center';
-  header.style.marginBottom = '6px';
-  header.style.paddingBottom = '8px';
-  header.style.borderBottom = '2px solid #16a085';
-  if (currentLang === 'ko') {
-    header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;font-weight:bold;">오경제 (Gyeongje Oh)</h1><p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;">Offensive Security Researcher | Portfolio</p>';
-  } else {
-    header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;font-weight:bold;">Gyeongje Oh</h1><p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;">Offensive Security Researcher | Portfolio</p>';
-  }
-  wrapper.appendChild(header);
+  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | ogj0824@gmail.com | github.com/Gyeongje'));
+  wrapper.appendChild(content.cloneNode(true));
+
+  var filename = currentLang === 'ko' ? 'CV_Portfolio_오경제.pdf' : 'CV_Portfolio_Gyeongje_Oh.pdf';
+  var opt = {
+    margin: [10, 12, 10, 12],
+    filename: filename,
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2, useCORS: true },
+    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+  };
+
+  // Fetch the portfolio page and append its content on a new page.
+  fetch('{{ "/portfolio/" | prepend: site.baseurl }}')
+    .then(function (res) { return res.text(); })
+    .then(function (html) {
+      var doc = new DOMParser().parseFromString(html, 'text/html');
+      var pf = doc.getElementById('portfolio-content');
+      if (pf) {
+        var pfClone = pf.cloneNode(true);
+        applyLangTo(pfClone);
+
+        var pageBreak = document.createElement('div');
+        pageBreak.className = 'html2pdf__page-break';
+        pageBreak.style.pageBreakBefore = 'always';
+        wrapper.appendChild(pageBreak);
+
+        wrapper.appendChild(makePdfHeader('Offensive Security Researcher | Portfolio'));
+        wrapper.appendChild(pfClone);
+      }
+    })
+    .catch(function () { /* fall back to CV-only PDF */ })
+    .then(function () {
+      html2pdf().set(opt).from(wrapper).save();
+    });
+}
+
+function generatePortfolioPDF() {
+  var content = document.getElementById('portfolio-content');
+  if (!content) { alert('Portfolio content not found.'); return; }
+
+  var clone = content.cloneNode(true);
+  applyLangTo(clone);
+
+  var wrapper = document.createElement('div');
+  wrapper.style.padding = '12px 36px';
+  wrapper.style.fontFamily = "'Quicksand', 'Pretendard Variable', Pretendard, sans-serif";
+  wrapper.style.fontSize = '11px';
+  wrapper.style.lineHeight = '1.5';
+  wrapper.style.color = '#1a1a2e';
+
+  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | Portfolio'));
   wrapper.appendChild(clone);
 
   var filename = currentLang === 'ko' ? 'Portfolio_오경제.pdf' : 'Portfolio_Gyeongje_Oh.pdf';
