@@ -132,6 +132,17 @@ title: Gyeongje Oh
   <h3 class="cv-subsection">International</h3>
 
   <div class="cv-awards-year">
+    <div class="cv-awards-year__label">2026</div>
+    <div class="cv-awards-year__list">
+      <div class="cv-award">
+        <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
+        <span class="cv-award__name">DEFCON CTF 2026</span>
+        <span class="cv-award__team"><a href="{{ '/assets/defcon2026_quals.png' | prepend: site.baseurl }}">Cold Fusion</a></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cv-awards-year">
     <div class="cv-awards-year__label">2025</div>
     <div class="cv-awards-year__list">
       <div class="cv-award">
