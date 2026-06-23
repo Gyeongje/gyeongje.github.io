@@ -10,115 +10,124 @@ title: Gyeongje Oh
   <p class="cv-title">Offensive Security Researcher</p>
   <div class="cv-contact">
     <a href="mailto:ogj0824@gmail.com"><i class="fa fa-envelope"></i> ogj0824@gmail.com</a>
-    <a href="https://github.com/Gyeongje" target="_blank"><i class="fa fa-github"></i> github.com/Gyeongje</a>
-    <a href="https://www.linkedin.com/in/gyeongjeoh/" target="_blank"><i class="fa fa-linkedin-square"></i> linkedin.com/in/gyeongjeoh</a>
+    <a href="https://github.com/Gyeongje" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+    <a href="https://www.linkedin.com/in/gyeongjeoh/" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
   </div>
   <div class="cv-actions">
-    <a href="#" class="cv-download" onclick="generatePDF(); return false;">Download CV</a>
-    <a href="#" class="cv-download" onclick="generateFullPDF(); return false;">Full Download</a>
+    <a href="#" class="cv-download" onclick="generatePDF(); return false;">
+      <i class="fa fa-download"></i> Download CV
+    </a>
+    <a href="#" class="cv-download" onclick="generateFullPDF(); return false;">
+      <i class="fa fa-download"></i> Full Download
+    </a>
   </div>
 </div>
 
 <div id="cv-content">
 
+<!-- ==================== EDUCATION ==================== -->
+<div class="cv-section">
+  <h2 class="cv-section__title"><i class="fa fa-graduation-cap"></i> <span data-en="Education" data-ko="Education">Education</span></h2>
+
+  <div class="cv-timeline">
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2025.03 - Current</div>
+      <div class="cv-timeline__content">
+        <strong data-en="KYUNGHEE UNIVERSITY" data-ko="경희대학교">KYUNGHEE UNIVERSITY</strong>
+        <p data-en="M.S. in Department of Computer Engineering" data-ko="컴퓨터공학과 석사과정">M.S. in Department of Computer Engineering</p>
+        <p class="cv-timeline__sub"><a href="https://pwnlab.kr" target="_blank">PWNLAB</a> <span data-en="(Lab Leader)" data-ko="(랩장)">(Lab Leader)</span> · Advisor: <a href="https://pwnlab.kr/downloads/cv.pdf" target="_blank">Prof. Daehee Jang</a></p>
+      </div>
+    </div>
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2019.03 - 2025.02</div>
+      <div class="cv-timeline__content">
+        <strong data-en="KYUNGHEE UNIVERSITY" data-ko="경희대학교">KYUNGHEE UNIVERSITY</strong>
+        <p data-en="B.S. in Department of Software Convergence" data-ko="소프트웨어융합학과 학사">B.S. in Department of Software Convergence</p>
+        <p class="cv-timeline__sub" data-en="Including military service" data-ko="군 복무 포함">Including military service</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- ==================== WORK EXPERIENCE ==================== -->
-<section class="cv-section">
-  <h2 class="cv-section__title" data-en="Work Experience" data-ko="경력">Work Experience</h2>
+<div class="cv-section">
+  <h2 class="cv-section__title"><i class="fa fa-briefcase"></i> <span data-en="Work Experience" data-ko="Work Experience">Work Experience</span></h2>
 
-  <div class="cv-role">
-    <div class="cv-role__head">
-      <strong class="cv-role__company">HAYYIM SECURITY</strong>
-      <span class="cv-role__title">Security Researcher</span>
-      <span class="cv-role__date">2022.03 – 2023.12</span>
+  <div class="cv-timeline">
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2025.07 - 2025.08</div>
+      <div class="cv-timeline__content">
+        <strong>GMO CyberSecurity by Ierae</strong> <span class="cv-badge">Internship</span>
+        <p>Aerospace Village in DEFCON 33 Conference (Las Vegas, Bahrain)</p>
+      </div>
     </div>
-    <ul class="cv-role__bullets">
-      <li>Vulnerability research and exploit development across Browser, Office, VM, and RDP attack surfaces on Windows.</li>
-      <li>Built WinAFL-based fuzzing harnesses for commercial document parsers; surfaced heap-overflow and OOB-write primitives.</li>
-      <li>Disclosed two RCEs to KISA Bug Bounty — <strong>KVE-2023-0095</strong>, <strong>KVE-2023-5125</strong> ($3,100).</li>
-      <li><em>(추가 디테일 자리 — 본인이 owned했던 컴포넌트 / 산출물 / 협업)</em></li>
-    </ul>
-  </div>
-</section>
-
-<!-- ==================== RESEARCH ==================== -->
-<section class="cv-section">
-  <h2 class="cv-section__title" data-en="Research" data-ko="연구">Research</h2>
-
-  <div class="cv-role">
-    <div class="cv-role__head">
-      <strong class="cv-role__company">PWNLAB — Kyung Hee University</strong>
-      <span class="cv-role__title">M.S. Candidate · Lab Leader</span>
-      <span class="cv-role__date">2025.03 – Current</span>
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2022.03 - 2023.12</div>
+      <div class="cv-timeline__content">
+        <strong data-en="HAYYIM SECURITY" data-ko="하임시큐리티">HAYYIM SECURITY</strong> <span class="cv-badge">Security Researcher</span>
+        <p data-en="Vulnerability analysis &amp; exploitation in Browser, Office, VM, RDP" data-ko="Browser, Office, VM, RDP 취약점 분석 및 Exploit">Vulnerability analysis &amp; exploitation in Browser, Office, VM, RDP</p>
+      </div>
     </div>
-    <p class="cv-role__sub">Advisor: <a href="https://pwnlab.kr/downloads/cv.pdf" target="_blank">Prof. Daehee Jang</a></p>
-    <ul class="cv-research-list">
-      <li>
-        <span class="cv-research-text">macOS kernel Bluetooth chipset firmware analysis and mitigation bypass research.</span>
-        <span class="cv-research-meta">2026.02 – 11 · <a href="{{ '/portfolio/#macos-bt' | prepend: site.baseurl }}">Details →</a></span>
-      </li>
-      <li>
-        <span class="cv-research-text">Satellite OBC security audit tooling for GomSpace / EnduroSat in collaboration with GMO IERAE.</span>
-        <span class="cv-research-meta">2025.07 – 2026.03 · <a href="{{ '/portfolio/#satellite-obc' | prepend: site.baseurl }}">Details →</a></span>
-      </li>
-      <li>
-        <span class="cv-research-text">Open-source ground station vulnerability research with live SDR signal validation.</span>
-        <span class="cv-research-meta">2025.03 – 2025.12 · <a href="{{ '/portfolio/#ground-station' | prepend: site.baseurl }}">Details →</a></span>
-      </li>
-      <li>
-        <span class="cv-research-text">Android kernel MTE (Memory Tagging Extension) bypass research.</span>
-        <span class="cv-research-meta">2025.12 – 2026.02 · <a href="{{ '/portfolio/#android-mte' | prepend: site.baseurl }}">Details →</a></span>
-      </li>
-      <li>
-        <span class="cv-research-text">Windows kernel local privilege escalation research and exploit development.</span>
-        <span class="cv-research-meta">2025.04 – 2025.12 · <a href="{{ '/portfolio/#windows-lpe' | prepend: site.baseurl }}">Details →</a></span>
-      </li>
-    </ul>
   </div>
+</div>
 
-  <div class="cv-role">
-    <div class="cv-role__head">
-      <strong class="cv-role__company">GMO Cybersecurity by Ierae</strong>
-      <span class="cv-role__title">Research Internship</span>
-      <span class="cv-role__date">2025.07 – 2025.08</span>
+<!-- ==================== EXTERNAL EXPERIENCE ==================== -->
+<div class="cv-section">
+  <h2 class="cv-section__title"><i class="fa fa-users"></i> <span data-en="External Experience" data-ko="External Experience">External Experience</span></h2>
+
+  <div class="cv-timeline">
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2023.04 - 2025.02</div>
+      <div class="cv-timeline__content">
+        <strong>PWNLAB</strong> <span class="cv-badge">Intern</span>
+        <p><span data-en="Kyunghee Univ. Dept. of Computer Engineering" data-ko="경희대학교 컴퓨터공학과">Kyunghee Univ. Dept. of Computer Engineering</span> (Advisor: <a href="https://pwnlab.kr/downloads/cv.pdf" target="_blank">Prof. Daehee Jang</a>)</p>
+      </div>
     </div>
-    <ul class="cv-role__bullets">
-      <li>Co-developed CCSDS protocol firewall prototype for the satellite ground-station / OBC uplink.</li>
-      <li>Live-demoed at <strong>DEFCON 33 Aerospace Village (Las Vegas)</strong> and <strong>Bahrain Aerospace Village</strong>.</li>
-      <li>Co-authored <em>"CCSDS based Firewall for Modern Satellite System"</em> — Computers &amp; Security (SCI, under review).</li>
-      <li><em>(추가 디테일 자리 — 본인이 owned한 컴포넌트 / 공격 시나리오 / 산출물)</em></li>
-    </ul>
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2018.03 - 2019.02</div>
+      <div class="cv-timeline__content">
+        <strong>Best of the Best 7th</strong> <span class="cv-badge">Vulnerability Analysis Track</span>
+        <p><a href="{{ '/assets/bob임명장.png' | prepend: site.baseurl }}">Certificate</a></p>
+      </div>
+    </div>
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2017.03 - 2017.12</div>
+      <div class="cv-timeline__content">
+        <strong data-en="Information Security Gifted Education Center" data-ko="정보보호영재교육원">Information Security Gifted Education Center</strong>
+        <p data-en="Advanced Professional Class B, Seoul Women's University" data-ko="서울여자대학교 고급전문B반">Advanced Professional Class B, Seoul Women's University</p>
+        <p><a href="{{ '/assets/정보보호영재교육원_수료증.png' | prepend: site.baseurl }}">Certificate</a></p>
+      </div>
+    </div>
   </div>
-</section>
+</div>
 
 <!-- ==================== PUBLICATIONS ==================== -->
-<section class="cv-section">
-  <h2 class="cv-section__title" data-en="Publications" data-ko="논문">Publications</h2>
-  <ul class="cv-list">
-    <li>
-      <strong>"CCSDS based Firewall for Modern Satellite System"</strong> · Computers &amp; Security (SCI) · <em data-en="Under review" data-ko="투고예정">Under review</em>
-      <div class="cv-list__sub">Woohyeop Im, Gyeongje Oh, Shinichi Kan, Kosuke Ito, Hikohiro Lin, Sayeon Kim, Jinwoo Jeong, Sangbom Yun, Daehee Jang</div>
-    </li>
-    <li>
-      <strong data-en="Vulnerability Research on Open-Source Ground Station Systems via Satellite RF Signal Generation" data-ko="인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구">"인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구"</strong> · CISC (KCI) · 2026.05
-      <div class="cv-list__sub" data-en="Gyeongje Oh, Daehee Jang" data-ko="오경제, 장대희">오경제, 장대희</div>
-    </li>
-  </ul>
-</section>
+<div class="cv-section">
+  <h2 class="cv-section__title"><i class="fa fa-file-text"></i> Publications</h2>
 
-<!-- ==================== TALKS ==================== -->
-<section class="cv-section">
-  <h2 class="cv-section__title" data-en="Talks" data-ko="발표">Talks</h2>
-  <ul class="cv-list">
-    <li><strong data-en="CodeEngn 2026" data-ko="코드엔진 2026">CodeEngn 2026</strong> · 2026.07 — <em data-en="Vulnerability Research on Open-Source Ground Station Systems via Satellite RF Signal Generation" data-ko="인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구">"인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구"</em></li>
-    <li><strong data-en="CISC 2026" data-ko="정보보호학회 2026">CISC 2026</strong> · 2026.05 — <em data-en="Vulnerability Research on Open-Source Ground Station Systems via Satellite RF Signal Generation" data-ko="인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구">"인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구"</em></li>
-    <li><strong>DEFCON 33 Aerospace Village — Bahrain</strong> · 2025.11 — <em>"CCSDS based Firewall for Modern Satellite System"</em></li>
-    <li><strong>DEFCON 33 Aerospace Village — Las Vegas</strong> · 2025.08 — <em>"CCSDS based Firewall for Modern Satellite System"</em></li>
-  </ul>
-</section>
+  <div class="cv-timeline">
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date" data-en="Pending" data-ko="투고예정">Pending</div>
+      <div class="cv-timeline__content">
+        <strong>"CCSDS based Firewall for Modern Satellite System"</strong>
+        <p>Computers & Security (SCI)</p>
+        <p class="cv-timeline__sub">Woohyeop Im, Gyeongje Oh, Shinichi Kan, Kosuke Ito, Hikohiro Lin, Sayeon Kim, Jinwoo Jeong, Sangbom Yun, Daehee Jang</p>
+      </div>
+    </div>
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2026.05</div>
+      <div class="cv-timeline__content">
+        <strong data-en="Vulnerability Research on Open-Source Ground Station Systems via Satellite RF Signal Generation" data-ko="인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구">"인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구"</strong>
+        <p data-en="CISC (KCI)" data-ko="정보보호학회 (KCI)">정보보호학회 (KCI)</p>
+        <p class="cv-timeline__sub" data-en="Gyeongje Oh, Daehee Jang" data-ko="오경제, 장대희">오경제, 장대희</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-<!-- ==================== AWARDS ==================== -->
-<section class="cv-section">
-  <h2 class="cv-section__title" data-en="Selected CTF Awards" data-ko="해킹 대회 수상">Selected CTF Awards</h2>
+<!-- ==================== CTF AWARDS ==================== -->
+<div class="cv-section">
+  <h2 class="cv-section__title"><i class="fa fa-trophy"></i> Hacking Competition (CTF) Awards</h2>
 
   <h3 class="cv-subsection">International</h3>
 
@@ -208,6 +217,17 @@ title: Gyeongje Oh
     </div>
   </div>
 
+  <div class="cv-awards-year">
+    <div class="cv-awards-year__label">2018</div>
+    <div class="cv-awards-year__list">
+      <div class="cv-award">
+        <span class="cv-award__place">9th</span>
+        <span class="cv-award__name">CODEGATE CTF Junior Final</span>
+        <span class="cv-award__team"><a href="{{ '/assets/코드게이트본선9위.png' | prepend: site.baseurl }}">오경제</a></span>
+      </div>
+    </div>
+  </div>
+
   <h3 class="cv-subsection">Domestic</h3>
 
   <div class="cv-awards-year">
@@ -273,60 +293,105 @@ title: Gyeongje Oh
       </div>
     </div>
   </div>
-</section>
+
+  <div class="cv-awards-year">
+    <div class="cv-awards-year__label">2017</div>
+    <div class="cv-awards-year__list">
+      <div class="cv-award">
+        <span class="cv-award__place" data-en="Bronze" data-ko="동상">Bronze</span>
+        <span class="cv-award__name" data-en="Information Security Olympiad" data-ko="정보보호올림피아드">Information Security Olympiad</span>
+        <span class="cv-award__team"><a href="{{ '/assets/정보보호올림피아드_동상.png' | prepend: site.baseurl }}">오경제</a></span>
+        <span class="cv-award__prize">$300</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- ==================== BUG BOUNTY ==================== -->
-<section class="cv-section">
-  <h2 class="cv-section__title" data-en="Bug Bounty" data-ko="버그바운티">Bug Bounty</h2>
+<div class="cv-section">
+  <h2 class="cv-section__title"><i class="fa fa-bug"></i> Bug Bounty</h2>
+
   <div class="cv-bounty">
     <strong>KISA Bug Bounty</strong>
     <span class="cv-award__prize">$3,100</span>
     <p>Remote Code Execution via Heap Overflow in Viewer</p>
-    <p class="cv-list__sub">KVE-2023-0095, KVE-2023-5125</p>
+    <p class="cv-timeline__sub">KVE-2023-0095, KVE-2023-5125</p>
   </div>
-</section>
+</div>
 
-<!-- ==================== EDUCATION ==================== -->
-<section class="cv-section">
-  <h2 class="cv-section__title" data-en="Education" data-ko="학력">Education</h2>
-  <ul class="cv-list">
-    <li>
-      <strong data-en="M.S., Computer Engineering" data-ko="컴퓨터공학과 석사">M.S., Computer Engineering</strong>, <span data-en="Kyung Hee University" data-ko="경희대학교">Kyung Hee University</span> · 2025.03 – Current
-      <div class="cv-list__sub">PWNLAB <span data-en="(Lab Leader)" data-ko="(랩장)">(Lab Leader)</span> · Advisor: <a href="https://pwnlab.kr/downloads/cv.pdf" target="_blank">Prof. Daehee Jang</a></div>
-    </li>
-    <li>
-      <strong data-en="B.S., Software Convergence" data-ko="소프트웨어융합학과 학사">B.S., Software Convergence</strong>, <span data-en="Kyung Hee University" data-ko="경희대학교">Kyung Hee University</span> · 2019.03 – 2025.02
-      <div class="cv-list__sub" data-en="Including military service (ROK Air Force, 2020.04 – 2022.01)" data-ko="군 복무 포함 (대한민국 공군, 2020.04 – 2022.01)">Including military service (ROK Air Force, 2020.04 – 2022.01)</div>
-    </li>
-    <li>
-      <strong>Best of the Best 7th</strong>, KITRI · <span data-en="Vulnerability Analysis Track" data-ko="취약점 분석 트랙">Vulnerability Analysis Track</span> · 2018.03 – 2019.02
-      <div class="cv-list__sub"><a href="{{ '/assets/bob임명장.png' | prepend: site.baseurl }}">Certificate</a></div>
-    </li>
-  </ul>
-</section>
+<!-- ==================== PRESENTATIONS ==================== -->
+<div class="cv-section">
+  <h2 class="cv-section__title"><i class="fa fa-microphone"></i> <span data-en="Presentations" data-ko="Presentations">Presentations</span></h2>
 
-<!-- ==================== OTHER ==================== -->
-<section class="cv-section">
-  <h2 class="cv-section__title" data-en="Other" data-ko="기타">Other</h2>
+  <div class="cv-timeline">
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2026.07</div>
+      <div class="cv-timeline__content">
+        <strong data-en="CodeEngn 2026" data-ko="코드엔진 2026">코드엔진 2026</strong>
+        <p data-en="&quot;Vulnerability Research on Open-Source Ground Station Systems via Satellite RF Signal Generation&quot;" data-ko="&quot;인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구&quot;">"인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구"</p>
+      </div>
+    </div>
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2026.05</div>
+      <div class="cv-timeline__content">
+        <strong data-en="CISC 2026" data-ko="정보보호학회 2026">정보보호학회 2026</strong>
+        <p data-en="&quot;Vulnerability Research on Open-Source Ground Station Systems via Satellite RF Signal Generation&quot;" data-ko="&quot;인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구&quot;">"인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구"</p>
+      </div>
+    </div>
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2025.11</div>
+      <div class="cv-timeline__content">
+        <strong>DEFCON Aerospace Village — Bahrain</strong>
+        <p>"CCSDS based Firewall for Modern Satellite System"</p>
+      </div>
+    </div>
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2025.08</div>
+      <div class="cv-timeline__content">
+        <strong>DEFCON Aerospace Village — Las Vegas</strong>
+        <p>"CCSDS based Firewall for Modern Satellite System"</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== REMARKS ==================== -->
+<div class="cv-section">
+  <h2 class="cv-section__title"><i class="fa fa-star"></i> <span data-en="Remarks" data-ko="Remarks">Remarks</span></h2>
+
+  <div class="cv-timeline">
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2020.04 - 2022.01</div>
+      <div class="cv-timeline__content">
+        <strong data-en="Republic of Korea Air Force" data-ko="대한민국 공군">Republic of Korea Air Force</strong>
+        <p data-en="MOS: Information Security" data-ko="병과: 정보보호">MOS: Information Security</p>
+      </div>
+    </div>
+  </div>
 
   <div class="cv-remarks-group">
-    <h4 data-en="CTF Challenge Author / Organizer" data-ko="해킹 대회 출제 및 운영">CTF Challenge Author / Organizer</h4>
+    <h4>CTF Challenge Author / Organizer</h4>
     <ul class="cv-remarks-list">
-      <li>2023 / 2024 International Drone Hacking Competition</li>
+      <li>2023/2024 International Drone Hacking Competition</li>
       <li>2022 KHU Software Security Competition</li>
-      <li>2017 / 2018 ROOTCTF</li>
+      <li>2017/2018 ROOTCTF</li>
     </ul>
   </div>
 
   <div class="cv-remarks-group">
-    <h4 data-en="Wargame" data-ko="워게임">Wargame</h4>
+    <h4>Wargame</h4>
     <ul class="cv-remarks-list">
-      <li><a href="http://reversing.kr/rank.php">Reversing.kr</a> — All Clear</li>
-      <li><a href="http://xcz.kr/START/rank.php">xcz.kr</a> — All Clear</li>
+      <li><a href="http://reversing.kr/rank.php">Reversing.kr</a> <span class="cv-badge cv-badge--accent">All Clear</span></li>
+      <li><a href="http://xcz.kr/START/rank.php">xcz.kr</a> <span class="cv-badge cv-badge--accent">All Clear</span></li>
     </ul>
   </div>
-</section>
+</div>
 
 </div><!-- /cv-content -->
+
+<div class="about">
+<div class="about__divider">*****</div>
+<div class="about__text"><strong>Contact: ogj0824@gmail.com</strong></div>
+</div>
 
 </div><!-- /cv-wrapper -->
