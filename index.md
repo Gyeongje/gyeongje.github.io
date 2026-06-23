@@ -74,8 +74,8 @@ title: Gyeongje Oh
       <div class="cv-timeline__content">
         <strong>GMO CyberSecurity by Ierae</strong> <span class="cv-badge">Internship</span>
         <ul class="cv-research-list">
-          <li><span class="cv-research-text">Co-developed CCSDS protocol firewall prototype for the satellite ground-station / OBC uplink, live-demoed at DEFCON 33 Aerospace Village (Las Vegas, Bahrain).</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#gmo-ccsds' | prepend: site.baseurl }}">Details →</a></span></li>
-          <li><span class="cv-research-text"><em>"CCSDS based Firewall for Modern Satellite System"</em> — Computers &amp; Security (SCI, under review).</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#gmo-paper' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li><span class="cv-research-text">Co-developed CCSDS protocol firewall prototype for the satellite ground station and OBC uplink.<br>Live-demoed at DEFCON 33 Aerospace Village (Las Vegas, Bahrain).</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#gmo-ccsds' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li><span class="cv-research-text">Submitted <em>"CCSDS based Firewall for Modern Satellite System"</em> to Computers &amp; Security (SCI), currently under review.</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#gmo-paper' | prepend: site.baseurl }}">Details →</a></span></li>
         </ul>
       </div>
     </div>
@@ -101,7 +101,7 @@ title: Gyeongje Oh
 
   <div class="cv-timeline">
     <div class="cv-timeline__item">
-      <div class="cv-timeline__date" data-en="Pending" data-ko="투고예정">Pending</div>
+      <div class="cv-timeline__date" data-en="Under Review" data-ko="리뷰중">리뷰중</div>
       <div class="cv-timeline__content">
         <strong>"CCSDS based Firewall for Modern Satellite System"</strong>
         <p>Computers & Security (SCI)</p>

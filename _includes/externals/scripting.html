@@ -2,7 +2,7 @@
 <script>hljs.initHighlightingOnLoad();</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
 <script>
-var currentLang = 'en';
+var currentLang = 'ko';
 
 function applyLang() {
   var sw = document.getElementById('lang-switch');
@@ -61,6 +61,8 @@ var PDF_OVERRIDES = [
   ".pdf-mode .cv-timeline::before, .pdf-mode .cv-timeline__item::before { display: none !important; content: none !important; background: transparent !important; box-shadow: none !important; border: none !important; width: 0 !important; height: 0 !important; }",
 
   ".pdf-mode a { color: #000 !important; text-decoration: none !important; border-bottom: none !important; font-weight: inherit !important; pointer-events: none; }",
+  ".pdf-mode a.pdf-keep-link { color: inherit !important; text-decoration: underline !important; pointer-events: auto !important; }",
+  ".pdf-mode .cv-research-meta { display: none !important; }",
   ".pdf-mode strong { color: #000 !important; }",
 
   ".pdf-mode .cv-name, .pdf-mode .cv-name__link { color: #000 !important; }",
@@ -130,18 +132,33 @@ function buildPdfWrapper() {
   return wrapper;
 }
 
-function runPdf(wrapper, opt) {
+function runPdf(wrapper, opt, mode) {
   // Strip href / target from every anchor in the PDF DOM so the rendered
   // PDF has no clickable link annotations (CSS alone can't suppress these
   // — html2pdf/jsPDF reads href directly to emit link rectangles).
-  var anchors = wrapper.querySelectorAll('a');
+  // Anchors marked with .pdf-keep-link survive (e.g., gye0ngje.com header).
+  var anchors = wrapper.querySelectorAll('a:not(.pdf-keep-link)');
   for (var i = 0; i < anchors.length; i++) {
     anchors[i].removeAttribute('href');
     anchors[i].removeAttribute('target');
   }
 
   var uninstall = installPdfStyles();
-  return html2pdf().set(opt).from(wrapper).save().then(function () {
+  var pipeline = html2pdf().set(opt).from(wrapper);
+
+  if (mode === 'open') {
+    // Render the PDF and navigate the current tab to the blob URL so the
+    // browser displays it inline instead of triggering a download.
+    return pipeline.toPdf().get('pdf').then(function (pdf) {
+      uninstall();
+      window.location.href = pdf.output('bloburl');
+    }, function (err) {
+      uninstall();
+      throw err;
+    });
+  }
+
+  return pipeline.save().then(function () {
     uninstall();
   }, function (err) {
     uninstall();
@@ -154,7 +171,7 @@ function generatePDF() {
   if (!content) { alert('CV content not found.'); return; }
 
   var wrapper = buildPdfWrapper();
-  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | gye0ngje.com'));
+  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | <a href="https://gye0ngje.com" class="pdf-keep-link">gye0ngje.com</a>'));
   wrapper.appendChild(content.cloneNode(true));
 
   var filename = currentLang === 'ko' ? 'CV_오경제.pdf' : 'CV_Gyeongje_Oh.pdf';
@@ -167,7 +184,7 @@ function generatePDF() {
     pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
   };
 
-  runPdf(wrapper, opt);
+  runPdf(wrapper, opt, 'open');
 }
 
 // CV + Portfolio merged into a single PDF.
@@ -176,7 +193,7 @@ function generateFullPDF() {
   if (!content) { alert('CV content not found.'); return; }
 
   var wrapper = buildPdfWrapper();
-  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | gye0ngje.com'));
+  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | <a href="https://gye0ngje.com" class="pdf-keep-link">gye0ngje.com</a>'));
   wrapper.appendChild(content.cloneNode(true));
 
   var filename = currentLang === 'ko' ? 'CV_Portfolio_오경제.pdf' : 'CV_Portfolio_Gyeongje_Oh.pdf';
