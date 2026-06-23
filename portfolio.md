@@ -177,10 +177,10 @@ permalink: /portfolio/
 
   <div class="pf-project">
     <div class="pf-project__header">
-      <h3 class="pf-project__name" data-en="🏆 Hacking Competition Authoring & Organization" data-ko="🏆 해킹 대회 출제 및 운영">🏆 해킹 대회 출제 및 운영</h3>
+      <h3 class="pf-project__name" data-en="🏆 CTF Authoring & Organization" data-ko="🏆 CTF 출제 및 운영">🏆 CTF 출제 및 운영</h3>
       <span class="pf-project__period">2023 / 2024</span>
     </div>
-    <p class="pf-project__desc" data-en="Designed security challenges and operated the International Drone Hacking Competition. Also authored challenges for KHU Security Competition and ROOTCTF." data-ko="국제 드론 해킹대회 보안 문제 출제 및 운영. 경희대 보안 대회, ROOTCTF 문제 제작.">국제 드론 해킹대회 보안 문제 출제 및 운영. 경희대 보안 대회, ROOTCTF 문제 제작.</p>
+    <p class="pf-project__desc" data-en="Designed security challenges and operated the International Drone CTF. Also authored challenges for KHU Security Competition and ROOTCTF." data-ko="국제 드론 CTF 보안 문제 출제 및 운영. 경희대 보안 대회, ROOTCTF 문제 제작.">국제 드론 CTF 보안 문제 출제 및 운영. 경희대 보안 대회, ROOTCTF 문제 제작.</p>
     <div class="pf-project__tags">
       <span class="pf-tag">CTF Author</span><span class="pf-tag">Organizer</span><span class="pf-tag">Drone</span>
     </div>

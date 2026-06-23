@@ -433,6 +433,16 @@ strong { color: #16a085; }
   font-size: 72%;
 }
 
+/* Align place-pill widths within each column to the longest label
+   (International = Finalist, Domestic = Excellence). Cell positions
+   in the 3-col grid: 5,8,11,14,17,20 = intl ; 6,9,12,15,18,21 = dom. */
+.cv-awards-grid > .cv-awards-grid__cell:nth-child(3n+5) .cv-award__place {
+  min-width: 60px;
+}
+.cv-awards-grid > .cv-awards-grid__cell:nth-child(3n+6) .cv-award__place {
+  min-width: 76px;
+}
+
 .cv-awards-grid .cv-award__name {
   font-size: 86%;
 }
@@ -496,6 +506,15 @@ strong { color: #16a085; }
   transition: background 0.15s;
 }
 .cv-award:hover { background: #f0f9f7; }
+
+/* Award block as anchor — strip default link styling, keep block layout */
+a.cv-award,
+a.cv-award:hover {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+  border-bottom: none;
+}
 
 .cv-award__place {
   background: #16a085;
