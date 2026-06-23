@@ -79,7 +79,7 @@ title: Gyeongje Oh
         </div>
         <ul class="cv-research-list">
           <li>Co-developed CCSDS protocol firewall prototype for the satellite ground-station / OBC uplink.</li>
-          <li>Live-demoed at <strong>DEFCON 33 Aerospace Village (Las Vegas)</strong> and <strong>Bahrain Aerospace Village</strong>.</li>
+          <li>Live-demoed at DEFCON 33 Aerospace Village (Las Vegas, Bahrain).</li>
           <li><em>"CCSDS based Firewall for Modern Satellite System"</em> — Computers &amp; Security (SCI, under review).</li>
           <li><em>(추가 디테일 자리 — owned 컴포넌트 / 공격 시나리오 / 산출물)</em></li>
         </ul>
@@ -96,7 +96,7 @@ title: Gyeongje Oh
         <ul class="cv-research-list">
           <li>Vulnerability research and exploit development across Browser, Office, VM, and RDP attack surfaces on Windows.</li>
           <li>Built WinAFL-based fuzzing harnesses for commercial document parsers; surfaced heap-overflow and OOB-write primitives.</li>
-          <li><span class="cv-research-text">Disclosed two RCEs to KISA Bug Bounty — <strong>KVE-2023-0095</strong>, <strong>KVE-2023-5125</strong> ($3,100).</span> <span class="cv-research-meta"><a href="https://gye0ngje.com/vulnerability-research/2023/01/14/heap-overflow-in-image-viewer-psd-parsing.html" target="_blank">Details →</a></span></li>
+          <li><span class="cv-research-text">Disclosed two RCEs to KISA Bug Bounty — KVE-2023-0095, KVE-2023-5125 ($3,100).</span> <span class="cv-research-meta"><a href="https://gye0ngje.com/vulnerability-research/2023/01/14/heap-overflow-in-image-viewer-psd-parsing.html" target="_blank">Details →</a></span></li>
           <li><em>(추가 디테일 자리 — 본인이 owned했던 컴포넌트 / 산출물 / 협업)</em></li>
         </ul>
       </div>
