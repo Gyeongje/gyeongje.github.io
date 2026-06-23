@@ -55,16 +55,16 @@ title: Gyeongje Oh
 
   <div class="cv-timeline">
     <div class="cv-timeline__item">
-      <div class="cv-timeline__date">2025.03 - Current</div>
+      <div class="cv-timeline__date">2024.01 - Current</div>
       <div class="cv-timeline__content">
         <strong>PWNLAB</strong> <span class="cv-badge" data-en="Lab Leader" data-ko="랩장">Lab Leader</span>
         <p><span data-en="Kyunghee Univ. Dept. of Computer Engineering" data-ko="경희대학교 컴퓨터공학과">Kyunghee Univ. Dept. of Computer Engineering</span> (Advisor: <a href="https://pwnlab.kr/downloads/cv.pdf" target="_blank">Prof. Daehee Jang</a>)</p>
         <ul class="cv-research-list">
-          <li>macOS kernel Bluetooth chipset firmware analysis and mitigation bypass research <span class="cv-research-meta">· 2026.02 – 11 · <a href="{{ '/portfolio/#macos-bt' | prepend: site.baseurl }}">Details →</a></span></li>
-          <li>Satellite OBC security audit tooling for GomSpace / EnduroSat with GMO IERAE <span class="cv-research-meta">· 2025.07 – 2026.03 · <a href="{{ '/portfolio/#satellite-obc' | prepend: site.baseurl }}">Details →</a></span></li>
-          <li>Open-source ground station vulnerability research with live SDR validation <span class="cv-research-meta">· 2025.03 – 2025.12 · <a href="{{ '/portfolio/#ground-station' | prepend: site.baseurl }}">Details →</a></span></li>
-          <li>Android kernel MTE (Memory Tagging Extension) bypass research <span class="cv-research-meta">· 2025.12 – 2026.02 · <a href="{{ '/portfolio/#android-mte' | prepend: site.baseurl }}">Details →</a></span></li>
-          <li>Windows kernel local privilege escalation research and exploit development <span class="cv-research-meta">· 2025.04 – 2025.12 · <a href="{{ '/portfolio/#windows-lpe' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li>macOS kernel Bluetooth chipset firmware analysis and mitigation bypass research <span class="cv-research-meta">· <a href="{{ '/portfolio/#macos-bt' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li>Satellite OBC security audit tooling for GomSpace / EnduroSat with GMO IERAE <span class="cv-research-meta">· <a href="{{ '/portfolio/#satellite-obc' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li>Open-source ground station vulnerability research with live SDR validation <span class="cv-research-meta">· <a href="{{ '/portfolio/#ground-station' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li>Android kernel MTE (Memory Tagging Extension) bypass research <span class="cv-research-meta">· <a href="{{ '/portfolio/#android-mte' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li>Windows kernel local privilege escalation research and exploit development <span class="cv-research-meta">· <a href="{{ '/portfolio/#windows-lpe' | prepend: site.baseurl }}">Details →</a></span></li>
         </ul>
       </div>
     </div>
@@ -72,28 +72,24 @@ title: Gyeongje Oh
       <div class="cv-timeline__date">2025.07 - 2025.08</div>
       <div class="cv-timeline__content">
         <strong>GMO CyberSecurity by Ierae</strong> <span class="cv-badge">Internship</span>
-        <p>Aerospace Village in DEFCON 33 Conference (Las Vegas, Bahrain)</p>
-      </div>
-    </div>
-    <div class="cv-timeline__item">
-      <div class="cv-timeline__date">2023.04 - 2025.02</div>
-      <div class="cv-timeline__content">
-        <strong>PWNLAB</strong> <span class="cv-badge">Intern</span>
-        <p><span data-en="Kyunghee Univ. Dept. of Computer Engineering" data-ko="경희대학교 컴퓨터공학과">Kyunghee Univ. Dept. of Computer Engineering</span> (Advisor: <a href="https://pwnlab.kr/downloads/cv.pdf" target="_blank">Prof. Daehee Jang</a>)</p>
+        <ul class="cv-research-list">
+          <li>Co-developed CCSDS protocol firewall prototype for the satellite ground-station / OBC uplink.</li>
+          <li>Live-demoed at <strong>DEFCON 33 Aerospace Village (Las Vegas)</strong> and <strong>Bahrain Aerospace Village</strong>.</li>
+          <li>Co-authored <em>"CCSDS based Firewall for Modern Satellite System"</em> — Computers &amp; Security (SCI, under review).</li>
+          <li><em>(추가 디테일 자리 — owned 컴포넌트 / 공격 시나리오 / 산출물)</em></li>
+        </ul>
       </div>
     </div>
     <div class="cv-timeline__item">
       <div class="cv-timeline__date">2022.03 - 2023.12</div>
       <div class="cv-timeline__content">
         <strong data-en="HAYYIM SECURITY" data-ko="하임시큐리티">HAYYIM SECURITY</strong> <span class="cv-badge">Security Researcher</span>
-        <p data-en="Vulnerability analysis &amp; exploitation in Browser, Office, VM, RDP" data-ko="Browser, Office, VM, RDP 취약점 분석 및 Exploit">Vulnerability analysis &amp; exploitation in Browser, Office, VM, RDP</p>
-      </div>
-    </div>
-    <div class="cv-timeline__item">
-      <div class="cv-timeline__date">2018.03 - 2019.02</div>
-      <div class="cv-timeline__content">
-        <strong>Best of the Best 7th</strong> <span class="cv-badge">Vulnerability Analysis Track</span>
-        <p><a href="{{ '/assets/bob임명장.png' | prepend: site.baseurl }}">Certificate</a></p>
+        <ul class="cv-research-list">
+          <li>Vulnerability research and exploit development across Browser, Office, VM, and RDP attack surfaces on Windows.</li>
+          <li>Built WinAFL-based fuzzing harnesses for commercial document parsers; surfaced heap-overflow and OOB-write primitives.</li>
+          <li>Disclosed two RCEs to KISA Bug Bounty — <strong>KVE-2023-0095</strong>, <strong>KVE-2023-5125</strong> ($3,100).</li>
+          <li><em>(추가 디테일 자리 — 본인이 owned했던 컴포넌트 / 산출물 / 협업)</em></li>
+        </ul>
       </div>
     </div>
   </div>
@@ -354,6 +350,13 @@ title: Gyeongje Oh
         <p data-en="MOS: Information Security" data-ko="병과: 정보보호">MOS: Information Security</p>
       </div>
     </div>
+  </div>
+
+  <div class="cv-remarks-group">
+    <h4 data-en="External Program" data-ko="외부 프로그램">External Program</h4>
+    <ul class="cv-remarks-list">
+      <li>Best of the Best 7th, KITRI — Vulnerability Analysis Track (2018.03 – 2019.02) · <a href="{{ '/assets/bob임명장.png' | prepend: site.baseurl }}">Certificate</a></li>
+    </ul>
   </div>
 
   <div class="cv-remarks-group">
