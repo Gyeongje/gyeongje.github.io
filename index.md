@@ -168,11 +168,6 @@ title: Gyeongje Oh
         <span class="cv-award__name">CODEGATE CTF Univ (2022)</span>
         <span class="cv-award__team">경희대미남해커들</span>
       </a>
-      <a class="cv-award" href="{{ '/assets/코드게이트본선9위.png' | prepend: site.baseurl }}">
-        <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
-        <span class="cv-award__name">CODEGATE CTF Junior (2018)</span>
-        <span class="cv-award__team">오경제</span>
-      </a>
     </div>
 
     <div class="cv-awards-grid__cell cv-awards-grid__cell--dom">
