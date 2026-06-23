@@ -13,54 +13,6 @@ permalink: /portfolio/
 
 <div id="portfolio-content">
 
-<!-- ==================== TARGETS & SKILLS ==================== -->
-<div class="pf-skills">
-  <h2 class="pf-skills__title"><i class="fa fa-crosshairs"></i> Targets &amp; Skills</h2>
-
-  <div class="pf-skills__label">Targets</div>
-  <div class="pf-skills__group">
-    <span class="pf-skill pf-skill--target">Windows Kernel</span>
-    <span class="pf-skill pf-skill--target">Android Kernel</span>
-    <span class="pf-skill pf-skill--target">GomSpace</span>
-    <span class="pf-skill pf-skill--target">EnduroSat</span>
-    <span class="pf-skill pf-skill--target">TinyGS</span>
-    <span class="pf-skill pf-skill--target">DJI</span>
-    <span class="pf-skill pf-skill--target">PX4</span>
-    <span class="pf-skill pf-skill--target">Satellite</span>
-    <span class="pf-skill pf-skill--target">Browser</span>
-    <span class="pf-skill pf-skill--target">Office</span>
-    <span class="pf-skill pf-skill--target">RDP</span>
-    <span class="pf-skill pf-skill--target">Antivirus</span>
-    <span class="pf-skill pf-skill--target">Viewer</span>
-  </div>
-
-  <div class="pf-skills__divider"></div>
-
-  <div class="pf-skills__label">Skills</div>
-  <div class="pf-skills__group">
-    <span class="pf-skill">Reverse Engineering</span>
-    <span class="pf-skill">Exploit</span>
-    <span class="pf-skill">Vulnerability Research</span>
-    <span class="pf-skill">Kernel Debugging</span>
-    <span class="pf-skill">RF / SDR</span>
-    <span class="pf-skill">GNU Radio</span>
-    <span class="pf-skill">Firmware Analysis</span>
-    <span class="pf-skill">Bug Bounty</span>
-    <span class="pf-skill">CTF</span>
-  </div>
-  <div class="pf-skills__group">
-    <span class="pf-skill pf-skill--sub">C / C++</span>
-    <span class="pf-skill pf-skill--sub">Python</span>
-    <span class="pf-skill pf-skill--sub">IDA Pro</span>
-    <span class="pf-skill pf-skill--sub">GDB</span>
-    <span class="pf-skill pf-skill--sub">WinDbg</span>
-    <span class="pf-skill pf-skill--sub">Wireshark</span>
-    <span class="pf-skill pf-skill--sub">Procmon</span>
-    <span class="pf-skill pf-skill--sub">USRP / HackRF</span>
-    <span class="pf-skill pf-skill--sub">QEMU</span>
-  </div>
-</div>
-
 <!-- ==================== PROJECTS ==================== -->
 <div class="pf-projects">
   <h2 class="pf-projects__title"><i class="fa fa-flask"></i> Projects</h2>

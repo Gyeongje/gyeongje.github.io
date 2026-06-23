@@ -2,7 +2,7 @@
 
 /* =Base */
 body {
-  font-family: 'Quicksand', 'Pretendard Variable', Pretendard, sans-serif;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 100%;
   color: #1a1a2e;
   background-color: #fff;
@@ -152,6 +152,17 @@ strong { color: #16a085; }
   max-width: 100%;
 }
 
+/* Bold/prominent elements use Quicksand for slightly softer feel,
+   while body text stays Pretendard. */
+.cv-wrapper .cv-name,
+.cv-wrapper .cv-name__link,
+.cv-wrapper .cv-section__title,
+.cv-wrapper .cv-subsection,
+.cv-wrapper .cv-badge,
+.cv-wrapper strong {
+  font-family: 'Quicksand', 'Pretendard Variable', Pretendard, sans-serif;
+}
+
 /* =CV Header */
 .cv-header {
   text-align: center;
@@ -161,7 +172,7 @@ strong { color: #16a085; }
 }
 
 .cv-name {
-  font-size: 240%;
+  font-size: 220%;
   font-weight: 700;
   color: #1a1a2e;
   margin: 0;
@@ -178,7 +189,7 @@ strong { color: #16a085; }
 }
 
 .cv-title {
-  font-size: 110%;
+  font-size: 100%;
   color: #16a085;
   font-weight: 400;
   margin: 6px 0 16px;
@@ -285,7 +296,7 @@ strong { color: #16a085; }
 }
 
 .cv-section__title {
-  font-size: 120%;
+  font-size: 108%;
   font-weight: 700;
   color: #1a1a2e;
   padding-bottom: 10px;
@@ -302,7 +313,7 @@ strong { color: #16a085; }
 }
 
 .cv-subsection {
-  font-size: 100%;
+  font-size: 92%;
   color: #16a085;
   font-weight: 700;
   margin: 20px 0 12px;
@@ -350,7 +361,8 @@ strong { color: #16a085; }
   font-size: 80%;
   color: #888;
   font-weight: 600;
-  min-width: 130px;
+  min-width: 70px;
+  max-width: 70px;
   flex-shrink: 0;
   padding-top: 2px;
 }
@@ -395,24 +407,19 @@ strong { color: #16a085; }
   color: #fff;
 }
 
-/* =Awards Grid (3-column: shared Year | International | Domestic) */
+/* =Awards Grid (2-column: International | Domestic, flat lists with year
+   inline in each award name). */
 .cv-awards-grid {
   display: grid;
-  grid-template-columns: 44px 1fr 1fr;
-  column-gap: 20px;
-  row-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 6px;
   align-items: start;
 }
 
 .cv-awards-grid__head {
-  margin: 0 0 4px;
-}
-
-.cv-awards-grid__year {
-  font-size: 90%;
-  font-weight: 700;
-  color: #16a085;
-  padding-top: 8px;
+  text-align: center;
+  margin: 0 0 6px;
 }
 
 .cv-awards-grid__cell {
@@ -422,25 +429,21 @@ strong { color: #16a085; }
 }
 
 .cv-awards-grid .cv-award {
-  padding: 6px 10px;
+  padding: 5px 10px;
   gap: 8px;
   margin-bottom: 0;
 }
 
 .cv-awards-grid .cv-award__place {
-  min-width: 30px;
-  padding: 2px 8px;
+  padding: 1px 6px;
   font-size: 72%;
 }
 
-/* Align place-pill widths within each column to the longest label
-   (International = Finalist, Domestic = Excellence). Cell positions
-   in the 3-col grid: 5,8,11,14,17,20 = intl ; 6,9,12,15,18,21 = dom. */
-.cv-awards-grid > .cv-awards-grid__cell:nth-child(3n+5) .cv-award__place {
-  min-width: 60px;
+.cv-awards-grid__cell--intl .cv-award__place {
+  min-width: 48px;
 }
-.cv-awards-grid > .cv-awards-grid__cell:nth-child(3n+6) .cv-award__place {
-  min-width: 76px;
+.cv-awards-grid__cell--dom .cv-award__place {
+  min-width: 60px;
 }
 
 .cv-awards-grid .cv-award__name {
@@ -452,24 +455,9 @@ strong { color: #16a085; }
 }
 
 @media (max-width: 640px) {
-  /* Mobile: single column stack. Domestic cells flow under International cells per year. */
   .cv-awards-grid {
-    grid-template-columns: 40px 1fr;
-    column-gap: 12px;
-    row-gap: 6px;
-  }
-  .cv-awards-grid__head:nth-of-type(2) {
-    /* Hide "Domestic" header; awards still rendered under their year */
-    display: none;
-  }
-  .cv-awards-grid__head {
-    grid-column: 2;
-  }
-  .cv-awards-grid__cell {
-    grid-column: 2;
-  }
-  .cv-awards-grid__cell:empty {
-    display: none;
+    grid-template-columns: 1fr;
+    column-gap: 0;
   }
 }
 
@@ -617,6 +605,21 @@ a.cv-award:hover {
   font-weight: 400;
 }
 
+/* Compact one-line remarks entry (label + items separated by ·) */
+.cv-remarks-line {
+  font-size: 90%;
+  color: #555;
+  margin: 6px 0;
+  line-height: 1.6;
+}
+.cv-remarks-line strong {
+  color: #1a1a2e;
+  font-weight: 700;
+}
+.cv-remarks-line a {
+  font-weight: 400;
+}
+
 /* =Role header (company + badge + right-aligned Details) */
 .cv-role__header {
   display: flex;
@@ -642,8 +645,8 @@ a.cv-award:hover {
 }
 
 .cv-research-list li {
-  font-size: 87%;
-  line-height: 1.6;
+  font-size: 90%;
+  line-height: 1.5;
   color: #555;
   padding: 3px 0;
   padding-left: 14px;

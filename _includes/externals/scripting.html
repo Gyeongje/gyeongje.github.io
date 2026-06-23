@@ -46,31 +46,115 @@ function applyLangTo(root) {
   }
 }
 
+/* =================================================================
+   PDF-only style overrides (black & white submission look)
+   Injected into the PDF wrapper and into <head> during render so
+   html2canvas picks them up. Strips icons + timeline dots/line,
+   recolors all teal/orange accents to black/gray.
+   ================================================================= */
+var PDF_OVERRIDES = [
+  ".pdf-mode { color: #000; }",
+
+  ".pdf-mode i.fa, .pdf-mode i[class^='fa-'], .pdf-mode i[class*=' fa-'] { display: none !important; }",
+
+  ".pdf-mode .cv-timeline { padding-left: 0 !important; }",
+  ".pdf-mode .cv-timeline::before, .pdf-mode .cv-timeline__item::before { display: none !important; content: none !important; background: transparent !important; box-shadow: none !important; border: none !important; width: 0 !important; height: 0 !important; }",
+
+  ".pdf-mode a { color: #000 !important; text-decoration: none !important; border-bottom: none !important; font-weight: inherit !important; pointer-events: none; }",
+  ".pdf-mode strong { color: #000 !important; }",
+
+  ".pdf-mode .cv-name, .pdf-mode .cv-name__link { color: #000 !important; }",
+  ".pdf-mode .cv-title { color: #555 !important; }",
+
+  ".pdf-mode .cv-section__title { color: #000 !important; border-bottom: 1px solid #000 !important; }",
+  ".pdf-mode .cv-subsection { color: #000 !important; }",
+
+  ".pdf-mode .cv-badge, .pdf-mode .cv-badge--accent { background: transparent !important; color: #000 !important; border: 1px solid #000 !important; font-weight: 600 !important; }",
+
+  ".pdf-mode .cv-award, .pdf-mode .cv-award:hover { background: transparent !important; }",
+  ".pdf-mode .cv-award__place { background: transparent !important; color: #000 !important; font-weight: 700 !important; border: none !important; padding-left: 0 !important; padding-right: 6px !important; }",
+  ".pdf-mode .cv-award__name, .pdf-mode .cv-award__team, .pdf-mode .cv-award__team a, .pdf-mode .cv-award__prize { color: #000 !important; }",
+
+  ".pdf-mode .cv-research-list li, .pdf-mode .cv-research-text, .pdf-mode .cv-research-meta, .pdf-mode .cv-research-meta a { color: #000 !important; }",
+  ".pdf-mode .cv-research-list li::before { color: #000 !important; }",
+
+  ".pdf-mode .cv-bounty { background: transparent !important; border-left-color: #000 !important; }",
+  ".pdf-mode .cv-awards-grid__year { color: #000 !important; }",
+  ".pdf-mode .cv-remarks-list li::before { color: #000 !important; }",
+
+  ".pdf-mode .cv-awards-grid > .cv-awards-grid__year:nth-child(n+7), .pdf-mode .cv-awards-grid > .cv-awards-grid__cell:nth-child(n+8) { border-top-color: #d0d0d0 !important; }",
+  ".pdf-mode .cv-awards-grid > .cv-awards-grid__cell:nth-child(n+8)::before { background: #d0d0d0 !important; }",
+
+  /* Portfolio overrides (used by Full PDF + Portfolio PDF) */
+  ".pdf-mode .pf-skills__title, .pdf-mode .pf-projects__title { color: #000 !important; border-bottom: 1px solid #000 !important; }",
+  ".pdf-mode .pf-skill, .pdf-mode .pf-skill--target, .pdf-mode .pf-skill--sub { background: transparent !important; color: #000 !important; border: 1px solid #000 !important; }",
+  ".pdf-mode .pf-skills__label { color: #555 !important; }",
+  ".pdf-mode .pf-tag { background: transparent !important; color: #000 !important; border: 1px solid #888 !important; }",
+  ".pdf-mode .pf-project__period, .pdf-mode .pf-project__desc, .pdf-mode .pf-project__name { color: #000 !important; }"
+].join("\n");
+
+/* Inject PDF override stylesheet into <head> during render, then remove.
+   html2canvas uses computed styles from the document, so the stylesheet
+   must be in the document (not just inside the cloned wrapper) for the
+   overrides to take effect. Returns a function that removes the style. */
+function installPdfStyles() {
+  var s = document.createElement('style');
+  s.id = 'pdf-mode-styles';
+  s.textContent = PDF_OVERRIDES;
+  document.head.appendChild(s);
+  return function () {
+    if (s.parentNode) s.parentNode.removeChild(s);
+  };
+}
+
 function makePdfHeader(subtitle) {
   var header = document.createElement('div');
   header.style.textAlign = 'center';
   header.style.marginBottom = '6px';
   header.style.paddingBottom = '8px';
-  header.style.borderBottom = '2px solid #16a085';
+  header.style.borderBottom = '1px solid #000';
   var name = currentLang === 'ko' ? '오경제 (Gyeongje Oh)' : 'Gyeongje Oh';
-  header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;font-weight:bold;">' + name + '</h1>' +
-    '<p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;">' + subtitle + '</p>';
+  header.innerHTML = '<h1 style="margin:0;color:#000;font-size:22px;font-family:\'Pretendard Variable\',Pretendard,sans-serif;font-weight:bold;">' + name + '</h1>' +
+    '<p style="color:#555;margin:4px 0 0;font-size:11px;font-family:\'Pretendard Variable\',Pretendard,sans-serif;">' + subtitle + '</p>';
   return header;
+}
+
+function buildPdfWrapper() {
+  var wrapper = document.createElement('div');
+  wrapper.className = 'pdf-mode';
+  wrapper.style.padding = '12px 36px';
+  wrapper.style.fontFamily = "'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, sans-serif";
+  wrapper.style.fontSize = '11px';
+  wrapper.style.lineHeight = '1.5';
+  wrapper.style.color = '#000';
+  return wrapper;
+}
+
+function runPdf(wrapper, opt) {
+  // Strip href / target from every anchor in the PDF DOM so the rendered
+  // PDF has no clickable link annotations (CSS alone can't suppress these
+  // — html2pdf/jsPDF reads href directly to emit link rectangles).
+  var anchors = wrapper.querySelectorAll('a');
+  for (var i = 0; i < anchors.length; i++) {
+    anchors[i].removeAttribute('href');
+    anchors[i].removeAttribute('target');
+  }
+
+  var uninstall = installPdfStyles();
+  return html2pdf().set(opt).from(wrapper).save().then(function () {
+    uninstall();
+  }, function (err) {
+    uninstall();
+    throw err;
+  });
 }
 
 function generatePDF() {
   var content = document.getElementById('cv-content');
   if (!content) { alert('CV content not found.'); return; }
 
-  // --- Same site font (Quicksand) for PDF ---
-  var wrapper = document.createElement('div');
-  wrapper.style.padding = '12px 36px';
-  wrapper.style.fontFamily = "'Quicksand', 'Pretendard Variable', Pretendard, sans-serif";
-  wrapper.style.fontSize = '11px';
-  wrapper.style.lineHeight = '1.5';
-  wrapper.style.color = '#1a1a2e';
-
-  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | ogj0824@gmail.com | github.com/Gyeongje'));
+  var wrapper = buildPdfWrapper();
+  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | ogj0824@gmail.com'));
   wrapper.appendChild(content.cloneNode(true));
 
   var filename = currentLang === 'ko' ? 'CV_오경제.pdf' : 'CV_Gyeongje_Oh.pdf';
@@ -83,7 +167,7 @@ function generatePDF() {
     pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
   };
 
-  html2pdf().set(opt).from(wrapper).save();
+  runPdf(wrapper, opt);
 }
 
 // CV + Portfolio merged into a single PDF.
@@ -91,14 +175,8 @@ function generateFullPDF() {
   var content = document.getElementById('cv-content');
   if (!content) { alert('CV content not found.'); return; }
 
-  var wrapper = document.createElement('div');
-  wrapper.style.padding = '12px 36px';
-  wrapper.style.fontFamily = "'Quicksand', 'Pretendard Variable', Pretendard, sans-serif";
-  wrapper.style.fontSize = '11px';
-  wrapper.style.lineHeight = '1.5';
-  wrapper.style.color = '#1a1a2e';
-
-  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | ogj0824@gmail.com | github.com/Gyeongje'));
+  var wrapper = buildPdfWrapper();
+  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | ogj0824@gmail.com'));
   wrapper.appendChild(content.cloneNode(true));
 
   var filename = currentLang === 'ko' ? 'CV_Portfolio_오경제.pdf' : 'CV_Portfolio_Gyeongje_Oh.pdf';
@@ -132,7 +210,7 @@ function generateFullPDF() {
     })
     .catch(function () { /* fall back to CV-only PDF */ })
     .then(function () {
-      html2pdf().set(opt).from(wrapper).save();
+      runPdf(wrapper, opt);
     });
 }
 
@@ -143,13 +221,7 @@ function generatePortfolioPDF() {
   var clone = content.cloneNode(true);
   applyLangTo(clone);
 
-  var wrapper = document.createElement('div');
-  wrapper.style.padding = '12px 36px';
-  wrapper.style.fontFamily = "'Quicksand', 'Pretendard Variable', Pretendard, sans-serif";
-  wrapper.style.fontSize = '11px';
-  wrapper.style.lineHeight = '1.5';
-  wrapper.style.color = '#1a1a2e';
-
+  var wrapper = buildPdfWrapper();
   wrapper.appendChild(makePdfHeader('Offensive Security Researcher | Portfolio'));
   wrapper.appendChild(clone);
 
@@ -163,6 +235,6 @@ function generatePortfolioPDF() {
     pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
   };
 
-  html2pdf().set(opt).from(wrapper).save();
+  runPdf(wrapper, opt);
 }
 </script>
