@@ -123,7 +123,9 @@ title: Gyeongje Oh
 <div class="cv-section">
   <h2 class="cv-section__title"><i class="fa fa-trophy"></i> Hacking Competition (CTF) Awards</h2>
 
-  <h3 class="cv-subsection">International</h3>
+  <div class="cv-awards-grid">
+    <div class="cv-awards-col">
+      <h3 class="cv-subsection">International</h3>
 
   <div class="cv-awards-year">
     <div class="cv-awards-year__label">2026</div>
@@ -222,7 +224,9 @@ title: Gyeongje Oh
     </div>
   </div>
 
-  <h3 class="cv-subsection">Domestic</h3>
+    </div><!-- /.cv-awards-col International -->
+    <div class="cv-awards-col">
+      <h3 class="cv-subsection">Domestic</h3>
 
   <div class="cv-awards-year">
     <div class="cv-awards-year__label">2025</div>
@@ -287,6 +291,8 @@ title: Gyeongje Oh
       </div>
     </div>
   </div>
+    </div><!-- /.cv-awards-col Domestic -->
+  </div><!-- /.cv-awards-grid -->
 
 </div>
 

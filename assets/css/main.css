@@ -395,6 +395,47 @@ strong { color: #16a085; }
   color: #fff;
 }
 
+/* =Awards Grid (2-column International / Domestic) */
+.cv-awards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.cv-awards-col .cv-subsection {
+  margin-top: 0;
+}
+
+.cv-awards-grid .cv-awards-year__label {
+  min-width: 40px;
+}
+
+.cv-awards-grid .cv-award {
+  padding: 6px 10px;
+  gap: 8px;
+}
+
+.cv-awards-grid .cv-award__place {
+  min-width: 30px;
+  padding: 2px 8px;
+  font-size: 72%;
+}
+
+.cv-awards-grid .cv-award__name {
+  font-size: 86%;
+}
+
+.cv-awards-grid .cv-award__team {
+  font-size: 78%;
+}
+
+@media (max-width: 640px) {
+  .cv-awards-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
 /* =Awards */
 .cv-awards-year {
   display: flex;
