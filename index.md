@@ -49,16 +49,37 @@ title: Gyeongje Oh
   </div>
 </div>
 
-<!-- ==================== WORK EXPERIENCE ==================== -->
+<!-- ==================== EXPERIENCE ==================== -->
 <div class="cv-section">
-  <h2 class="cv-section__title"><i class="fa fa-briefcase"></i> <span data-en="Work Experience" data-ko="Work Experience">Work Experience</span></h2>
+  <h2 class="cv-section__title"><i class="fa fa-briefcase"></i> <span data-en="Experience" data-ko="Experience">Experience</span></h2>
 
   <div class="cv-timeline">
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2025.03 - Current</div>
+      <div class="cv-timeline__content">
+        <strong>PWNLAB</strong> <span class="cv-badge" data-en="Lab Leader" data-ko="랩장">Lab Leader</span>
+        <p><span data-en="Kyunghee Univ. Dept. of Computer Engineering" data-ko="경희대학교 컴퓨터공학과">Kyunghee Univ. Dept. of Computer Engineering</span> (Advisor: <a href="https://pwnlab.kr/downloads/cv.pdf" target="_blank">Prof. Daehee Jang</a>)</p>
+        <ul class="cv-research-list">
+          <li>macOS kernel Bluetooth chipset firmware analysis and mitigation bypass research <span class="cv-research-meta">· 2026.02 – 11 · <a href="{{ '/portfolio/#macos-bt' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li>Satellite OBC security audit tooling for GomSpace / EnduroSat with GMO IERAE <span class="cv-research-meta">· 2025.07 – 2026.03 · <a href="{{ '/portfolio/#satellite-obc' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li>Open-source ground station vulnerability research with live SDR validation <span class="cv-research-meta">· 2025.03 – 2025.12 · <a href="{{ '/portfolio/#ground-station' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li>Android kernel MTE (Memory Tagging Extension) bypass research <span class="cv-research-meta">· 2025.12 – 2026.02 · <a href="{{ '/portfolio/#android-mte' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li>Windows kernel local privilege escalation research and exploit development <span class="cv-research-meta">· 2025.04 – 2025.12 · <a href="{{ '/portfolio/#windows-lpe' | prepend: site.baseurl }}">Details →</a></span></li>
+        </ul>
+      </div>
+    </div>
     <div class="cv-timeline__item">
       <div class="cv-timeline__date">2025.07 - 2025.08</div>
       <div class="cv-timeline__content">
         <strong>GMO CyberSecurity by Ierae</strong> <span class="cv-badge">Internship</span>
         <p>Aerospace Village in DEFCON 33 Conference (Las Vegas, Bahrain)</p>
+      </div>
+    </div>
+    <div class="cv-timeline__item">
+      <div class="cv-timeline__date">2023.04 - 2025.02</div>
+      <div class="cv-timeline__content">
+        <strong>PWNLAB</strong> <span class="cv-badge">Intern</span>
+        <p><span data-en="Kyunghee Univ. Dept. of Computer Engineering" data-ko="경희대학교 컴퓨터공학과">Kyunghee Univ. Dept. of Computer Engineering</span> (Advisor: <a href="https://pwnlab.kr/downloads/cv.pdf" target="_blank">Prof. Daehee Jang</a>)</p>
       </div>
     </div>
     <div class="cv-timeline__item">
@@ -68,34 +89,11 @@ title: Gyeongje Oh
         <p data-en="Vulnerability analysis &amp; exploitation in Browser, Office, VM, RDP" data-ko="Browser, Office, VM, RDP 취약점 분석 및 Exploit">Vulnerability analysis &amp; exploitation in Browser, Office, VM, RDP</p>
       </div>
     </div>
-  </div>
-</div>
-
-<!-- ==================== EXTERNAL EXPERIENCE ==================== -->
-<div class="cv-section">
-  <h2 class="cv-section__title"><i class="fa fa-users"></i> <span data-en="External Experience" data-ko="External Experience">External Experience</span></h2>
-
-  <div class="cv-timeline">
-    <div class="cv-timeline__item">
-      <div class="cv-timeline__date">2023.04 - 2025.02</div>
-      <div class="cv-timeline__content">
-        <strong>PWNLAB</strong> <span class="cv-badge">Intern</span>
-        <p><span data-en="Kyunghee Univ. Dept. of Computer Engineering" data-ko="경희대학교 컴퓨터공학과">Kyunghee Univ. Dept. of Computer Engineering</span> (Advisor: <a href="https://pwnlab.kr/downloads/cv.pdf" target="_blank">Prof. Daehee Jang</a>)</p>
-      </div>
-    </div>
     <div class="cv-timeline__item">
       <div class="cv-timeline__date">2018.03 - 2019.02</div>
       <div class="cv-timeline__content">
         <strong>Best of the Best 7th</strong> <span class="cv-badge">Vulnerability Analysis Track</span>
         <p><a href="{{ '/assets/bob임명장.png' | prepend: site.baseurl }}">Certificate</a></p>
-      </div>
-    </div>
-    <div class="cv-timeline__item">
-      <div class="cv-timeline__date">2017.03 - 2017.12</div>
-      <div class="cv-timeline__content">
-        <strong data-en="Information Security Gifted Education Center" data-ko="정보보호영재교육원">Information Security Gifted Education Center</strong>
-        <p data-en="Advanced Professional Class B, Seoul Women's University" data-ko="서울여자대학교 고급전문B반">Advanced Professional Class B, Seoul Women's University</p>
-        <p><a href="{{ '/assets/정보보호영재교육원_수료증.png' | prepend: site.baseurl }}">Certificate</a></p>
       </div>
     </div>
   </div>
@@ -294,17 +292,6 @@ title: Gyeongje Oh
     </div>
   </div>
 
-  <div class="cv-awards-year">
-    <div class="cv-awards-year__label">2017</div>
-    <div class="cv-awards-year__list">
-      <div class="cv-award">
-        <span class="cv-award__place" data-en="Bronze" data-ko="동상">Bronze</span>
-        <span class="cv-award__name" data-en="Information Security Olympiad" data-ko="정보보호올림피아드">Information Security Olympiad</span>
-        <span class="cv-award__team"><a href="{{ '/assets/정보보호올림피아드_동상.png' | prepend: site.baseurl }}">오경제</a></span>
-        <span class="cv-award__prize">$300</span>
-      </div>
-    </div>
-  </div>
 </div>
 
 <!-- ==================== BUG BOUNTY ==================== -->
