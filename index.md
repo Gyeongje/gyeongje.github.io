@@ -31,7 +31,7 @@ title: Gyeongje Oh
 
   <div class="cv-timeline">
     <div class="cv-timeline__item">
-      <div class="cv-timeline__date">2025.03 - Current</div>
+      <div class="cv-timeline__date">2025.03 -&nbsp;Current</div>
       <div class="cv-timeline__content">
         <strong data-en="KYUNGHEE UNIVERSITY" data-ko="경희대학교">KYUNGHEE UNIVERSITY</strong>
         <p data-en="M.S. in Department of Computer Engineering" data-ko="컴퓨터공학과 석사과정">M.S. in Department of Computer Engineering</p>
@@ -39,7 +39,7 @@ title: Gyeongje Oh
       </div>
     </div>
     <div class="cv-timeline__item">
-      <div class="cv-timeline__date">2019.03 - 2025.02</div>
+      <div class="cv-timeline__date">2019.03 -&nbsp;2025.02</div>
       <div class="cv-timeline__content">
         <strong data-en="KYUNGHEE UNIVERSITY" data-ko="경희대학교">KYUNGHEE UNIVERSITY</strong>
         <p data-en="B.S. in Department of Software Convergence" data-ko="소프트웨어융합학과 학사">B.S. in Department of Software Convergence</p>
@@ -54,7 +54,7 @@ title: Gyeongje Oh
 
   <div class="cv-timeline">
     <div class="cv-timeline__item">
-      <div class="cv-timeline__date">2024.01 - Current</div>
+      <div class="cv-timeline__date">2024.01 -&nbsp;Current</div>
       <div class="cv-timeline__content">
         <strong>PWNLAB</strong> <span class="cv-badge" data-en="Lab Leader" data-ko="랩장">Lab Leader</span>
         <p><span data-en="Kyung Hee University Dept. of Computer Engineering" data-ko="경희대학교 컴퓨터공학과">Kyung Hee University Dept. of Computer Engineering</span></p>
@@ -70,7 +70,7 @@ title: Gyeongje Oh
       </div>
     </div>
     <div class="cv-timeline__item">
-      <div class="cv-timeline__date">2025.07 - 2025.08</div>
+      <div class="cv-timeline__date">2025.07 -&nbsp;2025.08</div>
       <div class="cv-timeline__content">
         <strong>GMO CyberSecurity by Ierae</strong> <span class="cv-badge">Internship</span>
         <ul class="cv-research-list">
@@ -80,11 +80,11 @@ title: Gyeongje Oh
       </div>
     </div>
     <div class="cv-timeline__item">
-      <div class="cv-timeline__date">2022.03 - 2023.12</div>
+      <div class="cv-timeline__date">2022.03 -&nbsp;2023.12</div>
       <div class="cv-timeline__content">
         <strong data-en="HAYYIM SECURITY" data-ko="하임시큐리티">HAYYIM SECURITY</strong> <span class="cv-badge">Security Researcher</span>
         <ul class="cv-research-list">
-          <li><span class="cv-research-text">WinAFL-based fuzzing harness for Office document parser; surfaced heap-overflow and OOB-write primitives.</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#hayyim-office' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li><span class="cv-research-text">WinAFL-based fuzzing harness for Office document parser dll.</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#hayyim-office' | prepend: site.baseurl }}">Details →</a></span></li>
           <li><span class="cv-research-text">Browser vulnerability research targeting renderer / IPC attack surfaces.</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#hayyim-browser' | prepend: site.baseurl }}">Details →</a></span></li>
           <li><span class="cv-research-text">Antivirus exploit and bypass research.</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#hayyim-antivirus' | prepend: site.baseurl }}">Details →</a></span></li>
           <li><span class="cv-research-text">RDP protocol vulnerability research and exploitation.</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#hayyim-rdp' | prepend: site.baseurl }}">Details →</a></span></li>
@@ -232,14 +232,14 @@ title: Gyeongje Oh
 
   <div class="cv-timeline">
     <div class="cv-timeline__item">
-      <div class="cv-timeline__date">2026.05 / 07</div>
+      <div class="cv-timeline__date">2026.05 /&nbsp;2026.07</div>
       <div class="cv-timeline__content">
         <strong data-en="CISC 2026 · CodeEngn 2026" data-ko="정보보호학회 2026 · 코드엔진 2026">정보보호학회 2026 · 코드엔진 2026</strong>
         <p data-en="&quot;Vulnerability Research on Open-Source Ground Station Systems via Satellite RF Signal Generation&quot;" data-ko="&quot;인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구&quot;">"인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구"</p>
       </div>
     </div>
     <div class="cv-timeline__item">
-      <div class="cv-timeline__date">2025.08 / 11</div>
+      <div class="cv-timeline__date">2025.08 /&nbsp;2025.11</div>
       <div class="cv-timeline__content">
         <strong>DEFCON 33 Aerospace Village (Las Vegas, Bahrain)</strong>
         <p>"CCSDS based Firewall for Modern Satellite System"</p>
@@ -254,14 +254,14 @@ title: Gyeongje Oh
 
   <div class="cv-timeline">
     <div class="cv-timeline__item">
-      <div class="cv-timeline__date">2020.04 - 2022.01</div>
+      <div class="cv-timeline__date">2020.04 -&nbsp;2022.01</div>
       <div class="cv-timeline__content">
         <strong data-en="Republic of Korea Air Force" data-ko="대한민국 공군">Republic of Korea Air Force</strong>
         <p data-en="MOS: Information Security" data-ko="병과: 정보보호">MOS: Information Security</p>
       </div>
     </div>
     <div class="cv-timeline__item">
-      <div class="cv-timeline__date">2018.03 - 2019.02</div>
+      <div class="cv-timeline__date">2018.03 -&nbsp;2019.02</div>
       <div class="cv-timeline__content">
         <strong>Best of the Best 7th</strong>
         <p>KITRI · <span data-en="Vulnerability Analysis Track" data-ko="취약점 분석 트랙">Vulnerability Analysis Track</span> · <a href="{{ '/assets/bob임명장.png' | prepend: site.baseurl }}">Certificate</a></p>

@@ -154,7 +154,7 @@ function generatePDF() {
   if (!content) { alert('CV content not found.'); return; }
 
   var wrapper = buildPdfWrapper();
-  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | ogj0824@gmail.com'));
+  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | gye0ngje.com'));
   wrapper.appendChild(content.cloneNode(true));
 
   var filename = currentLang === 'ko' ? 'CV_오경제.pdf' : 'CV_Gyeongje_Oh.pdf';
@@ -176,7 +176,7 @@ function generateFullPDF() {
   if (!content) { alert('CV content not found.'); return; }
 
   var wrapper = buildPdfWrapper();
-  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | ogj0824@gmail.com'));
+  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | gye0ngje.com'));
   wrapper.appendChild(content.cloneNode(true));
 
   var filename = currentLang === 'ko' ? 'CV_Portfolio_오경제.pdf' : 'CV_Portfolio_Gyeongje_Oh.pdf';
