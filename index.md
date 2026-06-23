@@ -60,11 +60,11 @@ title: Gyeongje Oh
         <strong>PWNLAB</strong> <span class="cv-badge" data-en="Lab Leader" data-ko="랩장">Lab Leader</span>
         <p><span data-en="Kyunghee Univ. Dept. of Computer Engineering" data-ko="경희대학교 컴퓨터공학과">Kyunghee Univ. Dept. of Computer Engineering</span> (Advisor: <a href="https://pwnlab.kr/downloads/cv.pdf" target="_blank">Prof. Daehee Jang</a>)</p>
         <ul class="cv-research-list">
-          <li>macOS kernel Bluetooth chipset firmware analysis and mitigation bypass research <span class="cv-research-meta">· <a href="{{ '/portfolio/#macos-bt' | prepend: site.baseurl }}">Details →</a></span></li>
-          <li>Satellite OBC security audit tooling for GomSpace / EnduroSat with GMO IERAE <span class="cv-research-meta">· <a href="{{ '/portfolio/#satellite-obc' | prepend: site.baseurl }}">Details →</a></span></li>
-          <li>Open-source ground station vulnerability research with live SDR validation <span class="cv-research-meta">· <a href="{{ '/portfolio/#ground-station' | prepend: site.baseurl }}">Details →</a></span></li>
-          <li>Android kernel MTE (Memory Tagging Extension) bypass research <span class="cv-research-meta">· <a href="{{ '/portfolio/#android-mte' | prepend: site.baseurl }}">Details →</a></span></li>
-          <li>Windows kernel local privilege escalation research and exploit development <span class="cv-research-meta">· <a href="{{ '/portfolio/#windows-lpe' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li><span class="cv-research-text">macOS kernel Bluetooth chipset firmware analysis and mitigation bypass research</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#macos-bt' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li><span class="cv-research-text">Satellite OBC security audit tooling for GomSpace / EnduroSat with GMO IERAE</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#satellite-obc' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li><span class="cv-research-text">Open-source ground station vulnerability research with live SDR validation</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#ground-station' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li><span class="cv-research-text">Android kernel MTE (Memory Tagging Extension) bypass research</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#android-mte' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li><span class="cv-research-text">Windows kernel local privilege escalation research and exploit development</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#windows-lpe' | prepend: site.baseurl }}">Details →</a></span></li>
         </ul>
       </div>
     </div>

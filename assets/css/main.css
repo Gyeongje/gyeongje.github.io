@@ -585,6 +585,9 @@ strong { color: #16a085; }
   padding: 3px 0;
   padding-left: 14px;
   position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
 }
 
 .cv-research-list li::before {
@@ -595,9 +598,17 @@ strong { color: #16a085; }
   font-weight: 700;
 }
 
+.cv-research-text {
+  flex: 1;
+  min-width: 0;
+}
+
 .cv-research-meta {
   color: #999;
   font-size: 92%;
+  margin-left: auto;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .cv-research-meta a {
