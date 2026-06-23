@@ -395,24 +395,36 @@ strong { color: #16a085; }
   color: #fff;
 }
 
-/* =Awards Grid (2-column International / Domestic) */
+/* =Awards Grid (3-column: shared Year | International | Domestic) */
 .cv-awards-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
+  grid-template-columns: 44px 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 10px;
+  align-items: start;
 }
 
-.cv-awards-col .cv-subsection {
-  margin-top: 0;
+.cv-awards-grid__head {
+  margin: 0 0 4px;
 }
 
-.cv-awards-grid .cv-awards-year__label {
-  min-width: 40px;
+.cv-awards-grid__year {
+  font-size: 90%;
+  font-weight: 700;
+  color: #16a085;
+  padding-top: 8px;
+}
+
+.cv-awards-grid__cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .cv-awards-grid .cv-award {
   padding: 6px 10px;
   gap: 8px;
+  margin-bottom: 0;
 }
 
 .cv-awards-grid .cv-award__place {
@@ -430,9 +442,24 @@ strong { color: #16a085; }
 }
 
 @media (max-width: 640px) {
+  /* Mobile: single column stack. Domestic cells flow under International cells per year. */
   .cv-awards-grid {
-    grid-template-columns: 1fr;
-    gap: 8px;
+    grid-template-columns: 40px 1fr;
+    column-gap: 12px;
+    row-gap: 6px;
+  }
+  .cv-awards-grid__head:nth-of-type(2) {
+    /* Hide "Domestic" header; awards still rendered under their year */
+    display: none;
+  }
+  .cv-awards-grid__head {
+    grid-column: 2;
+  }
+  .cv-awards-grid__cell {
+    grid-column: 2;
+  }
+  .cv-awards-grid__cell:empty {
+    display: none;
   }
 }
 
@@ -569,6 +596,23 @@ strong { color: #16a085; }
 
 .cv-remarks-list li a {
   font-weight: 400;
+}
+
+/* =Role header (company + badge + right-aligned Details) */
+.cv-role__header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 2px;
+}
+
+.cv-role__details {
+  margin-left: auto;
+  font-size: 80%;
+  color: #16a085;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 /* =Research project list (inside Experience timeline item) */

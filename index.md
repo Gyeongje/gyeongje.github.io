@@ -65,13 +65,18 @@ title: Gyeongje Oh
           <li><span class="cv-research-text">Open-source ground station vulnerability research with live SDR validation</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#ground-station' | prepend: site.baseurl }}">Details →</a></span></li>
           <li><span class="cv-research-text">Android kernel MTE (Memory Tagging Extension) bypass research</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#android-mte' | prepend: site.baseurl }}">Details →</a></span></li>
           <li><span class="cv-research-text">Windows kernel local privilege escalation research and exploit development</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#windows-lpe' | prepend: site.baseurl }}">Details →</a></span></li>
+          <li><span class="cv-research-text">Drone (DJI / PX4) firmware vulnerability analysis and security tooling</span> <span class="cv-research-meta"><a href="{{ '/portfolio/#drone-security' | prepend: site.baseurl }}">Details →</a></span></li>
         </ul>
       </div>
     </div>
     <div class="cv-timeline__item">
       <div class="cv-timeline__date">2025.07 - 2025.08</div>
       <div class="cv-timeline__content">
-        <strong>GMO CyberSecurity by Ierae</strong> <span class="cv-badge">Internship</span>
+        <div class="cv-role__header">
+          <strong>GMO CyberSecurity by Ierae</strong>
+          <span class="cv-badge">Internship</span>
+          <a href="{{ '/portfolio/#gmo-ierae' | prepend: site.baseurl }}" class="cv-role__details">Details →</a>
+        </div>
         <ul class="cv-research-list">
           <li>Co-developed CCSDS protocol firewall prototype for the satellite ground-station / OBC uplink.</li>
           <li>Live-demoed at <strong>DEFCON 33 Aerospace Village (Las Vegas)</strong> and <strong>Bahrain Aerospace Village</strong>.</li>
@@ -83,7 +88,11 @@ title: Gyeongje Oh
     <div class="cv-timeline__item">
       <div class="cv-timeline__date">2022.03 - 2023.12</div>
       <div class="cv-timeline__content">
-        <strong data-en="HAYYIM SECURITY" data-ko="하임시큐리티">HAYYIM SECURITY</strong> <span class="cv-badge">Security Researcher</span>
+        <div class="cv-role__header">
+          <strong data-en="HAYYIM SECURITY" data-ko="하임시큐리티">HAYYIM SECURITY</strong>
+          <span class="cv-badge">Security Researcher</span>
+          <a href="{{ '/portfolio/#hayyim' | prepend: site.baseurl }}" class="cv-role__details">Details →</a>
+        </div>
         <ul class="cv-research-list">
           <li>Vulnerability research and exploit development across Browser, Office, VM, and RDP attack surfaces on Windows.</li>
           <li>Built WinAFL-based fuzzing harnesses for commercial document parsers; surfaced heap-overflow and OOB-write primitives.</li>
@@ -112,7 +121,7 @@ title: Gyeongje Oh
       <div class="cv-timeline__date">2026.05</div>
       <div class="cv-timeline__content">
         <strong data-en="Vulnerability Research on Open-Source Ground Station Systems via Satellite RF Signal Generation" data-ko="인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구">"인공위성 RF 신호 생성을 통한 오픈소스 지상국 시스템 취약점 연구"</strong>
-        <p data-en="CISC (KCI)" data-ko="정보보호학회 (KCI)">정보보호학회 (KCI)</p>
+        <p><span data-en="CISC (KCI)" data-ko="정보보호학회 (KCI)">정보보호학회 (KCI)</span> · <a href="{{ '/assets/cisc2026_ground_station.pdf' | prepend: site.baseurl }}" target="_blank">PDF</a></p>
         <p class="cv-timeline__sub" data-en="Gyeongje Oh, Daehee Jang" data-ko="오경제, 장대희">오경제, 장대희</p>
       </div>
     </div>
@@ -124,124 +133,60 @@ title: Gyeongje Oh
   <h2 class="cv-section__title"><i class="fa fa-trophy"></i> Hacking Competition (CTF) Awards</h2>
 
   <div class="cv-awards-grid">
-    <div class="cv-awards-col">
-      <h3 class="cv-subsection">International</h3>
+    <div></div>
+    <h3 class="cv-subsection cv-awards-grid__head">International</h3>
+    <h3 class="cv-subsection cv-awards-grid__head">Domestic</h3>
 
-  <div class="cv-awards-year">
-    <div class="cv-awards-year__label">2026</div>
-    <div class="cv-awards-year__list">
+    <div class="cv-awards-grid__year">2026</div>
+    <div class="cv-awards-grid__cell">
       <div class="cv-award">
         <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
-        <span class="cv-award__name">DEFCON CTF 2026</span>
+        <span class="cv-award__name">DEFCON 34 CTF</span>
         <span class="cv-award__team"><a href="{{ '/assets/defcon2026_quals.png' | prepend: site.baseurl }}">Cold Fusion</a></span>
       </div>
     </div>
-  </div>
+    <div class="cv-awards-grid__cell"></div>
 
-  <div class="cv-awards-year">
-    <div class="cv-awards-year__label">2025</div>
-    <div class="cv-awards-year__list">
+    <div class="cv-awards-grid__year">2025</div>
+    <div class="cv-awards-grid__cell">
       <div class="cv-award">
         <span class="cv-award__place">5th</span>
         <span class="cv-award__name">Cykor CTF</span>
         <span class="cv-award__team"><a href="{{ '/assets/Cykor2025.png' | prepend: site.baseurl }}">경희대미남해커들</a></span>
       </div>
       <div class="cv-award">
-        <span class="cv-award__place">8th</span>
-        <span class="cv-award__name">DEFCON 33 CTF Final</span>
+        <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
+        <span class="cv-award__name">DEFCON 33 CTF</span>
         <span class="cv-award__team"><a href="{{ '/assets/defcon33_quals.png' | prepend: site.baseurl }}">Cold Fusion</a></span>
       </div>
       <div class="cv-award">
-        <span class="cv-award__place">9th</span>
-        <span class="cv-award__name">CODEGATE CTF Final</span>
+        <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
+        <span class="cv-award__name">CODEGATE CTF</span>
         <span class="cv-award__team"><a href="{{ '/assets/codegate2025quals.jpg' | prepend: site.baseurl }}">경희로운세종대왕</a></span>
       </div>
     </div>
-  </div>
-
-  <div class="cv-awards-year">
-    <div class="cv-awards-year__label">2024</div>
-    <div class="cv-awards-year__list">
+    <div class="cv-awards-grid__cell">
       <div class="cv-award">
-        <span class="cv-award__place">6th</span>
-        <span class="cv-award__name">HITCON CTF Final</span>
-        <span class="cv-award__team"><a href="https://ctftime.org/event/2345">Cold Fusion</a></span>
-      </div>
-      <div class="cv-award">
-        <span class="cv-award__place">9th</span>
-        <span class="cv-award__name">DEFCON 32 CTF Final</span>
-        <span class="cv-award__team"><a href="https://nautilus.institute/blog/2024/defcon-32-ctf-final-results">Cold Fusion</a></span>
-      </div>
-    </div>
-  </div>
-
-  <div class="cv-awards-year">
-    <div class="cv-awards-year__label">2023</div>
-    <div class="cv-awards-year__list">
-      <div class="cv-award">
-        <span class="cv-award__place">4th</span>
-        <span class="cv-award__name">HITCON CTF Final</span>
-        <span class="cv-award__team"><a href="https://ctftime.org/event/2035/">프로그램털모찌</a></span>
-      </div>
-      <div class="cv-award">
-        <span class="cv-award__place">6th</span>
-        <span class="cv-award__name">CODEGATE CTF University Final</span>
-        <span class="cv-award__team"><a href="http://www.newstap.co.kr/news/photo/202306/196798_315670_357.jpg">경희대미남해커들</a></span>
-      </div>
-      <div class="cv-award">
-        <span class="cv-award__place">10th</span>
-        <span class="cv-award__name">DiceCTF</span>
-        <span class="cv-award__team"><a href="https://ctftime.org/event/1838/">HotIceAmericano</a></span>
-        <span class="cv-award__prize">$100</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="cv-awards-year">
-    <div class="cv-awards-year__label">2022</div>
-    <div class="cv-awards-year__list">
-      <div class="cv-award">
-        <span class="cv-award__place">10th</span>
-        <span class="cv-award__name">CODEGATE CTF University Final</span>
-        <span class="cv-award__team"><a href="https://www.boannews.com/media/view.asp?idx=105159">경희대미남해커들</a></span>
-      </div>
-      <div class="cv-award">
-        <span class="cv-award__place">5th</span>
-        <span class="cv-award__name">Samsung Hacker's Playground CTF</span>
-        <span class="cv-award__team"><a href="https://ctftime.org/event/1715">KoreaNumberOne</a></span>
-      </div>
-    </div>
-  </div>
-
-  <div class="cv-awards-year">
-    <div class="cv-awards-year__label">2018</div>
-    <div class="cv-awards-year__list">
-      <div class="cv-award">
-        <span class="cv-award__place">9th</span>
-        <span class="cv-award__name">CODEGATE CTF Junior Final</span>
-        <span class="cv-award__team"><a href="{{ '/assets/코드게이트본선9위.png' | prepend: site.baseurl }}">오경제</a></span>
-      </div>
-    </div>
-  </div>
-
-    </div><!-- /.cv-awards-col International -->
-    <div class="cv-awards-col">
-      <h3 class="cv-subsection">Domestic</h3>
-
-  <div class="cv-awards-year">
-    <div class="cv-awards-year__label">2025</div>
-    <div class="cv-awards-year__list">
-      <div class="cv-award">
-        <span class="cv-award__place">5th</span>
-        <span class="cv-award__name">CCE CTF Final</span>
+        <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
+        <span class="cv-award__name">CCE CTF</span>
         <span class="cv-award__team"><a href="{{ '/assets/2025_CCE.png' | prepend: site.baseurl }}">경희대미남해커들</a></span>
       </div>
     </div>
-  </div>
 
-  <div class="cv-awards-year">
-    <div class="cv-awards-year__label">2024</div>
-    <div class="cv-awards-year__list">
+    <div class="cv-awards-grid__year">2024</div>
+    <div class="cv-awards-grid__cell">
+      <div class="cv-award">
+        <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
+        <span class="cv-award__name">HITCON CTF</span>
+        <span class="cv-award__team"><a href="https://ctftime.org/event/2345">Cold Fusion</a></span>
+      </div>
+      <div class="cv-award">
+        <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
+        <span class="cv-award__name">DEFCON 32 CTF</span>
+        <span class="cv-award__team"><a href="https://nautilus.institute/blog/2024/defcon-32-ctf-final-results">Cold Fusion</a></span>
+      </div>
+    </div>
+    <div class="cv-awards-grid__cell">
       <div class="cv-award">
         <span class="cv-award__place" data-en="Excellence" data-ko="우수상">Excellence</span>
         <span class="cv-award__name">LG U+ Hacking Competition</span>
@@ -266,11 +211,42 @@ title: Gyeongje Oh
         <span class="cv-award__prize">$3,000</span>
       </div>
     </div>
-  </div>
 
-  <div class="cv-awards-year">
-    <div class="cv-awards-year__label">2022</div>
-    <div class="cv-awards-year__list">
+    <div class="cv-awards-grid__year">2023</div>
+    <div class="cv-awards-grid__cell">
+      <div class="cv-award">
+        <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
+        <span class="cv-award__name">HITCON CTF</span>
+        <span class="cv-award__team"><a href="https://ctftime.org/event/2035/">프로그램털모찌</a></span>
+      </div>
+      <div class="cv-award">
+        <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
+        <span class="cv-award__name">CODEGATE CTF University</span>
+        <span class="cv-award__team"><a href="http://www.newstap.co.kr/news/photo/202306/196798_315670_357.jpg">경희대미남해커들</a></span>
+      </div>
+      <div class="cv-award">
+        <span class="cv-award__place">10th</span>
+        <span class="cv-award__name">DiceCTF</span>
+        <span class="cv-award__team"><a href="https://ctftime.org/event/1838/">HotIceAmericano</a></span>
+        <span class="cv-award__prize">$100</span>
+      </div>
+    </div>
+    <div class="cv-awards-grid__cell"></div>
+
+    <div class="cv-awards-grid__year">2022</div>
+    <div class="cv-awards-grid__cell">
+      <div class="cv-award">
+        <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
+        <span class="cv-award__name">CODEGATE CTF University</span>
+        <span class="cv-award__team"><a href="https://www.boannews.com/media/view.asp?idx=105159">경희대미남해커들</a></span>
+      </div>
+      <div class="cv-award">
+        <span class="cv-award__place">5th</span>
+        <span class="cv-award__name">Samsung Hacker's Playground CTF</span>
+        <span class="cv-award__team"><a href="https://ctftime.org/event/1715">KoreaNumberOne</a></span>
+      </div>
+    </div>
+    <div class="cv-awards-grid__cell">
       <div class="cv-award">
         <span class="cv-award__place" data-en="Excellence" data-ko="우수상">Excellence</span>
         <span class="cv-award__name">HackTheon Sejong</span>
@@ -278,11 +254,16 @@ title: Gyeongje Oh
         <span class="cv-award__prize">$1,000</span>
       </div>
     </div>
-  </div>
 
-  <div class="cv-awards-year">
-    <div class="cv-awards-year__label">2018</div>
-    <div class="cv-awards-year__list">
+    <div class="cv-awards-grid__year">2018</div>
+    <div class="cv-awards-grid__cell">
+      <div class="cv-award">
+        <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
+        <span class="cv-award__name">CODEGATE CTF Junior</span>
+        <span class="cv-award__team"><a href="{{ '/assets/코드게이트본선9위.png' | prepend: site.baseurl }}">오경제</a></span>
+      </div>
+    </div>
+    <div class="cv-awards-grid__cell">
       <div class="cv-award">
         <span class="cv-award__place" data-en="Gold" data-ko="금상">Gold</span>
         <span class="cv-award__name" data-en="Information Security Olympiad" data-ko="정보보호올림피아드">Information Security Olympiad</span>
@@ -291,8 +272,6 @@ title: Gyeongje Oh
       </div>
     </div>
   </div>
-    </div><!-- /.cv-awards-col Domestic -->
-  </div><!-- /.cv-awards-grid -->
 
 </div>
 
@@ -308,9 +287,9 @@ title: Gyeongje Oh
   </div>
 </div>
 
-<!-- ==================== PRESENTATIONS ==================== -->
+<!-- ==================== TALKS ==================== -->
 <div class="cv-section">
-  <h2 class="cv-section__title"><i class="fa fa-microphone"></i> <span data-en="Presentations" data-ko="Presentations">Presentations</span></h2>
+  <h2 class="cv-section__title"><i class="fa fa-microphone"></i> <span data-en="Talks" data-ko="Talks">Talks</span></h2>
 
   <div class="cv-timeline">
     <div class="cv-timeline__item">
