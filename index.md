@@ -250,7 +250,7 @@ title: Gyeongje Oh
       <div class="cv-award">
         <span class="cv-award__place" data-en="Excellence" data-ko="우수상">Excellence</span>
         <span class="cv-award__name">HackTheon Sejong</span>
-        <span class="cv-award__team"><a href="https://m.boannews.com/html/detail.html?tab_type=1&idx=130709">QWER</a></span>
+        <span class="cv-award__team"><a href="{{ '/assets/fiesta2024.png' | prepend: site.baseurl }}">QWER</a></span>
         <span class="cv-award__prize">$3,000</span>
       </div>
     </div>
@@ -262,7 +262,7 @@ title: Gyeongje Oh
       <div class="cv-award">
         <span class="cv-award__place" data-en="Excellence" data-ko="우수상">Excellence</span>
         <span class="cv-award__name">HackTheon Sejong</span>
-        <span class="cv-award__team"><a href="https://www.ccnnews.co.kr/news/articleView.html?idxno=265932">라임도둑</a></span>
+        <span class="cv-award__team"><a href="{{ '/assets/fiesta2024.png' | prepend: site.baseurl }}">라임도둑</a></span>
         <span class="cv-award__prize">$1,000</span>
       </div>
     </div>
