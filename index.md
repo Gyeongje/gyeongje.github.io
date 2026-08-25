@@ -191,12 +191,12 @@ title: Gyeongje Oh
         <span class="cv-award__name">FIESTA CTF (2024)</span>
         <span class="cv-award__team">학석박입니다</span>
       </a>
-      <a class="cv-award" href="https://m.boannews.com/html/detail.html?tab_type=1&idx=130709">
+      <a class="cv-award" href="{{ '/assets/hacktheon2024.jpg' | prepend: site.baseurl }}">
         <span class="cv-award__place" data-en="Excellence" data-ko="우수상">Excellence</span>
         <span class="cv-award__name">HackTheon Sejong (2024)</span>
         <span class="cv-award__team">QWER</span>
       </a>
-      <a class="cv-award" href="https://www.ccnnews.co.kr/news/articleView.html?idxno=265932">
+      <a class="cv-award" href="{{ '/assets/hacktheon2022.jpg' | prepend: site.baseurl }}">
         <span class="cv-award__place" data-en="Excellence" data-ko="우수상">Excellence</span>
         <span class="cv-award__name">HackTheon Sejong (2022)</span>
         <span class="cv-award__team">라임도둑</span>
