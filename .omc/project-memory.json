@@ -1,0 +1,96 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1787653398184,
+  "projectRoot": "c:\\Users\\gyeongje\\Downloads\\gyeongje.github.io",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "assets"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "assets": {
+      "path": "assets",
+      "purpose": "Static assets",
+      "fileCount": 15,
+      "lastAccessed": 1787653398172,
+      "keyFiles": [
+        "2025_CCE.png",
+        "Autohack특별상.jpg",
+        "bob임명장.png",
+        "codegate2025quals.jpg",
+        "cv.pdf"
+      ]
+    },
+    "screenshots": {
+      "path": "screenshots",
+      "purpose": null,
+      "fileCount": 5,
+      "lastAccessed": 1787653398172,
+      "keyFiles": [
+        "404.png",
+        "blog.png",
+        "home.png",
+        "post.png",
+        "resume.png"
+      ]
+    },
+    "_includes": {
+      "path": "_includes",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1787653398173,
+      "keyFiles": [
+        "header.html"
+      ]
+    },
+    "_layouts": {
+      "path": "_layouts",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1787653398173,
+      "keyFiles": [
+        "default.html",
+        "page.html",
+        "poem.html"
+      ]
+    },
+    "_posts": {
+      "path": "_posts",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1787653398173,
+      "keyFiles": [
+        "2023-01-15-heap-overflow-in-image-viewer-psd-parsing.md",
+        "2024-11-15-open-source-ground-station-security-research.md"
+      ]
+    }
+  },
+  "hotPaths": [],
+  "userDirectives": []
+}
