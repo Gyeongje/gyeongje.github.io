@@ -2,7 +2,7 @@
 <script>hljs.initHighlightingOnLoad();</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
 <script>
-var currentLang = 'en';
+var currentLang = 'ko';
 
 function applyLang() {
   var sw = document.getElementById('lang-switch');
@@ -33,33 +33,146 @@ function toggleLang() {
 
 document.addEventListener('DOMContentLoaded', applyLang);
 
-function generatePDF() {
-  var content = document.getElementById('cv-content');
-  if (!content) { alert('CV content not found.'); return; }
+function applyLangTo(root) {
+  var els = root.querySelectorAll('[data-en][data-ko]');
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    var val = el.getAttribute('data-' + currentLang);
+    if (val.indexOf('<') !== -1) {
+      el.innerHTML = val;
+    } else if (el.children.length === 0) {
+      el.textContent = val;
+    }
+  }
+}
 
-  var clone = content.cloneNode(true);
+/* =================================================================
+   PDF-only style overrides (black & white submission look)
+   Injected into the PDF wrapper and into <head> during render so
+   html2canvas picks them up. Strips icons + timeline dots/line,
+   recolors all teal/orange accents to black/gray.
+   ================================================================= */
+var PDF_OVERRIDES = [
+  ".pdf-mode { color: #000; }",
 
-  // --- Same site font (Quicksand) for PDF ---
-  var wrapper = document.createElement('div');
-  wrapper.style.padding = '12px 36px';
-  wrapper.style.fontFamily = "'Quicksand', 'Pretendard Variable', Pretendard, sans-serif";
-  wrapper.style.fontSize = '11px';
-  wrapper.style.lineHeight = '1.5';
-  wrapper.style.color = '#1a1a2e';
+  ".pdf-mode i.fa, .pdf-mode i[class^='fa-'], .pdf-mode i[class*=' fa-'] { display: none !important; }",
 
-  // Header
+  ".pdf-mode .cv-timeline { padding-left: 0 !important; }",
+  ".pdf-mode .cv-timeline::before, .pdf-mode .cv-timeline__item::before { display: none !important; content: none !important; background: transparent !important; box-shadow: none !important; border: none !important; width: 0 !important; height: 0 !important; }",
+
+  ".pdf-mode a { color: #000 !important; text-decoration: none !important; border-bottom: none !important; font-weight: inherit !important; pointer-events: none; }",
+  ".pdf-mode a.pdf-keep-link { color: inherit !important; text-decoration: underline !important; pointer-events: auto !important; }",
+  ".pdf-mode .cv-research-meta { display: none !important; }",
+  ".pdf-mode strong { color: #000 !important; }",
+
+  ".pdf-mode .cv-name, .pdf-mode .cv-name__link { color: #000 !important; }",
+  ".pdf-mode .cv-title { color: #555 !important; }",
+
+  ".pdf-mode .cv-section__title { color: #000 !important; border-bottom: 1px solid #000 !important; }",
+  ".pdf-mode .cv-subsection { color: #000 !important; }",
+
+  ".pdf-mode .cv-badge, .pdf-mode .cv-badge--accent { background: transparent !important; color: #000 !important; border: 1px solid #000 !important; font-weight: 600 !important; }",
+
+  ".pdf-mode .cv-award, .pdf-mode .cv-award:hover { background: transparent !important; }",
+  ".pdf-mode .cv-award__place { background: transparent !important; color: #000 !important; font-weight: 700 !important; border: none !important; padding-left: 0 !important; padding-right: 6px !important; }",
+  ".pdf-mode .cv-award__name, .pdf-mode .cv-award__team, .pdf-mode .cv-award__team a, .pdf-mode .cv-award__prize { color: #000 !important; }",
+
+  ".pdf-mode .cv-research-list li, .pdf-mode .cv-research-text, .pdf-mode .cv-research-meta, .pdf-mode .cv-research-meta a { color: #000 !important; }",
+  ".pdf-mode .cv-research-list li::before { color: #000 !important; }",
+
+  ".pdf-mode .cv-bounty { background: transparent !important; border-left-color: #000 !important; }",
+  ".pdf-mode .cv-awards-grid__year { color: #000 !important; }",
+  ".pdf-mode .cv-remarks-list li::before { color: #000 !important; }",
+
+  ".pdf-mode .cv-awards-grid > .cv-awards-grid__year:nth-child(n+7), .pdf-mode .cv-awards-grid > .cv-awards-grid__cell:nth-child(n+8) { border-top-color: #d0d0d0 !important; }",
+  ".pdf-mode .cv-awards-grid > .cv-awards-grid__cell:nth-child(n+8)::before { background: #d0d0d0 !important; }",
+
+  /* Portfolio overrides (used by Full PDF + Portfolio PDF) */
+  ".pdf-mode .pf-skills__title, .pdf-mode .pf-projects__title { color: #000 !important; border-bottom: 1px solid #000 !important; }",
+  ".pdf-mode .pf-skill, .pdf-mode .pf-skill--target, .pdf-mode .pf-skill--sub { background: transparent !important; color: #000 !important; border: 1px solid #000 !important; }",
+  ".pdf-mode .pf-skills__label { color: #555 !important; }",
+  ".pdf-mode .pf-tag { background: transparent !important; color: #000 !important; border: 1px solid #888 !important; }",
+  ".pdf-mode .pf-project__period, .pdf-mode .pf-project__desc, .pdf-mode .pf-project__name { color: #000 !important; }"
+].join("\n");
+
+/* Inject PDF override stylesheet into <head> during render, then remove.
+   html2canvas uses computed styles from the document, so the stylesheet
+   must be in the document (not just inside the cloned wrapper) for the
+   overrides to take effect. Returns a function that removes the style. */
+function installPdfStyles() {
+  var s = document.createElement('style');
+  s.id = 'pdf-mode-styles';
+  s.textContent = PDF_OVERRIDES;
+  document.head.appendChild(s);
+  return function () {
+    if (s.parentNode) s.parentNode.removeChild(s);
+  };
+}
+
+function makePdfHeader(subtitle) {
   var header = document.createElement('div');
   header.style.textAlign = 'center';
   header.style.marginBottom = '6px';
   header.style.paddingBottom = '8px';
-  header.style.borderBottom = '2px solid #16a085';
-  if (currentLang === 'ko') {
-    header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;font-weight:bold;">오경제 (Gyeongje Oh)</h1><p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;">Offensive Security Researcher | ogj0824@gmail.com | github.com/Gyeongje</p>';
-  } else {
-    header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;font-weight:bold;">Gyeongje Oh</h1><p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;">Offensive Security Researcher | ogj0824@gmail.com | github.com/Gyeongje</p>';
+  header.style.borderBottom = '1px solid #000';
+  var name = currentLang === 'ko' ? '오경제 (Gyeongje Oh)' : 'Gyeongje Oh';
+  header.innerHTML = '<h1 style="margin:0;color:#000;font-size:22px;font-family:\'Pretendard Variable\',Pretendard,sans-serif;font-weight:bold;">' + name + '</h1>' +
+    '<p style="color:#555;margin:4px 0 0;font-size:11px;font-family:\'Pretendard Variable\',Pretendard,sans-serif;">' + subtitle + '</p>';
+  return header;
+}
+
+function buildPdfWrapper() {
+  var wrapper = document.createElement('div');
+  wrapper.className = 'pdf-mode';
+  wrapper.style.padding = '12px 36px';
+  wrapper.style.fontFamily = "'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, sans-serif";
+  wrapper.style.fontSize = '11px';
+  wrapper.style.lineHeight = '1.5';
+  wrapper.style.color = '#000';
+  return wrapper;
+}
+
+function runPdf(wrapper, opt, mode) {
+  // Strip href / target from every anchor in the PDF DOM so the rendered
+  // PDF has no clickable link annotations (CSS alone can't suppress these
+  // — html2pdf/jsPDF reads href directly to emit link rectangles).
+  // Anchors marked with .pdf-keep-link survive (e.g., gye0ngje.com header).
+  var anchors = wrapper.querySelectorAll('a:not(.pdf-keep-link)');
+  for (var i = 0; i < anchors.length; i++) {
+    anchors[i].removeAttribute('href');
+    anchors[i].removeAttribute('target');
   }
-  wrapper.appendChild(header);
-  wrapper.appendChild(clone);
+
+  var uninstall = installPdfStyles();
+  var pipeline = html2pdf().set(opt).from(wrapper);
+
+  if (mode === 'open') {
+    // Render the PDF and navigate the current tab to the blob URL so the
+    // browser displays it inline instead of triggering a download.
+    return pipeline.toPdf().get('pdf').then(function (pdf) {
+      uninstall();
+      window.location.href = pdf.output('bloburl');
+    }, function (err) {
+      uninstall();
+      throw err;
+    });
+  }
+
+  return pipeline.save().then(function () {
+    uninstall();
+  }, function (err) {
+    uninstall();
+    throw err;
+  });
+}
+
+function generatePDF() {
+  var content = document.getElementById('cv-content');
+  if (!content) { alert('CV content not found.'); return; }
+
+  var wrapper = buildPdfWrapper();
+  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | <a href="https://gye0ngje.com" class="pdf-keep-link">gye0ngje.com</a>'));
+  wrapper.appendChild(content.cloneNode(true));
 
   var filename = currentLang === 'ko' ? 'CV_오경제.pdf' : 'CV_Gyeongje_Oh.pdf';
   var opt = {
@@ -71,7 +184,51 @@ function generatePDF() {
     pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
   };
 
-  html2pdf().set(opt).from(wrapper).save();
+  runPdf(wrapper, opt);
+}
+
+// CV + Portfolio merged into a single PDF.
+function generateFullPDF() {
+  var content = document.getElementById('cv-content');
+  if (!content) { alert('CV content not found.'); return; }
+
+  var wrapper = buildPdfWrapper();
+  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | <a href="https://gye0ngje.com" class="pdf-keep-link">gye0ngje.com</a>'));
+  wrapper.appendChild(content.cloneNode(true));
+
+  var filename = currentLang === 'ko' ? 'CV_Portfolio_오경제.pdf' : 'CV_Portfolio_Gyeongje_Oh.pdf';
+  var opt = {
+    margin: [10, 12, 10, 12],
+    filename: filename,
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2, useCORS: true },
+    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+  };
+
+  // Fetch the portfolio page and append its content on a new page.
+  fetch('{{ "/portfolio/" | prepend: site.baseurl }}')
+    .then(function (res) { return res.text(); })
+    .then(function (html) {
+      var doc = new DOMParser().parseFromString(html, 'text/html');
+      var pf = doc.getElementById('portfolio-content');
+      if (pf) {
+        var pfClone = pf.cloneNode(true);
+        applyLangTo(pfClone);
+
+        var pageBreak = document.createElement('div');
+        pageBreak.className = 'html2pdf__page-break';
+        pageBreak.style.pageBreakBefore = 'always';
+        wrapper.appendChild(pageBreak);
+
+        wrapper.appendChild(makePdfHeader('Offensive Security Researcher | Portfolio'));
+        wrapper.appendChild(pfClone);
+      }
+    })
+    .catch(function () { /* fall back to CV-only PDF */ })
+    .then(function () {
+      runPdf(wrapper, opt);
+    });
 }
 
 function generatePortfolioPDF() {
@@ -79,37 +236,10 @@ function generatePortfolioPDF() {
   if (!content) { alert('Portfolio content not found.'); return; }
 
   var clone = content.cloneNode(true);
+  applyLangTo(clone);
 
-  // Apply current language to cloned elements
-  var els = clone.querySelectorAll('[data-en][data-ko]');
-  for (var i = 0; i < els.length; i++) {
-    var el = els[i];
-    var val = el.getAttribute('data-' + currentLang);
-    if (val.indexOf('<') !== -1) {
-      el.innerHTML = val;
-    } else {
-      el.textContent = val;
-    }
-  }
-
-  var wrapper = document.createElement('div');
-  wrapper.style.padding = '12px 36px';
-  wrapper.style.fontFamily = "'Quicksand', 'Pretendard Variable', Pretendard, sans-serif";
-  wrapper.style.fontSize = '11px';
-  wrapper.style.lineHeight = '1.5';
-  wrapper.style.color = '#1a1a2e';
-
-  var header = document.createElement('div');
-  header.style.textAlign = 'center';
-  header.style.marginBottom = '6px';
-  header.style.paddingBottom = '8px';
-  header.style.borderBottom = '2px solid #16a085';
-  if (currentLang === 'ko') {
-    header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;font-weight:bold;">오경제 (Gyeongje Oh)</h1><p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;">Offensive Security Researcher | Portfolio</p>';
-  } else {
-    header.innerHTML = '<h1 style="margin:0;color:#1a1a2e;font-size:22px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;font-weight:bold;">Gyeongje Oh</h1><p style="color:#16a085;margin:4px 0 0;font-size:11px;font-family:Quicksand,Pretendard Variable,Pretendard,sans-serif;">Offensive Security Researcher | Portfolio</p>';
-  }
-  wrapper.appendChild(header);
+  var wrapper = buildPdfWrapper();
+  wrapper.appendChild(makePdfHeader('Offensive Security Researcher | Portfolio'));
   wrapper.appendChild(clone);
 
   var filename = currentLang === 'ko' ? 'Portfolio_오경제.pdf' : 'Portfolio_Gyeongje_Oh.pdf';
@@ -122,6 +252,6 @@ function generatePortfolioPDF() {
     pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
   };
 
-  html2pdf().set(opt).from(wrapper).save();
+  runPdf(wrapper, opt);
 }
 </script>
