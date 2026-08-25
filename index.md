@@ -193,31 +193,6 @@ title: Gyeongje Oh
       </a>
       <a class="cv-award" href="https://m.boannews.com/html/detail.html?tab_type=1&idx=130709">
         <span class="cv-award__place" data-en="Excellence" data-ko="우수상">Excellence</span>
-<<<<<<< HEAD
-        <span class="cv-award__name">HackTheon Sejong</span>
-        <span class="cv-award__team"><a href="{{ '/assets/fiesta2024.png' | prepend: site.baseurl }}">QWER</a></span>
-        <span class="cv-award__prize">$3,000</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="cv-awards-year">
-    <div class="cv-awards-year__label">2022</div>
-    <div class="cv-awards-year__list">
-      <div class="cv-award">
-        <span class="cv-award__place" data-en="Excellence" data-ko="우수상">Excellence</span>
-        <span class="cv-award__name">HackTheon Sejong</span>
-        <span class="cv-award__team"><a href="{{ '/assets/fiesta2024.png' | prepend: site.baseurl }}">라임도둑</a></span>
-        <span class="cv-award__prize">$1,000</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="cv-awards-year">
-    <div class="cv-awards-year__label">2018</div>
-    <div class="cv-awards-year__list">
-      <div class="cv-award">
-=======
         <span class="cv-award__name">HackTheon Sejong (2024)</span>
         <span class="cv-award__team">QWER</span>
       </a>
@@ -227,7 +202,6 @@ title: Gyeongje Oh
         <span class="cv-award__team">라임도둑</span>
       </a>
       <a class="cv-award" href="{{ '/assets/정보보호올림피아드_금상.jpg' | prepend: site.baseurl }}">
->>>>>>> ad23ad2c71f21b520750a6fcd7d2d318b824219e
         <span class="cv-award__place" data-en="Gold" data-ko="금상">Gold</span>
         <span class="cv-award__name" data-en="Information Security Olympiad (2018)" data-ko="정보보호올림피아드 (2018)">Information Security Olympiad (2018)</span>
         <span class="cv-award__team">오경제</span>
