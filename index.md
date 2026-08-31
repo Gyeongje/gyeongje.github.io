@@ -130,27 +130,27 @@ title: Gyeongje Oh
     <div class="cv-awards-grid__cell cv-awards-grid__cell--intl">
       <a class="cv-award" href="{{ '/assets/defcon2026_quals.png' | prepend: site.baseurl }}">
         <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
-        <span class="cv-award__name">DEFCON 34 CTF (2026)</span>
+        <span class="cv-award__name" data-en="DEFCON 34 CTF (2026) 4th" data-ko="DEFCON 34 CTF (2026) 4위">DEFCON 34 CTF (2026) 4th</span>
         <span class="cv-award__team">Cold Fusion</span>
       </a>
       <a class="cv-award" href="{{ '/assets/defcon33_quals.png' | prepend: site.baseurl }}">
         <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
-        <span class="cv-award__name">DEFCON 33 CTF (2025)</span>
+        <span class="cv-award__name" data-en="DEFCON 33 CTF (2025) 10th" data-ko="DEFCON 33 CTF (2025) 10위">DEFCON 33 CTF (2025) 10th</span>
         <span class="cv-award__team">Cold Fusion</span>
       </a>
       <a class="cv-award" href="{{ '/assets/codegate2025quals.jpg' | prepend: site.baseurl }}">
         <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
-        <span class="cv-award__name">CODEGATE CTF (2025)</span>
+        <span class="cv-award__name" data-en="CODEGATE CTF (2025) 9th" data-ko="CODEGATE CTF (2025) 9위">CODEGATE CTF (2025) 9th</span>
         <span class="cv-award__team">경희로운세종대왕</span>
       </a>
       <a class="cv-award" href="https://ctftime.org/event/2345">
         <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
-        <span class="cv-award__name">HITCON CTF (2024)</span>
+        <span class="cv-award__name" data-en="HITCON CTF (2024) 6th" data-ko="HITCON CTF (2024) 6위">HITCON CTF (2024) 6th</span>
         <span class="cv-award__team">Cold Fusion</span>
       </a>
       <a class="cv-award" href="https://nautilus.institute/blog/2024/defcon-32-ctf-final-results">
         <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
-        <span class="cv-award__name">DEFCON 32 CTF (2024)</span>
+        <span class="cv-award__name" data-en="DEFCON 32 CTF (2024) 9th" data-ko="DEFCON 32 CTF (2024) 9위">DEFCON 32 CTF (2024) 9th</span>
         <span class="cv-award__team">Cold Fusion</span>
       </a>
       <a class="cv-award" href="https://ctftime.org/event/2035/">
