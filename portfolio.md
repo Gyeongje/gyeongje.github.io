@@ -21,7 +21,7 @@ permalink: /portfolio/
   <div class="pf-project" id="macos-bt">
     <div class="pf-project__header">
       <h3 class="pf-project__name" data-en="🍎 macOS Kernel Bluetooth Chipset Security Research" data-ko="🍎 macOS 커널 블루투스 칩셋 보안 연구">🍎 macOS 커널 블루투스 칩셋 보안 연구</h3>
-      <span class="pf-project__period">2026.02 ~ 2026.12</span>
+      <span class="pf-project__period">2026.02 ~ 2026.11</span>
     </div>
     <p class="pf-project__desc"
        data-en="Bluetooth chipsets on virtually every IoT device expose a Host Controller Interface (HCI) for debugging, including a WriteRAM primitive that lets the host write arbitrary memory in the chipset. Attackers in the wild patched chipset firmware via WriteRAM to turn the chip into an SDR-like arbitrary BT RF transmitter, after which Broadcom hardened the firmware with a mitigation blocking WriteRAM. This research targets the Broadcom chipset shipped in every MacBook, aiming to analyze and bypass that mitigation. With no public PoC available, prior related research informed the firmware extraction, the chipset-to-kernel interaction surface was mapped end-to-end, and the mitigation logic was reverse-engineered. A bypass was implemented against the mitigation code path, successfully re-enabling the restricted WriteRAM HCI primitive."
@@ -37,7 +37,7 @@ permalink: /portfolio/
   <div class="pf-project" id="ms-exchange">
     <div class="pf-project__header">
       <h3 class="pf-project__name" data-en="📧 MS Exchange Server Vulnerability Research" data-ko="📧 MS Exchange Server 취약점 연구">📧 MS Exchange Server 취약점 연구</h3>
-      <span class="pf-project__period">2026 ~ 2026.12</span>
+      <span class="pf-project__period">2026.02 ~ 2026.12</span>
     </div>
     <p class="pf-project__desc"
        data-en="A recently started offensive research effort targeting Microsoft Exchange Server, a foundational on-premise enterprise service. After mapping the broader system architecture, an unpublished 1-day was reproduced as a Cross-Site Scripting (XSS) trigger inside the Exchange Mailbox surface, validating an attack scenario that affects mailbox data and session context under authenticated user privileges. The work expands prior research scope from client / embedded / kernel into enterprise server and SaaS-adjacent attack surfaces."
@@ -53,7 +53,7 @@ permalink: /portfolio/
   <div class="pf-project" id="windows-lpe">
     <div class="pf-project__header">
       <h3 class="pf-project__name" data-en="🪟 Windows Kernel LPE & LLM/MCP Automation" data-ko="🪟 Windows Kernel LPE 및 LLM/MCP 자동화 연구">🪟 Windows Kernel LPE 및 LLM/MCP 자동화 연구</h3>
-      <span class="pf-project__period">2025.04 ~ 2026.12</span>
+      <span class="pf-project__period">2025.04 ~ 2025.12</span>
     </div>
     <p class="pf-project__desc"
        data-en="Targeting older Windows builds, this work reproduces undisclosed 1-day PoCs and weaponizes them to full local privilege escalation. Patch diff extraction ranks changed functions by CWE / domain / pattern weight, and PoC drafting confirms the patched vulnerable function. A Race Condition PoC proved hard to reproduce, so a UAF primitive was used instead to construct an arbitrary write, then writing the system token into the current process token to escalate. A parallel research effort wraps this manual workflow in an LLM agent + MCP pipeline (IDA Headless, WinDbg, Hyper-V), staged as L0 reachability → L1 trigger extraction → L1.5 field-consumption tracking → L2 runtime breakpoint verification → L3 PoC BSOD reproduction. The agent automates trigger generation and Hyper-V snapshot rollback for repeated PoC runs; Claude-based and GPT Codex Security configurations are cross-validated. The pipeline has reproduced CVE-2024-38106 (Race Condition) and the unpublished CVE-2026-40407 (CLFS Heap Overflow) to user-mode BSOD, and discovered a new UAF BSOD in the Windows 11 (Build 26100) Object Manager namespace-root path — submitted to MSRC with both attack and defensive patch code."
@@ -69,7 +69,7 @@ permalink: /portfolio/
   <div class="pf-project" id="android-mte">
     <div class="pf-project__header">
       <h3 class="pf-project__name" data-en="🤖 Android Kernel MTE Bypass Research" data-ko="🤖 Android Kernel MTE Bypass 연구">🤖 Android Kernel MTE Bypass 연구</h3>
-      <span class="pf-project__period">2025.09 ~ 2026.02</span>
+      <span class="pf-project__period">2025.08 ~ 2026.03</span>
     </div>
     <p class="pf-project__desc"
        data-en="Modern Android kernels ship with MTE (Memory Tagging Extension), a hardware-assisted memory protection. This study evaluates how prior memory-corruption 1-days fare under MTE and explores bypass avenues. Most direct memory-corruption 1-days are blocked, but an indirect path through the modprobe_path primitive reliably bypasses MTE. The bypass was reproduced on a Pixel device with MTE enabled, ending in full root escalation. ROGuard — a defense designed to block the same class of bypass with minimal performance overhead — is proposed alongside the attack research, treating offense and defense as one effort."

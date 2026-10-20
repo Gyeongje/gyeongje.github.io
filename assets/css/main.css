@@ -407,6 +407,12 @@ strong { color: #16a085; }
   color: #fff;
 }
 
+.cv-timeline__sub .cv-badge {
+  font-style: normal;
+  font-size: 95%;
+  margin: 0 2px;
+}
+
 /* =Awards Grid (2-column: International | Domestic, flat lists with year
    inline in each award name). */
 .cv-awards-grid {
@@ -538,6 +544,60 @@ a.cv-award:hover {
   font-weight: 700;
   color: #e67e22;
   flex-shrink: 0;
+}
+
+/* =Talks (one card per talk, one row per venue) */
+.cv-talks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.cv-talk {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cv-talk__title {
+  margin: 0 0 4px;
+  padding-left: 10px;
+  border-left: 3px solid #16a085;
+  font-size: 88%;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.45;
+  color: #1a1a2e;
+}
+
+.cv-talk .cv-award {
+  padding: 5px 10px;
+  gap: 8px;
+  margin-bottom: 0;
+}
+
+.cv-talk .cv-award__place {
+  min-width: 52px;
+  padding: 1px 6px;
+  font-size: 72%;
+  background: #f0f9f7;
+  color: #16a085;
+}
+
+.cv-talk .cv-award__name {
+  font-size: 86%;
+}
+
+.cv-talk .cv-award__team {
+  font-size: 78%;
+}
+
+@media (max-width: 640px) {
+  .cv-talks {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
 }
 
 /* =Bug Bounty */
@@ -680,6 +740,23 @@ a.cv-award:hover {
 .cv-research-meta a {
   color: #16a085;
   font-weight: 500;
+}
+
+.cv-role {
+  display: inline-block;
+  padding: 0 6px;
+  margin-right: 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #888;
+  font-size: 90%;
+  line-height: 1.5;
+}
+
+.cv-role--lead {
+  border-color: #16a085;
+  color: #16a085;
+  font-weight: 600;
 }
 
 /* =CV Footer */
