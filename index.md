@@ -167,6 +167,11 @@ title: Gyeongje Oh
     </div>
 
     <div class="cv-awards-grid__cell cv-awards-grid__cell--dom">
+      <div class="cv-award">
+        <span class="cv-award__place" data-en="Excellence" data-ko="우수상">Excellence</span>
+        <span class="cv-award__name" data-en="KIISC IT Platform Safety Research Group (2026)" data-ko="한국정보보호학회 IT플랫폼안전성연구회 (2026)">한국정보보호학회 IT플랫폼안전성연구회 (2026)</span>
+        <span class="cv-award__team" data-en="Gyeongje Oh" data-ko="오경제">오경제</span>
+      </div>
       <a class="cv-award" href="{{ '/assets/2025_CCE.png' | prepend: site.baseurl }}">
         <span class="cv-award__place" data-en="Finalist" data-ko="본선 진출">Finalist</span>
         <span class="cv-award__name">CCE CTF (2025)</span>
